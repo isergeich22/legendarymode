@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+:root {
+    --about-header-font: 'Seymour One', sans-serif;
+    --sample-font: 'Commissioner', sans-serif;
+}
+
+.about {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+    .about-header {
+        padding: 2vh 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #0000003b;
+        border-bottom: 1px solid #0000003b;
+    }
+
+        .about-header__text {
+            font-family: var(--about-header-font);
+            font-size: 2rem;
+        }
+
+    .about-content {
+        padding: 2vh 0;
+        font-family: var(--sample-font);
+        font-size: 1.3rem;
+    }

@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
+
+:root {
+    --part-header-font: 'Seymour One', sans-serif;
+    --card-header-font: 'Rubik Doodle Shadow', system-ui;
+    --sample-font: 'Commissioner', sans-serif;
+}
+
+.participant {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+    .part-header {
+        padding: 2vh 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #0000003b;
+        border-bottom: 1px solid #0000003b;
+    }
+
+        .part-header__text {
+            font-family: var(--part-header-font);
+            font-size: 2rem;   
+        }
+
+    .part-list {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6%;
+        padding: 3vh 5vh;
+    }
+
+        .part-card {
+            width: 47%;
+            height: 25vh;
+            border-radius: 15px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 10%;
+            box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.38);
+            -webkit-box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.38);
+            -moz-box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.38);
+            margin-bottom: 5vh;
+        }
+
+            .part-card-photo {
+                width: 30%;
+            }
+
+                .part-card-photo > img {
+                    padding: 0 5%;
+                    width: 24vh;
+                    border-radius: 40px;
+                }
+
+            .part-card-content {
+                width: 60%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+                .card-content__name {
+                    font-family: var(--card-header-font);
+                    font-size: 1.3rem;
+                    margin-bottom: 2vh;
+                }
+
+                .card-content__social {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                }
+
+                    .card-content__social-item {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: row;
+                        gap: 2%;
+                        justify-content: center;
+                        align-items: center;
+                    }
+
+                        .card-content__social-item-icon {
+                            width: 10%;
+                            display: flex;
+                        }
+
+                        .card-content__social-item-ref {
+                            width: 88%;
+                        }
+
+                            .card-content__social-item-ref > a {
+                                text-decoration: none;
+                                font-family: var(--sample-font);
+                                color: #000000;
+                            }

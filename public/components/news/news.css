@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+:root {
+    --news-block-font: 'Seymour One', sans-serif;
+    --sample-font: 'Commissioner', sans-serif;
+}
+
+.news {
+    font-family: var(--news-block-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 80%;
+    margin: 2vh auto;
+}
+
+    .news-header {
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #0000003b;
+        border-bottom: 1px solid #0000003b;
+        font-family: var(--news-block-font);
+        padding: 2vh 0;
+        font-size: 2rem;
+    }
+
+    .news-card {
+        width: 100%;
+        padding-right: 5%;
+        padding-left: 1%;
+        margin-top: 2vh;
+    }
+
+        .news-card-header {
+            font-size: 1.5rem;
+        }
+
+        .news-card-body > p {
+            font-family: var(--sample-font);
+            font-size: 1.3rem;
+            padding: 2vh 0;
+        }
+
+        .news-card-body__date {
+            font-family: var(--sample-font);
+            font-size: 1.2rem;
+            color: #5c5c5ca5;
+        }

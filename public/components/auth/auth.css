@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+
+:root {
+    --form-font: 'Seymour One', sans-serif;
+}
+
+.auth {
+    width: 100%;
+    display: flex;
+}
