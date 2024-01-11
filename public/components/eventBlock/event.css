@@ -46,7 +46,7 @@
             }
 
                 .text-block-item > p:first-child {
-                    font-size: 1.3em;
+                    /* font-size: 1.3em; */
                     width: 10%;
                 }
 
