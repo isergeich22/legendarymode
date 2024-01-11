@@ -1,0 +1,119 @@
+{
+    "participants": [
+        {
+            "id": "vikakarter",
+            "photo": "/img/participants/vikakarter.jpg",
+            "name": "Вика Картер",
+            "links": [
+                {
+                    "linkName": "twitch.tv/vika_karter",
+                    "linkAddress": "https://www.twitch.tv/vika_karter"
+                },
+                {
+                    "linkName": "boosty.to/karter",
+                    "linkAddress": "https://boosty.to/karter"
+                },
+                {
+                    "linkName": "t.me/karter_info",
+                    "linkAddress": "https://t.me/karter_info"
+                },
+                {
+                    "linkName": "vk.com/vikakarter",
+                    "linkAddress": "https://vk.com/vikakarter"
+                }
+            ]
+        },
+        {
+            "id": "orkpodcaster",
+            "photo": "/img/participants/orkpodcaster.jpg",
+            "name": "Орк Подкастер",
+            "links": [
+                {
+                    "linkName": "twitch.tv/orkpod",
+                    "linkAddress": "https://www.twitch.tv/orkpod"
+                },
+                {
+                    "linkName": "boosty.to/orkpod",
+                    "linkAddress": "https://boosty.to/orkpod"
+                },
+                {
+                    "linkName": "t.me/orkpodcaster",
+                    "linkAddress": "https://t.me/orkpodcaster"
+                },
+                {
+                    "linkName": "vk.com/orktwitch",
+                    "linkAddress": "https://vk.com/orktwitch"
+                }
+            ]
+        },
+        {
+            "id": "welovegames",
+            "photo": "/img/participants/welovegames.jpg",
+            "name": "Денис WELOVEGAMES",
+            "links": [
+                {
+                    "linkName": "twitch.tv/welovegames",
+                    "linkAddress": "https://www.twitch.tv/welovegames"
+                },
+                {
+                    "linkName": "boosty.to/welovegames",
+                    "linkAddress": "https://boosty.to/welovegames"
+                },
+                {
+                    "linkName": "t.me/welovegames",
+                    "linkAddress": "https://t.me/welovegames"
+                },
+                {
+                    "linkName": "vk.com/welovegames",
+                    "linkAddress": "https://vk.com/welovegames"
+                }
+            ]
+        },
+        {
+            "id": "dmitry_bale",
+            "photo": "/img/participants/dmitrybale.jpg",
+            "name": "Дмитрий Бейл",
+            "links": [
+                {
+                    "linkName": "twitch.tv/dmitry_bale",
+                    "linkAddress": "https://www.twitch.tv/dmitry_bale"
+                },
+                {
+                    "linkName": "youtube.com/@DmitryBale",
+                    "linkAddress": "https://www.youtube.com/channel/UCcAQJDkK-Xf-YGCGAdAY3Ig"
+                },
+                {
+                    "linkName": "t.me/DmitryBaleOfficial",
+                    "linkAddress": "https://t.me/DmitryBaleOfficial"
+                },
+                {
+                    "linkName": "vk.com/dmitrybaleofficial",
+                    "linkAddress": "https://vk.com/dmitrybaleofficial"
+                }
+            ]
+        },
+        {
+            "id": "juice",
+            "photo": "/img/participants/juice.jpg",
+            "name": "Михаил Джус",
+            "links": [
+                {
+                    "linkName": "twitch.tv/juice",
+                    "linkAddress": "https://www.twitch.tv/juice"
+                },
+                {
+                    "linkName": "boosty.to/juice",
+                    "linkAddress": "https://boosty.to/juice"
+                },
+                {
+                    "linkName": "t.me/Juice_live",
+                    "linkAddress": "https://t.me/Juice_live"
+                },
+                {
+                    "linkName": "vk.com/juicelive",
+                    "linkAddress": "https://vk.com/juicelive"
+                }
+            ]
+        }
+    ]
+}

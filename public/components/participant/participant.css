@@ -4,7 +4,7 @@
 
 :root {
     --part-header-font: 'Seymour One', sans-serif;
-    --card-header-font: 'Rubik Doodle Shadow', system-ui;
+    --card-header-font: 'Seymour One', sans-serif;
     --sample-font: 'Commissioner', sans-serif;
 }
 
@@ -15,19 +15,21 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background: #fff;
 }
 
     .part-header {
         padding: 2vh 0;
         width: 100%;
         text-align: center;
-        border-top: 1px solid #0000003b;
-        border-bottom: 1px solid #0000003b;
+        border-top: 1px solid #e8e4f0;
+        border-bottom: 1px solid #e8e4f0;
     }
 
         .part-header__text {
+            color: #63489d;
             font-family: var(--part-header-font);
-            font-size: 2rem;   
+            font-size: 2em;   
         }
 
     .part-list {
@@ -48,9 +50,9 @@
             justify-content: center;
             align-items: center;
             gap: 10%;
-            box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.38);
-            -webkit-box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.38);
-            -moz-box-shadow: 10px 10px 34px -4px rgba(0,0,0,0.38);
+            box-shadow: 10px 10px 24px -4px #63489d;
+            -webkit-box-shadow: 10px 10px 24px -4px #63489d;
+            -moz-box-shadow: 10px 10px 24px -4px #63489d;
             margin-bottom: 5vh;
         }
 
@@ -61,7 +63,7 @@
                 .part-card-photo > img {
                     padding: 0 5%;
                     width: 24vh;
-                    border-radius: 40px;
+                    border-radius: 23px;
                 }
 
             .part-card-content {
@@ -73,8 +75,9 @@
             }
 
                 .card-content__name {
+                    color: #9772ab;
                     font-family: var(--card-header-font);
-                    font-size: 1.3rem;
+                    font-size: 1em;
                     margin-bottom: 2vh;
                 }
 
@@ -105,7 +108,7 @@
                         }
 
                             .card-content__social-item-ref > a {
-                                text-decoration: none;
+                                text-decoration: underline;
                                 font-family: var(--sample-font);
-                                color: #000000;
+                                color: #63489d;
                             }

@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+:root {
+    --seasons-header-font: 'Seymour One', sans-serif;
+    --sample-font: 'Commissioner', sans-serif;
+}
+
+.seasons {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin: 2vh auto;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+}
+
+    .seasons-header {
+        padding: 2vh 0;
+        width: 100%;
+        text-align: center;
+        border-top: 1px solid #e8e4f0;
+        border-bottom: 1px solid #e8e4f0;
+    }
+
+        .seasons-header__text {
+            font-family: var(--seasons-header-font);
+            font-size: 2em;
+            color: #63489d;
+        }
+
+    .season-body {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+        .btn-event {
+            width: 100%;
+        }
+
+        .btn-event:hover {
+            background: #e8e4f0;
+        }
+
+        .season-event {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: #63489d !important;
+        }
+
+            .event-headers {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                gap: 2%;
+            }
+
+                .event-headers > h3 {
+                    border-right: 1px solid #0000003b;
+                }
+
+                .event-headers-item {
+                    display: flex;
+                    margin: 0;
+                    width: 12.29%;
+                    height: 4vh;
+                    font-family: var(--seasons-header-font);
+                    font-size: .8em;
+                    text-align: center;
+                    justify-content: center;
+                    align-items: center;
+                }

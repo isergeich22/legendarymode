@@ -1,0 +1,276 @@
+{
+    "seasons": [
+        {
+            "seasonNumber": "1 сезон",
+            "events": [
+                {
+                    "eventNumber": "1",
+                    "eventVideo": "https://www.youtube.com/embed/OUditpcWppA?si=eAt_9walPlq7olrH",
+                    "eventHost": "WELOVEGAMES",
+                    "eventGame": "The Long Drive",
+                    "eventDescription": "Заезд в The Long Drive, кто дальше проедет. Спецальное условие - можно было найти золотую лампу которая значительно бустила результат участника",
+                    "eventResults": [
+                        {
+                            "position": "1",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "2",
+                    "eventVideo": "https://www.youtube.com/embed/bXoguN-UW9U?si=fDIqrHetyfiPjsAQ",
+                    "eventHost": "Dmitry_bale",
+                    "eventGame": "Hitman 3",
+                    "eventDescription": "Играли в Hitman 3 на прохождение указанных миссий и выполняли бинго, на очки.",
+                    "eventResults": [
+                        {
+                            "position": "2",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "1",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "3",
+                    "eventVideo": "https://www.youtube.com/embed/Uqle1-RQaGI?si=0dbHLUXgnSSYEUZu",
+                    "eventHost": "Orkpod",
+                    "eventGame": "Grand Theft Auto V",
+                    "eventDescription": "Проходили GTA 5 c модом CHAOS MOD, на то кто пройдет больше миссий.",
+                    "eventResults": [
+                        {
+                            "position": "1",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Dmitry_bale"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "4",
+                    "eventVideo": "https://www.youtube.com/embed/_GsTr9ee_uc?si=SfSY4LfeMSKZheuZ",
+                    "eventHost": "Juice",
+                    "eventGame": "Phasmophobia",
+                    "eventDescription": "Играли в Фазму соло на очки. Очки давались за правильно определение призрака и за доп. задания",
+                    "eventResults": [
+                        {
+                            "position": "2",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "1",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "5",
+                    "eventVideo": "https://www.youtube.com/embed/v6Vg8oqOkjc?si=qVn9pCec3vj3yle-",
+                    "eventHost": "Vika-Karter",
+                    "eventGame": "The Witcher 3: Wild Hunt",
+                    "eventDescription": "Проходили Ведьмака по заранее подготовленным квестам, кто больше прошел, тот и победил.",
+                    "eventResults": [
+                        {
+                            "position": "3",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "4",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "1",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "6",
+                    "eventVideo": "https://www.youtube.com/embed/hZWPa6nAGKc?si=1HvtUJ0NUGmN9hv3",
+                    "eventHost": "Dmitry_bale",
+                    "eventGame": "Dark and Darker",
+                    "eventDescription": "Играли в Dark and Darker. Заранее выбирали для себя класс и выходили в соло рейды. Критерием для победы послужило финальное число золота на персонаже.",
+                    "eventResults": [
+                        {
+                            "position": "4",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "2",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "1",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "7",
+                    "eventVideo": "https://www.youtube.com/embed/J4YqyTsBe8I?si=DylgYHWrIuQqZEqI",
+                    "eventHost": "Orkpod",
+                    "eventGame": "Cooking Simulator",
+                    "eventDescription": "Играли в Кукинг Симулятор, критериев для побелы было несколько, но основной - количество рецептов.",
+                    "eventResults": [
+                        {
+                            "position": "2",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "4",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "1",
+                            "player": "Vika-Karter"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "8",
+                    "eventVideo": "https://www.youtube.com/embed/ey40gffawh0?si=cTAJge5rzM3_b_m-",
+                    "eventHost": "Vika-Karter",
+                    "eventGame": "Sims 4",
+                    "eventDescription": "Выполняли различные задания в Sims 4, отыгрывая своих персонажей в городе с другими стримерами. Основной критерий победы - количество денег в конце.",
+                    "eventResults": [
+                        {
+                            "position": "1",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "3",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "9",
+                    "eventVideo": "https://www.youtube.com/embed/iosMS7LAdIs?si=kmiJzV8UXI3reHf-",
+                    "eventHost": "Juice",
+                    "eventGame": "Retro Games",
+                    "eventDescription": "Играли в Ретро игры, Аладдин, Червяк Джим, Король Лев. Критерий на победу - кто дальше пройдет.",
+                    "eventResults": [
+                        {
+                            "position": "2",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "1",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "10",
+                    "eventVideo": "https://www.youtube.com/embed/G0OVUDfY53Y?si=_jFZ1Tjm4o1DO1Rn",
+                    "eventHost": "WELOVEGAMES",
+                    "eventGame": "Manual Samuel, Stilt Fella",
+                    "eventDescription": "Играли в 2 инди игры, критерий победы - кто дальше пройдет.",
+                    "eventResults": [
+                        {
+                            "position": "2",
+                            "player": "Dmitry_bale"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "4",
+                            "player": "Vika-Karter"
+                        },
+                        {
+                            "position": "1",
+                            "player": "Orkpod"
+                        }
+                    ]
+                },
+                {
+                    "eventNumber": "11",
+                    "eventVideo": "https://www.youtube.com/embed/Ttp8kRXMqbk?si=kSfvQdUHEfJHtMA0",
+                    "eventHost": "Dmitry_bale",
+                    "eventGame": "Fall Guys",
+                    "eventDescription": "Бонусный выпуск, который вел победитель - Дмитрий Бейл. Играли в Fall Guys, в командах по 2 человека. Решали судьбу 2 и 3-го места. Критерий победы - количество корон.",
+                    "eventResults": [
+                        {
+                            "position": "1",
+                            "player": "WELOVEGAMES"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Orkpod"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
+
+:root {
+    --event-host-font: 'Seymour One', sans-serif;
+    --sample-font: 'Commissioner', sans-serif;
+}
+
+.event {
+    display: flex;
+    width: 80%;
+    margin: 0 auto;
+}
+
+    .event-body {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 2vh 2vh;
+        gap: 2%
+    }
+
+        .event-body-item {
+            width: 49%;
+            height: 50vh;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            /* font-family: var(--sample-font); */
+        }
+
+        .text-block {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 5%;
+        }
+
+            .text-block-item {
+                display: flex;
+                flex-direction: row;                
+                width: 100%;
+                gap: 4%;
+            }
+
+                .text-block-item > p:first-child {
+                    font-size: 1.3em;
+                    width: 10%;
+                }
+
+                .text-block-item > p:nth-child(2) {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .text-block-item > h3 {
+                    margin: 0;
+                    width: 86%;
+                }
+
+                .text-block-item > p {
+                    margin: 0;
+                }

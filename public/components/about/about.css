@@ -13,23 +13,26 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
+    background: #fff;
 }
 
     .about-header {
         padding: 2vh 0;
         width: 100%;
         text-align: center;
-        border-top: 1px solid #0000003b;
-        border-bottom: 1px solid #0000003b;
+        border-top: 1px solid #e8e4f0;
+        border-bottom: 1px solid #e8e4f0;
     }
 
         .about-header__text {
+            color: #63489d;
             font-family: var(--about-header-font);
             font-size: 2rem;
         }
 
     .about-content {
-        padding: 2vh 0;
+        padding: 2vh 2vh;
         font-family: var(--sample-font);
         font-size: 1.3rem;
+        color: #63489d;
     }
