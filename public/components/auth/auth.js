@@ -1,10 +1,10 @@
 exports.auth = auth = `
-    <form class="auth" action="/home" method="POST">
-        <input type="text" name="userType" value="admin">
-        <label for="adminName">Имя пользователя</label>
-        <input type="text" name="adminName">
-        <label for="adminPass">Пароль</label>
-        <input type="text" name="adminPass">
-        <input type="submit" value="Войти">
+    <form class="auth" id="authForm" action="/login?userType=viewer" method="POST">
+        <div class="user-type-choice" id="userTypeChoice">
+            <input type="submit" value="Зритель">
+            <input class="admin-type" type="text" id="adminType" value="Админ / Ведущий">
+        </div>
+        <div class="auth-block" id="authBlock">
+        </div>
     </form>
 `

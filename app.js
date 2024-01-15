@@ -22,7 +22,32 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', async function(req, res){
 
-    res.send(auth.auth)
+    let startPageContent = `<!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Турнир - Легендарная сложность</title>
+                                <link rel="stylesheet" href="/style.css">
+                                <link rel="stylesheet" href="/components/header/header.css">
+                                <link rel="stylesheet" href="/components/footer/footer.css">
+                                <link rel="stylesheet" href="/components/auth/auth.css"
+                                <link rel="stylesheet" href="/components/news/news.css">
+                                <link rel="stylesheet" href="/components/nav/nav.css">
+                                <link rel="stylesheet" href="/components/about/about.css">
+                                <link rel="stylesheet" href="/components/participant/participant.css">
+                                <link rel="stylesheet" href="/components/seasons/seasons.css">
+                                <link rel="stylesheet" href="/components/eventBlock/event.css">
+                                <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+                                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                            </head>
+                            <body>`
+
+    let endPageContent = `<script src="/script.js"></script>
+                        </body>
+                    </html>`
+
+    res.send(startPageContent + auth.auth + endPageContent)
 
 })
 
@@ -181,15 +206,17 @@ app.get('/home', async function(req, res){
     res.send(header.header + news.news(newses) + nav.nav(seasonNav) + about.about + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
 })
 
-// app.post('/home', urlencodedParser, async function(req, res){
-//     if(!req.body) res.sendStatus(400)
-//     if((req.body.userType === 'viewer' || req.body.userType === 'participant') && req.body.userType !== 'admin') {
-//         res.send(header.header + news.news + nav.nav + footer.footer)
-//     }
-//     if(req.body.userType === 'admin' && req.body.adminName === 'vikarter' && req.body.adminPass === adminPass) {
-//         res.send(header.header + news.news + nav.nav + footer.footer)
-//     }
-// })
+app.post('/login', urlencodedParser, async function(req, res){
+    if(!req.body && !req.query.userType === undefined) res.sendStatus(400)
+    if(req.query.userType === 'viewer' && req.body.userType !== 'admin') {
+        console.log('viewer')
+        res.redirect('home')
+    }
+    if(req.query.userType === 'admin' && req.body.adminName === 'vikakarter' && req.body.adminPass === adminPass) {
+        console.log('admin')
+        res.redirect('home')
+    }
+})
 
 app.get('/change', async function(req, res){
 

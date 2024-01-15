@@ -68,3 +68,33 @@ seasonsButton.forEach(el => {
     })
     
 })
+
+if(window.location.href.indexOf('home') < 0 && window.location.href.indexOf('login') < 0 && window.location.href.indexOf('change') < 0) {
+
+    const body = document.querySelector('body')
+    const userTypeChoice = document.querySelector('#userTypeChoice')
+    const authForm = document.querySelector('#authForm')
+    const authBlock = document.querySelector('#authBlock')
+    const adminTypeButton = document.querySelector('#adminType')
+
+    adminTypeButton.addEventListener('click', () => {
+
+        authForm.setAttribute('action', '/login?userType=admin')
+
+        userTypeChoice.style.display = 'none'
+
+        authBlock.innerHTML = `
+            <div class="auth-block-item">
+                <label for="adminName">Логин</label>
+                <input class="admin-name" type="text" name="adminName">
+            </div>
+            <div class="auth-block-item">
+                <label for="adminPass">Пароль</label>
+                <input class="admin-pass" type="password" name="adminPass">
+            </div>
+            <input class="auth-button" type="submit" value="Войти">
+        `
+
+    })
+
+}

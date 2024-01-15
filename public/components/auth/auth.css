@@ -1,10 +1,122 @@
-@import url('https://fonts.googleapis.com/css2?family=Seymour+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Commissioner&display=swap');
 
 :root {
-    --form-font: 'Seymour One', sans-serif;
+    --sample-font: 'Commissioner', sans-serif;
+}
+
+body {
+    background-image: url('../../img/bg_auth.png');
+    box-shadow: 0px 13px 46px -16px #feca6b inset;
+    -webkit-box-shadow: 0px 13px 46px -16px #feca6b inset;
+    -moz-box-shadow: 0px 13px 46px -16px #feca6b inset;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
 }
 
 .auth {
-    width: 100%;
+    width: 20%;
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 55vh;
+    border-radius: 20px;
+    background: #ffffffdc;
 }
+
+    .user-type-choice {
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        gap: 4%;
+    }
+
+        .user-type-choice > input {
+            font-family: var(--sample-font);
+            width: 48%;
+            border: 2px solid #9772ab;
+            background: none;
+            color: #9772ab;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .user-type-choice > input:hover {
+            background: #9772ab;
+            color: #fff;
+            transition: .3s ease-in-out;
+        }
+
+        .user-type-choice > .admin-type {
+            font-family: var(--sample-font);
+            text-align: center;
+            width: 48%;
+            border: 2px solid #9772ab;
+            background: none;
+            color: #9772ab;
+            transition: .3s ease-in-out;
+            cursor: pointer;
+        }
+
+        .user-type-choice > .admin-type:hover {
+            background: #9772ab;
+            color: #fff;
+            transition: .3s ease-in-out;
+        }
+
+    .auth-block {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .auth-block-item {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: 2%;
+        }
+
+            .auth-block-item > label {
+                width: 18%;
+                font-family: var(--sample-font);
+                color: #9772ab;
+            }
+
+            .admin-name, .admin-pass {
+                width: 80%;
+                margin-bottom: 1vh;
+                font-family: var(--sample-font);
+                text-align: center;
+                background: none;
+                border: none;
+                padding: 0 1vw;
+                border-bottom: 2px solid #9772ab;
+            }
+
+                .admin-name:focus, .admin-pass:focus {
+                    outline: none;
+                }
+
+    .auth-button {
+        width: 100%;
+        text-align: center;
+        background: none;
+        font-family: var(--sample-font);
+        color: #9772ab;
+        border: 2px solid #9772ab;
+        transition: .3s ease-in-out;
+    }
+
+        .auth-button:hover {
+            background: #9772ab;
+            color: #fff;
+            transition: .3s ease-in-out;
+        }
