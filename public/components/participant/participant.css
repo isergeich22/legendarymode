@@ -48,9 +48,9 @@
             justify-content: center;
             align-items: center;
             gap: 10%;
-            box-shadow: 10px 10px 24px -4px #63489d inset;
-            -webkit-box-shadow: 10px 10px 24px -4px #63489d inset;
-            -moz-box-shadow: 10px 10px 24px -4px #63489d inset;
+            box-shadow: -10px 10px 24px -4px #63489d inset;
+            -webkit-box-shadow: -10px 10px 24px -4px #63489d inset;
+            -moz-box-shadow: -10px 10px 24px -4px #63489d inset;
             margin-bottom: 5vh;
             background: #f7e9ff;
         }
