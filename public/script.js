@@ -62,6 +62,7 @@ seasonsButton.forEach(el => {
                                 </div>
                             </div>`
                 eventBlock.innerHTML = content
+                eventBlock.style.background = '#f7e9ff'
                 content = ``
             })
         })

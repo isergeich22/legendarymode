@@ -4,6 +4,17 @@
     box-sizing: border-box;
 }
 
+@font-face {
+    font-family: 'Minecraft-Ten regular';
+    src: url('../../fonts/minecraft-ten.ttf');
+}
+
 body {
-    background: #fff;
+    background: #63489d !important;
+    background-image: url('./img/bg_pattern.png') !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    /* background-size: 10vh; */
+    background-size: 25vw 100vh !important;
+    background-repeat: repeat !important;
 }

@@ -8,6 +8,11 @@
     --sample-font: 'Commissioner', sans-serif;
 }
 
+@font-face {
+    font-family: 'Minecraft-Ten regular';
+    src: url('../../fonts/minecraft-ten.ttf');
+}
+
 .participant {
     width: 80%;
     display: flex;
@@ -15,20 +20,18 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: #fff;
 }
 
     .part-header {
         padding: 2vh 0;
         width: 100%;
         text-align: center;
-        border-top: 1px solid #e8e4f0;
-        border-bottom: 1px solid #e8e4f0;
+        background: #feca6b;
     }
 
         .part-header__text {
             color: #63489d;
-            font-family: var(--part-header-font);
+            font-family: 'Minecraft-Ten regular';
             font-size: 2em;   
         }
 
@@ -38,7 +41,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 6%;
-        padding: 3vh 5vh;
+        padding: 3vh 0;
     }
 
         .part-card {
@@ -54,6 +57,7 @@
             -webkit-box-shadow: 10px 10px 24px -4px #63489d;
             -moz-box-shadow: 10px 10px 24px -4px #63489d;
             margin-bottom: 5vh;
+            background: #f7e9ff;
         }
 
             .part-card-photo {
@@ -76,7 +80,7 @@
 
                 .card-content__name {
                     color: #9772ab;
-                    font-family: var(--card-header-font);
+                    font-family: 'Minecraft-Ten regular';
                     font-size: 1em;
                     margin-bottom: 2vh;
                 }

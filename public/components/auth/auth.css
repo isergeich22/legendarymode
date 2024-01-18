@@ -5,10 +5,9 @@
 }
 
 body {
-    background-image: url('../../img/bg_auth.png');
-    box-shadow: 0px 13px 46px -16px #feca6b inset;
+    /* box-shadow: 0px 13px 46px -16px #feca6b inset;
     -webkit-box-shadow: 0px 13px 46px -16px #feca6b inset;
-    -moz-box-shadow: 0px 13px 46px -16px #feca6b inset;
+    -moz-box-shadow: 0px 13px 46px -16px #feca6b inset; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,15 +38,17 @@ body {
         .user-type-choice > input {
             font-family: var(--sample-font);
             width: 48%;
-            border: 2px solid #9772ab;
+            border: 2px solid #63489d;
             background: none;
-            color: #9772ab;
+            color: #63489d;
             transition: .3s ease-in-out;
             cursor: pointer;
+            border-radius: 15px;
+            height: 10vh;
         }
 
         .user-type-choice > input:hover {
-            background: #9772ab;
+            background: #63489d;
             color: #fff;
             transition: .3s ease-in-out;
         }
@@ -56,15 +57,17 @@ body {
             font-family: var(--sample-font);
             text-align: center;
             width: 48%;
-            border: 2px solid #9772ab;
+            border: 2px solid #63489d;
             background: none;
-            color: #9772ab;
+            color: #63489d;
             transition: .3s ease-in-out;
             cursor: pointer;
+            border-radius: 15px;
+            height: 10vh;
         }
 
         .user-type-choice > .admin-type:hover {
-            background: #9772ab;
+            background: #63489d;
             color: #fff;
             transition: .3s ease-in-out;
         }
@@ -87,7 +90,7 @@ body {
             .auth-block-item > label {
                 width: 18%;
                 font-family: var(--sample-font);
-                color: #9772ab;
+                color: #63489d;
             }
 
             .admin-name, .admin-pass {
@@ -98,7 +101,8 @@ body {
                 background: none;
                 border: none;
                 padding: 0 1vw;
-                border-bottom: 2px solid #9772ab;
+                border-bottom: 2px solid #63489d;
+                color: #63489d;
             }
 
                 .admin-name:focus, .admin-pass:focus {
@@ -110,13 +114,15 @@ body {
         text-align: center;
         background: none;
         font-family: var(--sample-font);
-        color: #9772ab;
-        border: 2px solid #9772ab;
+        color: #63489d;
+        border: 2px solid #63489d;
         transition: .3s ease-in-out;
+        height: 5vh;
+        border-radius: 5px;
     }
 
         .auth-button:hover {
-            background: #9772ab;
+            background: #63489d;
             color: #fff;
             transition: .3s ease-in-out;
         }

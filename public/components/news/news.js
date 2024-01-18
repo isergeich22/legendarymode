@@ -1,5 +1,5 @@
 exports.news = news = (content) =>`
-    <section class="news">
+    <section id="news" class="news">
         <h1 class="news-header">Новости турнира</h1>
         ${content}
     </section>

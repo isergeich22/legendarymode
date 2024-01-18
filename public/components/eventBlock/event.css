@@ -14,16 +14,19 @@
 
     .event-body {
         display: flex;
+        justify-content: center;
+        align-items: center;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
         padding: 2vh 2vh;
-        gap: 2%
+        gap: 2%;        
+        margin-bottom: 3vh;
     }
 
         .event-body-item {
             width: 49%;
-            height: 50vh;
+            height: 43vh;
             display: flex;
             justify-content: center;
             align-items: flex-start;

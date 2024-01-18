@@ -14,11 +14,8 @@
     gap: 5%;
     margin: 2vh auto;
     padding: 2vh 0;
-    box-shadow: 0px 13px 46px -16px #feca6b inset;
-    -webkit-box-shadow: 0px 13px 46px -16px #feca6b inset;
-    -moz-box-shadow: 0px 13px 46px -16px #feca6b inset;
     margin-bottom: 2vh !important;
-    background: #fff;
+    background: transparent;
 }
 
     .dropdown {
@@ -26,20 +23,34 @@
     }
 
     .nav-item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         font-size: 1.5rem;
         text-align: center;
-        width: 30%;
+        width: 21.25%;
+        background: #feca6b;
+        height: 8.5vh;
     }
 
         .nav-item > a {
             font-size: 1.5rem;
             text-decoration: none;
-            font-family: var(--nav-font);
+            font-family: 'Minecraft-Ten regular';
             color: #63489d;
         }
 
+        .nav-item > a:hover {
+            color: #9772ab;
+        }
+
         .dropdown-menu {
+            font-family: 'Minecraft-Ten regular';
             box-shadow: 0px -11px 20px -15px rgba(0,0,0,0.75) inset;
             -webkit-box-shadow: 0px -11px 20px -15px rgba(0,0,0,0.75) inset;
             -moz-box-shadow: 0px -11px 20px -15px rgba(0,0,0,0.75) inset;
         }
+
+            .dropdown-item {
+                color: #63489d !important;
+            }

@@ -6,6 +6,11 @@
     --sample-font: 'Commissioner', sans-serif;
 }
 
+@font-face {
+    font-family: 'Minecraft-Ten regular';
+    src: url('../../fonts/minecraft-ten.ttf');
+}
+
 .about {
     width: 80%;
     display: flex;
@@ -13,20 +18,20 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background: #fff;
+    margin-bottom: 8vh;
 }
 
     .about-header {
         padding: 2vh 0;
         width: 100%;
-        text-align: center;
-        border-top: 1px solid #e8e4f0;
-        border-bottom: 1px solid #e8e4f0;
+        text-align: center;        
+        background: #feca6b;
+        margin-bottom: 1vh;
     }
 
         .about-header__text {
             color: #63489d;
-            font-family: var(--about-header-font);
+            font-family: 'Minecraft-Ten regular';
             font-size: 2rem;
         }
 
@@ -35,4 +40,5 @@
         font-family: var(--sample-font);
         font-size: 1.3rem;
         color: #63489d;
+        background: #f7e9ff;
     }

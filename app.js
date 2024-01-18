@@ -203,7 +203,7 @@ app.get('/home', async function(req, res){
                     </div>
                 </div>`        
     })
-    res.send(header.header + news.news(newses) + nav.nav(seasonNav) + about.about + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
+    res.send(header.header + nav.nav(seasonNav) + about.about + news.news(newses) + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
 })
 
 app.post('/login', urlencodedParser, async function(req, res){
