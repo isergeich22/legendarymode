@@ -1,17 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap');
 
-
-@font-face {
-    font-family: 'Minecraft-Ten regular';
-    src: url('../../fonts/minecraft-ten.ttf');
-}
-
-:root {
-    --header-font: 'Minecraft-Ten regular'
-}
-
 .header {
-    font-family: 'Minecraft-Ten regular';
+    font-family: 'Harpseal Regular';
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -27,7 +17,7 @@
 }
 
     .header > h1 {
-        font-family: 'Minecraft-Ten regular';
+        font-family: 'Harpseal Regular';
         font-size: 4rem;
         line-height: 5.5rem;
         color: #63489d;

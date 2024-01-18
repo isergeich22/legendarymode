@@ -8,11 +8,6 @@
     --sample-font: 'Commissioner', sans-serif;
 }
 
-@font-face {
-    font-family: 'Minecraft-Ten regular';
-    src: url('../../fonts/minecraft-ten.ttf');
-}
-
 .participant {
     width: 80%;
     display: flex;
@@ -31,7 +26,7 @@
 
         .part-header__text {
             color: #63489d;
-            font-family: 'Minecraft-Ten regular';
+            font-family: 'Harpseal Regular';
             font-size: 2em;   
         }
 
@@ -47,15 +42,15 @@
         .part-card {
             width: 47%;
             height: 25vh;
-            border-radius: 15px;
+            /* border-radius: 15px; */
             display: flex;
             flex-direction: row;
             justify-content: center;
             align-items: center;
             gap: 10%;
-            box-shadow: 10px 10px 24px -4px #63489d;
-            -webkit-box-shadow: 10px 10px 24px -4px #63489d;
-            -moz-box-shadow: 10px 10px 24px -4px #63489d;
+            box-shadow: 10px 10px 24px -4px #63489d inset;
+            -webkit-box-shadow: 10px 10px 24px -4px #63489d inset;
+            -moz-box-shadow: 10px 10px 24px -4px #63489d inset;
             margin-bottom: 5vh;
             background: #f7e9ff;
         }
@@ -79,8 +74,8 @@
             }
 
                 .card-content__name {
-                    color: #9772ab;
-                    font-family: 'Minecraft-Ten regular';
+                    color: #63489d;
+                    font-family: 'Harpseal Regular';
                     font-size: 1em;
                     margin-bottom: 2vh;
                 }
@@ -113,6 +108,6 @@
 
                             .card-content__social-item-ref > a {
                                 text-decoration: underline;
-                                font-family: var(--sample-font);
+                                font-family: 'FortuneC regular';
                                 color: #63489d;
                             }

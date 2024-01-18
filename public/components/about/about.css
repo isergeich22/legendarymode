@@ -6,11 +6,6 @@
     --sample-font: 'Commissioner', sans-serif;
 }
 
-@font-face {
-    font-family: 'Minecraft-Ten regular';
-    src: url('../../fonts/minecraft-ten.ttf');
-}
-
 .about {
     width: 80%;
     display: flex;
@@ -31,13 +26,13 @@
 
         .about-header__text {
             color: #63489d;
-            font-family: 'Minecraft-Ten regular';
+            font-family: 'Harpseal Regular';
             font-size: 2rem;
         }
 
     .about-content {
         padding: 2vh 2vh;
-        font-family: var(--sample-font);
+        font-family: 'FortuneC regular';
         font-size: 1.3rem;
         color: #63489d;
         background: #f7e9ff;

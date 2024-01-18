@@ -60,10 +60,12 @@
                 }
 
                 .text-block-item > h3 {
+                    font-family: 'FortuneC regular';
                     margin: 0;
                     width: 86%;
                 }
 
                 .text-block-item > p {
+                    font-family: 'FortuneC regular';
                     margin: 0;
                 }

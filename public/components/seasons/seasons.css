@@ -24,7 +24,7 @@
     }
 
         .seasons-header__text {
-            font-family: 'Minecraft-Ten regular';
+            font-family: 'Harpseal Regular';
             font-size: 2em;
             color: #63489d;
         }
@@ -53,6 +53,7 @@
             justify-content: center;
             align-items: center;
             color: #63489d !important;
+            font-family: 'FortuneC regular' !important;
         }
 
             .event-headers {
@@ -73,7 +74,7 @@
                     margin: 0;
                     width: 12.29%;
                     height: 4vh;
-                    font-family: var(--seasons-header-font);
+                    font-family: 'FortuneC regular';
                     font-size: .8em;
                     text-align: center;
                     justify-content: center;

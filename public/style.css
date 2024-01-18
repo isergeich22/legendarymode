@@ -5,8 +5,13 @@
 }
 
 @font-face {
-    font-family: 'Minecraft-Ten regular';
-    src: url('../../fonts/minecraft-ten.ttf');
+    font-family: 'Harpseal Regular';
+    src: url('../../fonts/Harpseal Regular.ttf');
+}
+
+@font-face {
+    font-family: 'FortuneC regular';
+    src: url('../../fonts/FortuneC.ttf');
 }
 
 body {

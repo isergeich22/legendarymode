@@ -6,11 +6,6 @@
     --sample-font: 'Commissioner', sans-serif;
 }
 
-@font-face {
-    font-family: 'Minecraft-Ten regular';
-    src: url('../../fonts/minecraft-ten.ttf');
-}
-
 .news {
     font-family: var(--news-block-font);
     display: flex;
@@ -19,12 +14,13 @@
     align-items: center;
     width: 80%;
     margin: 2vh auto;
+    margin-bottom: 8vh;
 }
 
     .news-header {
         width: 100%;
         text-align: center;
-        font-family: 'Minecraft-Ten regular';
+        font-family: 'Harpseal Regular';
         padding: 2vh 0;
         font-size: 2rem;
         color: #63489d;
@@ -43,19 +39,19 @@
 
         .news-card-header {
             font-size: 1.5rem;
-            font-family: 'Minecraft-Ten regular';
+            font-family: 'Harpseal Regular';
             color: #63489d;
         }
 
         .news-card-body > p {
-            font-family: var(--sample-font);
+            font-family: 'FortuneC regular';
             font-size: 1.3rem;
             padding: 2vh 2vh;
             color: #63489d;
         }
 
         .news-card-body__date {
-            font-family: var(--sample-font);
+            font-family: 'FortuneC regular';
             font-size: 1.2rem;
             color: #9772ab;
             margin-bottom: 4vh;
