@@ -69,3 +69,41 @@
                     font-family: 'FortuneC regular';
                     margin: 0;
                 }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .event-body {
+        flex-direction: column;
+    }
+
+        .event-body-item {
+            width: 100%;
+            height: 50vh;
+        }
+
+            .event-body-item > iframe {
+                width: 100%;
+                height: 203px;
+            }
+
+        .text-block {
+            padding: 2vh;
+            height: 40vh;
+        }
+
+        .text-block-item {
+            margin-bottom: 2vh;
+        }
+
+            .text-block-item > p:first-child {
+                width: 25%;
+                font-size: .7rem;
+            }
+
+            .text-block-item > p:nth-child(2) {
+                width: 71%;
+                font-size: .7rem;
+                justify-content: flex-start;
+            }
+
+}
