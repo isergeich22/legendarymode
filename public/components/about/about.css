@@ -37,3 +37,29 @@
         color: #63489d;
         background: #f7e9ff;
     }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .about {
+        margin-bottom: 4vh;
+    }
+
+    .about-header {
+        padding: 1vh 0;
+        height: 4vh;
+    }
+
+        .about-header__text {
+            font-size: .6rem;
+            margin: 0;
+        }
+
+    .about-content {
+        font-size: .6rem;
+    }
+
+        .about-content__text {
+            margin: 0;
+        }
+
+}

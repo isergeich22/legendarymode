@@ -25,14 +25,29 @@ seasonsButton.forEach(el => {
                 </div>
                 <div id="eventsBlock" class="season-body">`
         season.events.forEach(elem => {            
-            content += `<div class="btn-group">
-                            <button class="btn btn-event btn-lg season-event" id="${elem.eventNumber}" type="button">
-                                ${elem.eventNumber} выпуск
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li>Hello World</li>
-                            </ul>
-                        </div>`
+            if(parseInt(elem.eventNumber) / 5 >= 2 && parseInt(elem.eventNumber) % 5 > 0) {
+
+                content += `<div class="btn-group">
+                                <button class="btn btn-event btn-lg season-event" id="${elem.eventNumber}" type="button">
+                                    ${elem.eventNumber} выпуск (бонусный)
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>Hello World</li>
+                                </ul>
+                            </div>`
+
+            } else {
+
+                content += `<div class="btn-group">
+                                <button class="btn btn-event btn-lg season-event" id="${elem.eventNumber}" type="button">
+                                    ${elem.eventNumber} выпуск
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li>Hello World</li>
+                                </ul>
+                            </div>`
+
+            }
         })
         content += `</div>`
         seasonBlock.innerHTML = content
@@ -40,6 +55,12 @@ seasonsButton.forEach(el => {
         eventButtons = document.querySelectorAll('.season-event')
         eventButtons.forEach(btn => {
             btn.addEventListener('click', () => {
+                eventButtons.forEach(el => {
+                    if(el.id !== btn.id) {
+                        el.classList.remove('season-event-active')
+                    }
+                })
+                btn.classList.add('season-event-active')
                 let event = season.events.find(evt => evt.eventNumber === btn.id)
                 content += `<div class="event-body-item">
                                 <iframe width="720" height="405" src="${event.eventVideo}" title="YouTube video player" 
@@ -50,7 +71,7 @@ seasonsButton.forEach(el => {
                             <div class="event-body-item text-block">
                                 <div class="text-block-item">
                                     <p>Ведущий:</p>
-                                    <h3>${event.eventHost}</h3>
+                                    <p><a href="">${event.eventHost}</a></p>
                                 </div>
                                 <div class="text-block-item">
                                     <p>Игра:</p>

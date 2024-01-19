@@ -56,3 +56,40 @@
             color: #9772ab;
             margin-bottom: 4vh;
         }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .news {
+        margin-bottom: 4vh;
+    }
+
+        .news > h1 {
+            margin: .8vh;
+        }
+
+        .news-header {
+            padding: 1vh 0;
+            height: 4vh;
+            font-size: .6rem;
+        }
+
+        .news-card {
+            padding-left: 4%;
+        }
+
+            .news-card-header {
+                font-size: .6rem;
+            }
+
+            .news-card-body > p {
+                font-size: .6rem;
+                padding: 1vh 1vh;
+                margin: 0;
+            }
+
+            .news-card-body__date {
+                font-size: .6rem;
+                margin: 0;
+            }
+
+}

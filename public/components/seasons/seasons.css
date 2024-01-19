@@ -56,6 +56,10 @@
             font-family: 'FortuneC regular' !important;
         }
 
+            .season-event-active {
+                background-color: #feca6b !important;
+            }
+
             .event-headers {
                 width: 100%;
                 display: flex;

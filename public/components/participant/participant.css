@@ -111,3 +111,54 @@
                                 font-family: 'FortuneC regular';
                                 color: #63489d;
                             }
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+
+    .part-header {
+        padding: 1vh 0;
+        height: 4vh;
+    }
+
+        .part-header__text {
+            font-size: .6rem;   
+        }
+        
+    .part-list {
+        flex-direction: column;
+    }
+
+        .part-card {
+            width: 100%;
+        }
+
+                .part-card-photo > img {
+                    width: 30vw;
+                }
+
+                .card-content__name {
+                    margin: 0;
+                }
+
+                .card-content__name > h3 {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+                    .card-content__social-item {
+                        height: 3vh;
+                    }
+
+                        .card-content__social-item-icon {
+                            height: .5vh;
+                        }
+
+                            .card-content__social-item-icon > svg {
+                                width: 10px;
+                                height: 10px;                                
+                            }
+
+                            .card-content__social-item-ref > a {
+                                font-size: .6rem;
+                            }
+
+}
