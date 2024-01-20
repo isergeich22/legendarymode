@@ -47,3 +47,11 @@ body {
         background-repeat: repeat !important;
     }
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+    
+}

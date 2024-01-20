@@ -102,3 +102,61 @@
         }
 
 }
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+
+    .about {
+        margin-bottom: 4vh;
+    }
+
+    .about-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 1vh 0; */
+        height: 4vh;
+    }
+
+        .about-header__text {
+            font-size: .6rem;
+            margin: 0;
+        }
+
+    .about-content {
+        font-size: .6rem;
+    }
+
+        .about-content__text {
+            margin: 0;
+        }
+    
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+
+    .about {
+        margin-bottom: 4vh;
+    }
+
+    .about-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 1vh 0; */
+        height: 4vh;
+    }
+
+        .about-header__text {
+            font-size: .6rem;
+            margin: 0;
+        }
+
+    .about-content {
+        font-size: .6rem;
+    }
+
+        .about-content__text {
+            margin: 0;
+        }
+    
+}
