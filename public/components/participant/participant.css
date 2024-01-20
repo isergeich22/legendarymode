@@ -18,11 +18,18 @@
 }
 
     .part-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 2vh 0;
         width: 100%;
         text-align: center;
         background: #feca6b;
     }
+
+        .part-header > h1 {
+            margin: 0;
+        }
 
         .part-header__text {
             color: #63489d;
@@ -36,7 +43,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 6%;
-        padding: 3vh 0;
+        /* padding: 3vh 0; */
     }
 
         .part-card {
@@ -48,9 +55,9 @@
             justify-content: center;
             align-items: center;
             gap: 10%;
-            box-shadow: -10px 10px 24px -4px #63489d inset;
+            /* box-shadow: -10px 10px 24px -4px #63489d inset;
             -webkit-box-shadow: -10px 10px 24px -4px #63489d inset;
-            -moz-box-shadow: -10px 10px 24px -4px #63489d inset;
+            -moz-box-shadow: -10px 10px 24px -4px #63489d inset; */
             margin-bottom: 5vh;
             background: #f7e9ff;
         }
@@ -112,10 +119,10 @@
                                 color: #63489d;
                             }
 
-@media screen and (min-width: 320px) and (max-width: 481px) {
+@media screen and (min-width: 320px) and (max-width: 481px) and (orientation: portrait) {
 
     .part-header {
-        padding: 1vh 0;
+        /* padding: 1vh 0; */
         height: 4vh;
     }
 
@@ -133,6 +140,63 @@
 
                 .part-card-photo > img {
                     width: 30vw;
+                }
+
+                .card-content__name {
+                    margin: 0;
+                }
+
+                .card-content__name > h3 {
+                    font-size: 1rem;
+                    margin: 0;
+                }
+
+                    .card-content__social-item {
+                        height: 3vh;
+                    }
+
+                        .card-content__social-item-icon {
+                            height: .5vh;
+                        }
+
+                            .card-content__social-item-icon > svg {
+                                width: 10px;
+                                height: 10px;                                
+                            }
+
+                            .card-content__social-item-ref > a {
+                                font-size: .6rem;
+                            }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 481px) and (orientation: landscape) {
+
+    .part-header {
+        /* padding: 1vh 0; */
+        height: 4vh;
+    }
+
+        .part-header__text {
+            font-size: .6rem;   
+        }
+        
+    .part-list {
+        flex-direction: column;
+    }
+
+        .part-card {
+            width: 100%;
+        }
+
+            .part-card-photo {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+                .part-card-photo > img {
+                    width: 15vw;
                 }
 
                 .card-content__name {

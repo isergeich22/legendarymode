@@ -17,12 +17,19 @@
 }
 
     .about-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 2vh 0;
         width: 100%;
         text-align: center;        
         background: #feca6b;
-        margin-bottom: 1vh;
+        /* margin-bottom: 1vh; */
     }
+
+        .about-header > h1 {
+            margin: 0;
+        }
 
         .about-header__text {
             color: #63489d;
@@ -45,6 +52,9 @@
     }
 
     .about-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 1vh 0;
         height: 4vh;
     }
@@ -62,4 +72,59 @@
             margin: 0;
         }
 
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+    .about {
+        margin-bottom: 4vh;
+    }
+
+    .about-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* padding: 1vh 0; */
+        height: 4vh;
+    }
+
+        .about-header__text {
+            font-size: .6rem;
+            margin: 0;
+        }
+
+    .about-content {
+        font-size: .6rem;
+    }
+
+        .about-content__text {
+            margin: 0;
+        }
+
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    .about {
+        margin-bottom: 4vh;
+    }
+
+    .about-header {
+        padding: 1vh 0;
+        height: 8vh;
+    }
+
+        .about-header__text {
+            font-size: .8rem;
+            margin: 0;
+        }
+
+    .about-content {
+        font-size: .6rem;
+    }
+
+        .about-content__text {
+            margin: 0;
+        }
+    
 }

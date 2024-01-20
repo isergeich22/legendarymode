@@ -24,7 +24,7 @@ body {
     background-repeat: repeat !important;
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     body{
         background: #63489d !important;
         background-image: url('./img/bg_pattern.png') !important;
@@ -32,6 +32,18 @@ body {
         background-position: center !important;
         /* background-size: 10vh; */
         background-size: 33vw 39.5vh !important;
+        background-repeat: repeat !important;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+    body{
+        background: #63489d !important;
+        background-image: url('./img/bg_pattern.png') !important;
+        background-attachment: fixed !important;
+        background-position: center !important;
+        /* background-size: 10vh; */
+        background-size: 20vw 45vh !important;
         background-repeat: repeat !important;
     }
 }

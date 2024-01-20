@@ -19,6 +19,9 @@
 
     .news-header {
         width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         text-align: center;
         font-family: 'Harpseal Regular';
         padding: 2vh 0;
@@ -26,8 +29,12 @@
         color: #63489d;
         background: #feca6b;
         margin: 0;
-        margin-bottom: 1vh;
+        /* margin-bottom: 1vh; */
     }
+
+        .news-header > h1 {
+            margin: 0;
+        }
 
     .news-card {
         width: 100%;
@@ -63,12 +70,8 @@
         margin-bottom: 4vh;
     }
 
-        .news > h1 {
-            margin: .8vh;
-        }
-
         .news-header {
-            padding: 1vh 0;
+            /* padding: 1vh 0; */
             height: 4vh;
             font-size: .6rem;
         }
