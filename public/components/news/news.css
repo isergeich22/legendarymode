@@ -13,7 +13,7 @@
     justify-content: flex-start;
     align-items: center;
     width: 80%;
-    margin: 2vh auto;
+    margin: 0 auto;
     margin-bottom: 8vh;
 }
 
@@ -116,7 +116,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1vh 0;
+            /* padding: 1vh 0; */
             height: 4vh;
         }
 
@@ -156,7 +156,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1vh 0;
+            /* padding: 1vh 0; */
             height: 4vh;
         }
 

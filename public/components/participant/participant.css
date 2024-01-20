@@ -21,7 +21,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 2vh 0;
+        /* padding: 2vh 0; */
         width: 100%;
         text-align: center;
         background: #feca6b;
@@ -136,6 +136,7 @@
 
         .part-card {
             width: 100%;
+            margin-bottom: 2vh;
         }
 
                 .part-card-photo > img {
@@ -182,11 +183,14 @@
         }
         
     .part-list {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
     }
 
         .part-card {
             width: 100%;
+            margin-bottom: 2vh;
         }
 
             .part-card-photo {
@@ -239,11 +243,14 @@
         }
         
     .part-list {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
     }
 
         .part-card {
-            width: 100%;
+            width: 49%;
+            margin-bottom: 2vh;
         }
 
             .part-card-photo {
@@ -297,11 +304,14 @@
         }
         
     .part-list {
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 2%;
     }
 
         .part-card {
-            width: 100%;
+            width: 49%;
+            margin-bottom: 2vh;
         }
 
             .part-card-photo {
