@@ -18,22 +18,24 @@
 }
 
     .news-header {
-        width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        text-align: center;
-        font-family: 'Harpseal Regular';
         padding: 2vh 0;
-        font-size: 2rem;
-        color: #63489d;
+        width: 100%;
+        text-align: center;        
         background: #feca6b;
-        margin: 0;
         /* margin-bottom: 1vh; */
     }
 
         .news-header > h1 {
             margin: 0;
+        }
+
+        .news-header__text {
+            color: #63489d;
+            font-family: 'Harpseal Regular';
+            font-size: 2rem;            
         }
 
     .news-card {
@@ -64,17 +66,64 @@
             margin-bottom: 4vh;
         }
 
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
 
     .news {
         margin-bottom: 4vh;
     }
 
         .news-header {
-            /* padding: 1vh 0; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vh 0;
             height: 4vh;
-            font-size: .6rem;
         }
+
+            .news-header__text {
+                font-size: .6rem;
+                margin: 0;                
+            }
+
+        .news-card {
+            padding-left: 4%;
+        }
+
+            .news-card-header {
+                font-size: .6rem;
+            }
+
+            .news-card-body > p {
+                font-size: .6rem;
+                padding: 1vh 1vh;
+                margin: 0;
+            }
+
+            .news-card-body__date {
+                font-size: .6rem;
+                margin: 0;
+            }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+
+    .news {
+        margin-bottom: 4vh;
+    }
+
+        .news-header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 1vh 0;
+            height: 4vh;
+        }
+
+            .news-header__text {
+                font-size: .6rem;
+                margin: 0;                
+            }
 
         .news-card {
             padding-left: 4%;
