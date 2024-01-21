@@ -23,7 +23,7 @@
         color: #63489d;
     }
 
-@media handheld and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
     
     .header {
         width: 100%;
@@ -41,7 +41,7 @@
 
 }
 
-@media handheld and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
 
     .header {
         width: 100%;
