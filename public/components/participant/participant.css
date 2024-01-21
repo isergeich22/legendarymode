@@ -171,7 +171,7 @@
 
 }
 
-@media handheld and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
 
     .part-header {
         /* padding: 1vh 0; */
@@ -231,7 +231,7 @@
 
 }
 
-@media handheld and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
 
     .part-header {
         /* padding: 1vh 0; */
@@ -292,7 +292,7 @@
     
 }
 
-@media handheld and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
+@media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
     .part-header {
         /* padding: 1vh 0; */
