@@ -10,17 +10,24 @@
     width: 80%;
     display: flex;
     flex-direction: column;
-    margin: 2vh auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
     background: #fff;
 }
 
     .seasons-header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
         padding: 2vh 0;
         width: 100%;
         text-align: center;
         background: #feca6b;        
+    }
+
+    .seasons-header > h1 {
+        margin: 0;
     }
 
         .seasons-header__text {
