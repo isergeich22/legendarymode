@@ -134,3 +134,43 @@
         }
     
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .nav-item {
+        height: 4.5vh;
+    }
+
+        .nav-item > a {
+            font-size: .4rem;
+        }
+
+    .dropdown-menu {
+        min-width: 3rem !important;
+    }
+
+        .dropdown-item {
+            font-size: .5rem;
+        }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .nav-item {
+        height: 4.5vh;
+    }
+
+        .nav-item > a {
+            font-size: .4rem;
+        }
+
+    .dropdown-menu {
+        min-width: 3rem !important;
+    }
+
+        .dropdown-item {
+            font-size: .5rem;
+        }
+
+}

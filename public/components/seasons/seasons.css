@@ -184,6 +184,55 @@
         .btn-lg {
             padding: 2vh !important;
         }
-
     
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
+
+    .seasons-header {
+        padding: 1vh 0;
+        height: 4.5vh;
+    }
+
+        .seasons-header__text {
+            font-size: .6rem;
+        }
+
+    .season-body {
+        flex-wrap: wrap;
+    }
+
+        .season-event {
+            font-size: .6rem !important;
+        }
+
+        .btn-lg {
+            padding: 2vh !important;
+        }
+
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+
+    .seasons-header {
+        padding: 1vh 0;
+        height: 4.5vh;
+    }
+
+        .seasons-header__text {
+            font-size: .6rem;
+        }
+
+    .season-body {
+        flex-wrap: wrap;
+    }
+
+        .season-event {
+            font-size: .6rem !important;
+        }
+
+        .btn-lg {
+            padding: 2vh !important;
+        }
+
 }
