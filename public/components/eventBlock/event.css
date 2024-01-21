@@ -268,12 +268,12 @@
 
         .event-body-item {
             width: 100%;
-            height: 25vh;
+            height: 110vh;
         }
 
             .event-body-item > iframe {
                 width: 100%;
-                height: 203px;
+                height: 453px;
             }
 
         .text-block {

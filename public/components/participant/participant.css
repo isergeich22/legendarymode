@@ -310,6 +310,7 @@
         .part-card {
             width: 49%;
             margin-bottom: 2vh;
+            gap: 6%;
         }
 
             .part-card-photo {
@@ -319,7 +320,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 15vw;
+                    width: 13vw;
                 }
 
                 .card-content__name {
@@ -327,7 +328,7 @@
                 }
 
                 .card-content__name > h3 {
-                    font-size: 1rem;
+                    font-size: .65rem;
                     margin: 0;
                 }
 
