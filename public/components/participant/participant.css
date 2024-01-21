@@ -191,6 +191,7 @@
         .part-card {
             width: 100%;
             margin-bottom: 2vh;
+            height: 30vh;
         }
 
             .part-card-photo {
@@ -208,7 +209,7 @@
                 }
 
                 .card-content__name > h3 {
-                    font-size: 1rem;
+                    font-size: .7rem;
                     margin: 0;
                 }
 
