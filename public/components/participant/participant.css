@@ -58,7 +58,7 @@
             /* box-shadow: -10px 10px 24px -4px #63489d inset;
             -webkit-box-shadow: -10px 10px 24px -4px #63489d inset;
             -moz-box-shadow: -10px 10px 24px -4px #63489d inset; */
-            margin-bottom: 1vh;
+            margin-bottom: .5vh;
             background: #f7e9ff;
         }
 
@@ -68,7 +68,7 @@
 
                 .part-card-photo > img {
                     padding: 0 5%;
-                    width: 24vh;
+                    width: 100%;
                     border-radius: 23px;
                 }
 
@@ -491,7 +491,7 @@
 
     .participant {
 
-        width: 50%;
+        width: 45%;
 
     }
     
