@@ -174,3 +174,11 @@
         }
 
 }
+
+@media screen and (min-width: 1921px) {
+    
+    .nav {
+        width: 50%;
+    }
+
+}
