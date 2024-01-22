@@ -43,6 +43,7 @@
         justify-content: flex-start;
         align-items: center;
         background: #f7e9ff;
+        height: 50px;
     }
 
         .btn-event {
@@ -261,5 +262,9 @@
     .seasons {
         width: 45%;
     }
+
+        .season-body {
+            height: 65px;
+        }
     
 }
