@@ -120,8 +120,8 @@
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
 
     .seasons-header {
-        padding: 1vh 0;
-        height: 4.5vh;
+        padding: 2vh 0;
+        height: 25px;
     }
 
         .seasons-header__text {
@@ -146,12 +146,12 @@
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
     
     .seasons-header {
-        padding: 1vh 0;
-        height: 4.5vh;
+        padding: 2vh 0;
+        height: 30px;
     }
 
         .seasons-header__text {
-            font-size: .6rem;
+            font-size: .9rem;
         }
 
     .season-body {
@@ -159,7 +159,7 @@
     }
 
         .season-event {
-            font-size: .6rem !important;
+            font-size: .9rem !important;
         }
 
         .btn-lg {
@@ -171,13 +171,17 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
+    .seasons {
+        width: 70%;
+    }
+
     .seasons-header {
-        padding: 1vh 0;
-        height: 4.5vh;
+        padding: 2vh 0;
+        height: 30px;
     }
 
         .seasons-header__text {
-            font-size: .6rem;
+            font-size: .9rem;
         }
 
     .season-body {
@@ -196,13 +200,17 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
+    .seasons {
+        width: 60%;
+    }
+
     .seasons-header {
-        padding: 1vh 0;
-        height: 4.5vh;
+        padding: 2vh 0;
+        height: 30px;
     }
 
         .seasons-header__text {
-            font-size: .6rem;
+            font-size: .9rem;
         }
 
     .season-body {
@@ -210,7 +218,7 @@
     }
 
         .season-event {
-            font-size: .6rem !important;
+            font-size: .9rem !important;
         }
 
         .btn-lg {
@@ -221,13 +229,17 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 
+    .seasons {
+        width: 60%;
+    }
+
     .seasons-header {
         padding: 1vh 0;
-        height: 4.5vh;
+        height: 30px;
     }
 
         .seasons-header__text {
-            font-size: .6rem;
+            font-size: .9rem;
         }
 
     .season-body {
@@ -235,7 +247,7 @@
     }
 
         .season-event {
-            font-size: .6rem !important;
+            font-size: .9rem !important;
         }
 
         .btn-lg {

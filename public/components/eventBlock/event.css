@@ -78,7 +78,7 @@
 
         .event-body-item {
             width: 100%;
-            height: 25vh;
+            height: 205px;
         }
 
             .event-body-item > iframe {
@@ -88,7 +88,7 @@
 
         .text-block {
             padding: 2vh;
-            height: 25vh;
+            height: 205px;
         }
 
         .text-block-item {
@@ -116,7 +116,7 @@
 
         .event-body-item {
             width: 100%;
-            height: 25vh;
+            height: 205px;
         }
 
             .event-body-item > iframe {
@@ -126,7 +126,7 @@
 
         .text-block {
             padding: 2vh;
-            height: 25vh;
+            height: 205px;
         }
 
         .text-block-item {
@@ -154,7 +154,7 @@
 
         .event-body-item {
             width: 100%;
-            height: 25vh;
+            height: 205px;
         }
 
             .event-body-item > iframe {
@@ -164,7 +164,7 @@
 
         .text-block {
             padding: 2vh;
-            height: 25vh;
+            height: 205px;
         }
 
         .text-block-item {
@@ -186,18 +186,22 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
+    .event {
+        width: 70%;
+    }
+
     .event-body {
         flex-direction: column;
     }
 
         .event-body-item {
             width: 100%;
-            height: 25vh;
+            height: 300px;
         }
 
             .event-body-item > iframe {
                 width: 100%;
-                height: 203px;
+                height: 293px;
             }
 
         .text-block {
@@ -224,23 +228,27 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
+    .event {
+        width: 60%;
+    }
+
     .event-body {
         flex-direction: column;
     }
 
         .event-body-item {
             width: 100%;
-            height: 25vh;
+            height: 310px;
         }
 
             .event-body-item > iframe {
                 width: 100%;
-                height: 203px;
+                height: 313px;
             }
 
         .text-block {
             padding: 2vh;
-            height: 25vh;
+            height: 310px;
         }
 
         .text-block-item {
@@ -262,13 +270,17 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 
+    .event {
+        width: 60%;
+    }
+
     .event-body {
         flex-direction: column;
     }
 
         .event-body-item {
             width: 100%;
-            height: 110vh;
+            height: 450px;
         }
 
             .event-body-item > iframe {
@@ -278,7 +290,7 @@
 
         .text-block {
             padding: 2vh;
-            height: 25vh;
+            height: 250px;
         }
 
         .text-block-item {

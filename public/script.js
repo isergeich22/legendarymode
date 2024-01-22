@@ -63,7 +63,7 @@ seasonsButton.forEach(el => {
                 btn.classList.add('season-event-active')
                 let event = season.events.find(evt => evt.eventNumber === btn.id)
                 content += `<div class="event-body-item">
-                                <iframe width="720" height="405" src="${event.eventVideo}" title="YouTube video player" 
+                                <iframe width="640" height="360" src="${event.eventVideo}" title="YouTube video player" 
                                     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
                                     gyroscope; picture-in-picture; web-share" allowfullscreen>
                                 </iframe>

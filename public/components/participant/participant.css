@@ -42,12 +42,12 @@
         width: 100%;
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 3.5%;
+        gap: .5%;
         /* padding: 3vh 0; */
     }
 
         .part-card {
-            width: 48.25%;
+            width: 49.75%;
             height: 300px;
             /* border-radius: 15px; */
             display: flex;
@@ -58,7 +58,7 @@
             /* box-shadow: -10px 10px 24px -4px #63489d inset;
             -webkit-box-shadow: -10px 10px 24px -4px #63489d inset;
             -moz-box-shadow: -10px 10px 24px -4px #63489d inset; */
-            margin-bottom: 5vh;
+            margin-bottom: 1vh;
             background: #f7e9ff;
         }
 
@@ -124,7 +124,7 @@
 
     .part-header {
         /* padding: 1vh 0; */
-        height: 4vh;
+        height: 25px;
     }
 
         .part-header__text {
@@ -138,7 +138,7 @@
         .part-card {
             width: 100%;
             height: 150px;
-            margin-bottom: 2vh;
+            margin-bottom: .5vh;
         }
 
                 .part-card-photo > img {
@@ -177,7 +177,7 @@
 
     .part-header {
         /* padding: 1vh 0; */
-        height: 4vh;
+        height: 25px;
     }
 
         .part-header__text {
@@ -192,7 +192,7 @@
 
         .part-card {
             width: 100%;
-            margin-bottom: 2vh;
+            margin-bottom: 1vh;
             height: 150px;
         }
 
@@ -203,7 +203,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 15vw;
+                    width: 100%;
                 }
 
                 .card-content__name {
@@ -216,7 +216,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 3vh;
+                        height: 25px;
                     }
 
                         .card-content__social-item-icon {
@@ -238,11 +238,11 @@
 
     .part-header {
         /* padding: 1vh 0; */
-        height: 4vh;
+        height: 30px;
     }
 
         .part-header__text {
-            font-size: .6rem;   
+            font-size: .9rem;   
         }
         
     .part-list {
@@ -252,7 +252,7 @@
         .part-card {
             width: 100%;
             height: 150px;
-            margin-bottom: 2vh;
+            margin-bottom: .5vh;
         }
 
             .part-card-photo {
@@ -262,7 +262,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 15vw;
+                    width: 22vw;
                 }
 
                 .card-content__name {
@@ -295,24 +295,28 @@
 
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
+    .participant {
+        width: 70%;
+    }
+
     .part-header {
         /* padding: 1vh 0; */
-        height: 4vh;
+        height: 30px;
     }
 
         .part-header__text {
-            font-size: .6rem;   
+            font-size: .9rem;   
         }
         
     .part-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2%;
+        gap: .5%;
     }
 
         .part-card {
-            width: 49%;
-            margin-bottom: 2vh;
+            width: 49.75%;
+            margin-bottom: .5vh;
             gap: 6%;
             height: 150px;
         }
@@ -357,13 +361,17 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
+    .participant {
+        width: 60%;
+    }
+
     .part-header {
         /* padding: 1vh 0; */
-        height: 4vh;
+        height: 30px;
     }
 
         .part-header__text {
-            font-size: .6rem;   
+            font-size: .9rem;   
         }
         
     .part-list {
@@ -372,7 +380,8 @@
 
         .part-card {
             width: 100%;
-            margin-bottom: 2vh;
+            height: 200px;
+            margin-bottom: .5vh;
         }
 
             .part-card-photo {
@@ -415,34 +424,39 @@
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 
+    .participant {
+        width: 60%;
+    }
+
     .part-header {
         /* padding: 1vh 0; */
-        height: 4vh;
+        height: 40px;
     }
 
         .part-header__text {
-            font-size: .6rem;   
+            font-size: .9rem;   
         }
         
     .part-list {
         flex-direction: row;
         flex-wrap: wrap;
-        gap: 2%;
+        gap: .5%;
     }
 
         .part-card {
-            width: 49%;
-            margin-bottom: 3vh;
+            width: 49.75%;
+            height: 180px;
+            margin-bottom: .5vh;
         }
 
             .part-card-photo {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
             }
 
                 .part-card-photo > img {
-                    width: 15vw;
+                    width: 120%;
                 }
 
                 .card-content__name {

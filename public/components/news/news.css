@@ -55,7 +55,7 @@
         .news-card-body > p {
             font-family: 'FortuneC regular';
             font-size: 1.3rem;
-            padding: 2vh 2vh;
+            padding: 2vh 0;
             color: #63489d;
         }
 
@@ -69,15 +69,15 @@
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
 
     .news {
-        margin-bottom: 4vh;
+        margin-bottom: .5vh;
     }
 
         .news-header {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1vh 0;
-            height: 4vh;
+            padding: 2vh 0;
+            height: 25px;
         }
 
             .news-header__text {
@@ -95,7 +95,7 @@
 
             .news-card-body > p {
                 font-size: .6rem;
-                padding: 1vh 1vh;
+                padding: 1vh 0;
                 margin: 0;
             }
 
@@ -109,7 +109,7 @@
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
 
     .news {
-        margin-bottom: 4vh;
+        margin-bottom: .5vh;
     }
 
         .news-header {
@@ -117,7 +117,7 @@
             justify-content: center;
             align-items: center;
             /* padding: 1vh 0; */
-            height: 4vh;
+            height: 25px;
         }
 
             .news-header__text {
@@ -135,7 +135,7 @@
 
             .news-card-body > p {
                 font-size: .6rem;
-                padding: 1vh 1vh;
+                padding: 1vh 0;
                 margin: 0;
             }
 
@@ -149,7 +149,7 @@
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
 
     .news {
-        margin-bottom: 4vh;
+        margin-bottom: .5vh;
     }
 
         .news-header {
@@ -157,11 +157,11 @@
             justify-content: center;
             align-items: center;
             /* padding: 1vh 0; */
-            height: 4vh;
+            height: 30px;
         }
 
             .news-header__text {
-                font-size: .6rem;
+                font-size: .9rem;
                 margin: 0;                
             }
 
@@ -175,7 +175,7 @@
 
             .news-card-body > p {
                 font-size: .6rem;
-                padding: 1vh 1vh;
+                padding: 1vh 0;
                 margin: 0;
             }
 
@@ -189,19 +189,20 @@
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
     .news {
-        margin-bottom: 4vh;
+        width: 70%;
+        margin-bottom: .5vh;
     }
 
         .news-header {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 1vh 0;
-            height: 4vh;
+            padding: 2vh 0;
+            height: 30px;
         }
 
             .news-header__text {
-                font-size: .6rem;
+                font-size: .9rem;
                 margin: 0;                
             }
 
@@ -215,7 +216,7 @@
 
             .news-card-body > p {
                 font-size: .6rem;
-                padding: 1vh 1vh;
+                padding: 1vh 0;
                 margin: 0;
             }
 
@@ -229,7 +230,8 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
     .news {
-        margin-bottom: 4vh;
+        width: 60%;
+        margin-bottom: .5vh;
     }
 
         .news-header {
@@ -237,11 +239,11 @@
             justify-content: center;
             align-items: center;
             /* padding: 1vh 0; */
-            height: 4vh;
+            height: 30px;
         }
 
             .news-header__text {
-                font-size: .6rem;
+                font-size: .9rem;
                 margin: 0;                
             }
 
@@ -255,7 +257,7 @@
 
             .news-card-body > p {
                 font-size: .6rem;
-                padding: 1vh 1vh;
+                padding: 1vh 0;
                 margin: 0;
             }
 
@@ -269,7 +271,8 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 
     .news {
-        margin-bottom: 4vh;
+        width: 60%;
+        margin-bottom: .5vh;
     }
 
         .news-header {
@@ -277,11 +280,11 @@
             justify-content: center;
             align-items: center;
             padding: 1vh 0;
-            height: 4vh;
+            height: 40px;
         }
 
             .news-header__text {
-                font-size: .6rem;
+                font-size: .9rem;
                 margin: 0;                
             }
 
@@ -295,7 +298,7 @@
 
             .news-card-body > p {
                 font-size: .6rem;
-                padding: 1vh 1vh;
+                padding: 1vh 0;
                 margin: 0;
             }
 
