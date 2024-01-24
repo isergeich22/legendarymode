@@ -54,7 +54,7 @@
             flex-direction: row;
             justify-content: center;
             align-items: center;
-            gap: 10%;
+            gap: 5%;
             /* box-shadow: -10px 10px 24px -4px #63489d inset;
             -webkit-box-shadow: -10px 10px 24px -4px #63489d inset;
             -moz-box-shadow: -10px 10px 24px -4px #63489d inset; */
@@ -484,6 +484,14 @@
                             .card-content__social-item-ref > a {
                                 font-size: .6rem;
                             }
+
+}
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+    .participant {
+        width: 60%;
+    }
 
 }
 

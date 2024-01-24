@@ -309,6 +309,14 @@
 
 }
 
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+    .news {
+        width: 60%;
+    }
+
+}
+
 @media screen and (min-width: 1921px) {
 
     .news {

@@ -2,6 +2,24 @@
     "seasons": [
         {
             "seasonNumber": "1 сезон",
+            "rules": [
+                {
+                    "eventPlace": 1,
+                    "placePoints": 4
+                },
+                {
+                    "eventPlace": 2,
+                    "placePoints": 3
+                },
+                {
+                    "eventPlace": 3,
+                    "placePoints": 2
+                },
+                {
+                    "eventPlace": 4,
+                    "placePoints": 1
+                }
+            ],
             "events": [
                 {
                     "eventNumber": "1",
@@ -26,7 +44,8 @@
                             "position": "4",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "2",
@@ -51,7 +70,8 @@
                             "position": "1",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "3",
@@ -76,7 +96,8 @@
                             "position": "2",
                             "player": "DMITRY_BALE"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "4",
@@ -101,7 +122,8 @@
                             "position": "3",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "5",
@@ -126,7 +148,8 @@
                             "position": "1",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "6",
@@ -151,7 +174,8 @@
                             "position": "1",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "7",
@@ -176,7 +200,8 @@
                             "position": "1",
                             "player": "vika_karter"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "8",
@@ -201,7 +226,8 @@
                             "position": "4",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "9",
@@ -226,7 +252,8 @@
                             "position": "3",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "10",
@@ -251,14 +278,15 @@
                             "position": "1",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": false
                 },
                 {
                     "eventNumber": "11",
                     "eventVideo": "https://www.youtube.com/embed/Ttp8kRXMqbk?si=kSfvQdUHEfJHtMA0",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Fall Guys",
-                    "eventDescription": "Бонусный выпуск, который вел победитель - Дмитрий Бейл. Играли в Fall Guys, в командах по 2 человека. Решали судьбу 2 и 3-го места. Критерий победы - количество корон.",
+                    "eventDescription": "Бонусный выпуск, который вел победитель - Дмитрий Бейл. Играли в Fall Guys, в командах по 2 человека. Решали судьбу 2 и 3-го места. Критерий победы - количество корон.",                    
                     "eventResults": [
                         {
                             "position": "1",
@@ -268,7 +296,8 @@
                             "position": "2",
                             "player": "orkpod"
                         }
-                    ]
+                    ],
+                    "isBonus": true
                 }
             ]
         }

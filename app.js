@@ -4,9 +4,9 @@ const participants = require('./data/participant.json')
 const newsList = require('./data/news.json')
 const seasonsList = require('./public/seasons.json')
 const event = require('./public/components/eventBlock/event')
-const [header, news, nav, about, participant, seasons, footer] = 
+const [header, current, news, nav, about, participant, seasons, footer] = 
         [
-            require('./public/components/header/header'), require('./public/components/news/news'), require('./public/components/nav/nav'),
+            require('./public/components/header/header'), require('./public/components/current/current'), require('./public/components/news/news'), require('./public/components/nav/nav'),
             require('./public/components/about/about'), require('./public/components/participant/participant'), require('./public/components/seasons/seasons'), 
             require('./public/components/footer/footer')
             
@@ -20,38 +20,96 @@ const urlencodedParser = express.urlencoded({extended: false})
 
 app.use(express.static(__dirname + '/public'))
 
-// app.get('/', async function(req, res){
+app.get('/iZ8saRlTNldVuCJpxH2i', async function(req, res){
 
-//     let startPageContent = `<!DOCTYPE html>
-//                             <html lang="en">
-//                             <head>
-//                                 <meta charset="UTF-8">
-//                                 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//                                 <title>Турнир - Легендарная сложность</title>
-//                                 <link rel="stylesheet" href="/style.css">
-//                                 <link rel="stylesheet" href="/components/header/header.css">
-//                                 <link rel="stylesheet" href="/components/footer/footer.css">
-//                                 <link rel="stylesheet" href="/components/auth/auth.css"
-//                                 <link rel="stylesheet" href="/components/news/news.css">
-//                                 <link rel="stylesheet" href="/components/nav/nav.css">
-//                                 <link rel="stylesheet" href="/components/about/about.css">
-//                                 <link rel="stylesheet" href="/components/participant/participant.css">
-//                                 <link rel="stylesheet" href="/components/seasons/seasons.css">
-//                                 <link rel="stylesheet" href="/components/eventBlock/event.css">
-//                                 <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-//                                 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-//                             </head>
-//                             <body>`
+    let startPageContent = `<!DOCTYPE html>
+                            <html lang="en">
+                            <head>
+                                <meta charset="UTF-8">
+                                <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                                <title>Турнир - Легендарная сложность</title>
+                                <link rel="stylesheet" href="/style.css">
+                                <link rel="stylesheet" href="/components/header/header.css">
+                                <link rel="stylesheet" href="/components/footer/footer.css">
+                                <link rel="stylesheet" href="/components/auth/auth.css"
+                                <link rel="stylesheet" href="/components/news/news.css">
+                                <link rel="stylesheet" href="/components/nav/nav.css">
+                                <link rel="stylesheet" href="/components/about/about.css">
+                                <link rel="stylesheet" href="/components/participant/participant.css">
+                                <link rel="stylesheet" href="/components/seasons/seasons.css">
+                                <link rel="stylesheet" href="/components/eventBlock/event.css">
+                                <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+                                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+                            </head>
+                            <body>`
 
-//     let endPageContent = `<script src="/script.js"></script>
-//                         </body>
-//                     </html>`
+    let endPageContent = `<script src="/script.js"></script>
+                        </body>
+                    </html>`
 
-//     res.send(startPageContent + auth.auth + endPageContent)
+    res.send(startPageContent + auth.auth + endPageContent)
 
-// })
+})
 
 app.get(['/', '/home'], async function(req, res){
+
+    let currentResults = ``
+
+    let players = ['DMITRY_BALE', 'Juice', 'orkpod', 'vika_karter', 'WELOVEGAMES']
+
+    let seasonResult = []
+
+    for(let i = 0; i < players.length; i++) {
+        let pointsSum = 0
+        for(let j = 0; j < seasonsList.seasons[seasonsList.seasons.length - 1].events.length; j++) {
+            if(players[i] !== seasonsList.seasons[seasonsList.seasons.length - 1].events[j].eventHost) {
+                if(seasonsList.seasons[seasonsList.seasons.length - 1].events[j].eventResults.findIndex(evt => evt.player === players[i]) >= 0) {
+                    // console.log(players[i])
+                    if(seasonsList.seasons[seasonsList.seasons.length - 1].events[j].isBonus === false) {
+                        pointsSum += seasonsList.seasons[seasonsList.seasons.length - 1].rules.find(rule => rule.eventPlace === parseInt(seasonsList.seasons[seasonsList.seasons.length - 1].events[j].eventResults.find(evt => evt.player === players[i]).position)).placePoints
+                    }
+
+                    if(seasonsList.seasons[seasonsList.seasons.length - 1].events[j].isBonus === true) {
+                        if(seasonsList.seasons[seasonsList.seasons.length - 1].events[j].eventResults.find(evt => evt.player === players[i]).position === '1') {
+                            pointsSum += 1
+                        }
+                    }
+                }
+            }
+        }
+
+        // console.log(pointsSum)
+        
+        seasonResult.push({
+            playerName: players[i],
+            seasonPoints: pointsSum
+        })
+
+    }
+
+    let values = []
+
+    for(let i = 0; i < seasonResult.length; i++) {
+
+        if(values.indexOf(seasonResult[i].seasonPoints) < 0) {
+            values.push(seasonResult[i].seasonPoints)
+        }
+
+    }
+
+    values.sort((a, b) => b - a)
+
+    for(let i = 0; i < values.length; i++) {
+
+        for(let j = 0; j < seasonResult.length; j++) {
+
+            if(seasonResult[j].seasonPoints === values[i]) {
+                currentResults += `<div class="current-body-content__item">${i+1} место - ${seasonResult[j].playerName} (${seasonResult[j].seasonPoints})</div>`
+            }
+
+        }
+
+    }
 
     let seasonNav = ``
 
@@ -203,23 +261,21 @@ app.get(['/', '/home'], async function(req, res){
                     </div>
                 </div>`        
     })
-    res.send(header.header + nav.nav(seasonNav) + about.about + news.news(newses) + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
+    res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length) + about.about + news.news(newses) + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
 })
 
-app.post('/login', urlencodedParser, async function(req, res){
+app.get('/iZ8saRlTNldVuCJpxH2i/edit', async function(req, res) {
+
+    res.send('Hello')
+
+})
+
+app.post('/iZ8saRlTNldVuCJpxH2i/login', urlencodedParser, async function(req, res){
     if(!req.body && !req.query.userType === undefined) res.sendStatus(400)
-    if(req.query.userType === 'viewer' && req.body.userType !== 'admin') {
-        console.log('viewer')
-        res.redirect('home')
-    }
-    if(req.query.userType === 'admin' && req.body.adminName === 'vikakarter' && req.body.adminPass === adminPass) {
+    if(req.body.adminName === 'vikakarter' && req.body.adminPass === adminPass) {
         console.log('admin')
-        res.redirect('home')
+        res.redirect('edit')
     }
-})
-
-app.get('/change', async function(req, res){
-
 })
 
 app.listen(3000)
