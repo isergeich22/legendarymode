@@ -23,7 +23,9 @@
             "events": [
                 {
                     "eventNumber": "1",
+                    "eventDate": "12.07.2023",
                     "eventVideo": "https://www.youtube.com/embed/OUditpcWppA?si=eAt_9walPlq7olrH",
+                    "eventTitle": "",
                     "eventHost": "WELOVEGAMES",
                     "eventGame": "The Long Drive",
                     "eventDescription": "Заезд в The Long Drive, кто дальше проедет. Спецальное условие - можно было найти золотую лампу которая значительно бустила результат участника",
@@ -49,7 +51,9 @@
                 },
                 {
                     "eventNumber": "2",
+                    "eventDate": "19.07.2023",
                     "eventVideo": "https://www.youtube.com/embed/bXoguN-UW9U?si=fDIqrHetyfiPjsAQ",
+                    "eventTitle": "",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Hitman 3",
                     "eventDescription": "Играли в Hitman 3 на прохождение указанных миссий и выполняли бинго, на очки.",
@@ -75,7 +79,9 @@
                 },
                 {
                     "eventNumber": "3",
+                    "eventDate": "26.07.2023",
                     "eventVideo": "https://www.youtube.com/embed/Uqle1-RQaGI?si=0dbHLUXgnSSYEUZu",
+                    "eventTitle": "",
                     "eventHost": "orkpod",
                     "eventGame": "Grand Theft Auto V",
                     "eventDescription": "Проходили GTA 5 c модом CHAOS MOD, на то кто пройдет больше миссий.",
@@ -101,7 +107,9 @@
                 },
                 {
                     "eventNumber": "4",
+                    "eventDate": "02.08.2023",
                     "eventVideo": "https://www.youtube.com/embed/_GsTr9ee_uc?si=SfSY4LfeMSKZheuZ",
+                    "eventTitle": "",
                     "eventHost": "Juice",
                     "eventGame": "Phasmophobia",
                     "eventDescription": "Играли в Фазму соло на очки. Очки давались за правильно определение призрака и за доп. задания",
@@ -127,7 +135,9 @@
                 },
                 {
                     "eventNumber": "5",
+                    "eventDate": "09.08.2023",
                     "eventVideo": "https://www.youtube.com/embed/v6Vg8oqOkjc?si=qVn9pCec3vj3yle-",
+                    "eventTitle": "",
                     "eventHost": "vika_karter",
                     "eventGame": "The Witcher 3: Wild Hunt",
                     "eventDescription": "Проходили Ведьмака по заранее подготовленным квестам, кто больше прошел, тот и победил.",
@@ -153,7 +163,9 @@
                 },
                 {
                     "eventNumber": "6",
+                    "eventDate": "23.08.2023",
                     "eventVideo": "https://www.youtube.com/embed/hZWPa6nAGKc?si=1HvtUJ0NUGmN9hv3",
+                    "eventTitle": "",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Dark and Darker",
                     "eventDescription": "Играли в Dark and Darker. Заранее выбирали для себя класс и выходили в соло рейды. Критерием для победы послужило финальное число золота на персонаже.",
@@ -179,7 +191,9 @@
                 },
                 {
                     "eventNumber": "7",
+                    "eventDate": "30.08.2023",
                     "eventVideo": "https://www.youtube.com/embed/J4YqyTsBe8I?si=DylgYHWrIuQqZEqI",
+                    "eventTitle": "",
                     "eventHost": "orkpod",
                     "eventGame": "Cooking Simulator",
                     "eventDescription": "Играли в Кукинг Симулятор, критериев для побелы было несколько, но основной - количество рецептов.",
@@ -205,7 +219,9 @@
                 },
                 {
                     "eventNumber": "8",
+                    "eventDate": "06.09.2023",
                     "eventVideo": "https://www.youtube.com/embed/ey40gffawh0?si=cTAJge5rzM3_b_m-",
+                    "eventTitle": "",
                     "eventHost": "vika_karter",
                     "eventGame": "Sims 4",
                     "eventDescription": "Выполняли различные задания в Sims 4, отыгрывая своих персонажей в городе с другими стримерами. Основной критерий победы - количество денег в конце.",
@@ -231,7 +247,9 @@
                 },
                 {
                     "eventNumber": "9",
+                    "eventDate": "13.09.2023",
                     "eventVideo": "https://www.youtube.com/embed/iosMS7LAdIs?si=kmiJzV8UXI3reHf-",
+                    "eventTitle": "",
                     "eventHost": "Juice",
                     "eventGame": "Retro Games",
                     "eventDescription": "Играли в Ретро игры, Аладдин, Червяк Джим, Король Лев. Критерий на победу - кто дальше пройдет.",
@@ -257,7 +275,9 @@
                 },
                 {
                     "eventNumber": "10",
+                    "eventDate": "13.09.2023",
                     "eventVideo": "https://www.youtube.com/embed/G0OVUDfY53Y?si=_jFZ1Tjm4o1DO1Rn",
+                    "eventTitle": "",
                     "eventHost": "WELOVEGAMES",
                     "eventGame": "Manual Samuel, Stilt Fella",
                     "eventDescription": "Играли в 2 инди игры, критерий победы - кто дальше пройдет.",
@@ -283,7 +303,9 @@
                 },
                 {
                     "eventNumber": "11",
+                    "eventDate": "18.10.2023",
                     "eventVideo": "https://www.youtube.com/embed/Ttp8kRXMqbk?si=kSfvQdUHEfJHtMA0",
+                    "eventTitle": "",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Fall Guys",
                     "eventDescription": "Бонусный выпуск, который вел победитель - Дмитрий Бейл. Играли в Fall Guys, в командах по 2 человека. Решали судьбу 2 и 3-го места. Критерий победы - количество корон.",                    

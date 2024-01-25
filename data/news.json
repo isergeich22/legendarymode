@@ -1,9 +1,4 @@
 {
     "news": [
-        {
-            "newsHeader": "Новостной заголовок",
-            "newsText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec id rutrum libero. Sed finibus a diam sit amet pretium. Praesent gravida lacus ac lorem dictum, quis iaculis risus venenatis. Vestibulum feugiat volutpat viverra. Praesent ornare tellus at volutpat rhoncus. Fusce consectetur lorem eget erat dictum.",
-            "newsDate": "06-01-2024"
-        }
     ]
 }

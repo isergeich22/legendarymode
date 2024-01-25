@@ -59,6 +59,10 @@
             color: #63489d;
         }
 
+            .empty-news {
+                text-align: center;
+            }
+
         .news-card-body__date {
             font-family: 'FortuneC regular';
             font-size: 1.2rem;

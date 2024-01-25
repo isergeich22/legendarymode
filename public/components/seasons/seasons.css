@@ -106,6 +106,7 @@
 
     .season-body {
         flex-wrap: wrap;
+        height: 100px;
     }
 
         .season-event {
@@ -131,6 +132,7 @@
 
     .season-body {
         flex-wrap: wrap;
+        height: 60px;
     }
 
         .season-event {
@@ -157,6 +159,7 @@
 
     .season-body {
         flex-wrap: wrap;
+        height: 155px;
     }
 
         .season-event {
@@ -187,6 +190,7 @@
 
     .season-body {
         flex-wrap: wrap;
+        height: 70px;
     }
 
         .season-event {
@@ -216,6 +220,7 @@
 
     .season-body {
         flex-wrap: wrap;
+        height: 190px;
     }
 
         .season-event {
@@ -245,6 +250,7 @@
 
     .season-body {
         flex-wrap: wrap;
+        height: 110px;
     }
 
         .season-event {

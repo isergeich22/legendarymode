@@ -4,10 +4,10 @@ const participants = require('./data/participant.json')
 const newsList = require('./data/news.json')
 const seasonsList = require('./public/seasons.json')
 const event = require('./public/components/eventBlock/event')
-const [header, current, news, nav, about, participant, seasons, footer] = 
+const [header, current, news, nav, about, detailed, participant, seasons, footer] = 
         [
             require('./public/components/header/header'), require('./public/components/current/current'), require('./public/components/news/news'), require('./public/components/nav/nav'),
-            require('./public/components/about/about'), require('./public/components/participant/participant'), require('./public/components/seasons/seasons'), 
+            require('./public/components/about/about'), require('./public/components/aboutDetailed/aboutDetailed'), require('./public/components/participant/participant'), require('./public/components/seasons/seasons'), 
             require('./public/components/footer/footer')
             
         ]
@@ -131,21 +131,37 @@ app.get(['/', '/home'], async function(req, res){
 
     let newses = ``
 
-    newsList.news.forEach(el => {
+    if(newsList.news.length > 0) {
+        
+        newsList.news.forEach(el => {
+
+            newses += `<div class="news-card">
+                        <div class="news-card-header">
+                            ${el.newsHeader}
+                        </div>
+                        <div class="news-card-body">
+                            <p>
+                                ${el.newsText}
+                            </p>
+                            <div class="news-card-body__date">${el.newsDate}</div>
+                        </div>
+                    </div>`
+
+        })
+
+    }
+
+    if(newsList.news.length <= 0) {
 
         newses += `<div class="news-card">
-                    <div class="news-card-header">
-                        ${el.newsHeader}
-                    </div>
-                    <div class="news-card-body">
-                        <p>
-                            ${el.newsText}
-                        </p>
-                        <div class="news-card-body__date">${el.newsDate}</div>
-                    </div>
-                </div>`
+                        <div class="news-card-body empty-news">
+                            <p>
+                                Здесь пока нет новостей...
+                            </p>
+                        </div>
+                    </div>`
 
-    })
+    }
 
     let parts = ``
 
@@ -262,6 +278,18 @@ app.get(['/', '/home'], async function(req, res){
                 </div>`        
     })
     res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length) + about.about + news.news(newses) + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
+})
+
+app.get ('/detailed', async function(req, res){
+
+    res.send(header.header + detailed.detailed + footer.footer)
+
+})
+
+app.get('/profile', async function(req, res){
+
+    
+
 })
 
 app.get('/iZ8saRlTNldVuCJpxH2i/edit', async function(req, res) {

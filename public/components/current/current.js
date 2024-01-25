@@ -4,8 +4,87 @@ exports.current = current = (seasonNumber ,content, eventsLength) =>`
             <button id="${seasonNumber-1}" class="current-prev-button">
             <?xml version="1.0" encoding="iso-8859-1"?>
             <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-            <svg fill="#63489d" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            <svg fill="#63489d" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                 viewBox="0 0 512.013 512.013" xml:space="preserve">
+                <style>
+
+                    #Layer_1 {
+                        width: 64px
+                    }
+
+                    g {
+                        width: 20px
+                    }
+
+                    g > g {
+                        width: 20px
+                    }
+
+                    g > g > path {
+                        width: 20px
+                    }
+
+                    @media screen and (min-width: 320px) and (max-width: 480px) {
+
+                        #Layer_1 {
+                            width: 20px
+                        }
+
+                        g {
+                            width: 20px
+                        }
+
+                        g > g {
+                            width: 20px
+                        }
+
+                        g > g > path {
+                            width: 20px
+                        }
+
+                    }
+                    
+                    @media screen and (min-width: 481px) and (max-width: 768px) {
+
+                        #Layer_1 {
+                            width: 30px
+                        }
+
+                        g {
+                            width: 30px
+                        }
+
+                        g > g {
+                            width: 30px
+                        }
+
+                        g > g > path {
+                            width: 30px
+                        }
+
+                    }
+
+                    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+                        #Layer_1 {
+                            width: 40px
+                        }
+
+                        g {
+                            width: 40px
+                        }
+
+                        g > g {
+                            width: 40px
+                        }
+
+                        g > g > path {
+                            width: 40px
+                        }
+
+                    }
+
+                </style>
                 <g>
                     <g>
                         <path d="M366.64,256.013L508.677,32.802c5.141-8.107,4.267-18.624-2.176-25.749c-6.443-7.168-16.832-9.067-25.365-4.8
