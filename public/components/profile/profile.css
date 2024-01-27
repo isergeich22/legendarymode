@@ -1,0 +1,240 @@
+.profile {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+    .profile-header {
+        margin-top: 1vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 0;
+        width: 100%;
+        text-align: center;        
+        background: #feca6b;
+    }
+
+        .profile-header > h1 {
+            margin: 0;
+        }
+
+        .profile-header__text {
+            color: #63489d;
+            font-family: 'Harpseal Regular';
+            font-size: 2rem;
+        }
+
+    .profile-info {
+        width: 100%;
+        background: #f7e9ff;
+    }
+
+        .profile-info-headers {
+            display: flex;
+            flex-direction: row;
+            gap: 5%;
+            padding: 15px;
+        }
+
+            .profile-info-headers > h3 {
+                color: #63489d;
+                font-family: 'Harpseal Regular';
+                font-size: 1.5rem;
+                text-align: center;
+                width: 43%;
+            }
+
+            .profile-info-headers > h3:first-child {
+                width: 27%;
+            }
+
+            .profile-info-headers > h3:nth-child(2) {
+                width: 20%;
+            }
+
+        .profile-info-contacts {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5%;
+            padding: 15px;
+        }            
+
+            .profile-info-contacts__image {
+                width: 27%;
+            }
+
+
+                .profile-info-contacts__image-name > h3, .profile-info-contacts__links-header > h3 {
+                    text-align: center;
+                    color: #63489d;
+                    font-family: 'Harpseal Regular';
+                }
+
+            .profile-info-contacts__links {
+                width: 40%;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+            }
+
+                .profile-info-contacts__links-item {
+                    width: 100%;
+                    height: 48px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 2%;
+                    justify-content: center;
+                    align-items: center;
+                }
+        
+        .profile-info-events {
+            display: flex;
+            flex-direction: column;
+            padding: 15px;
+        }
+
+            .profile-info-events-header {
+                width: 100%;
+                margin: 10px;
+            }
+
+                .profile-info-events-header > h3 {
+                    text-align: center;
+                    color: #63489d;
+                    font-family: 'Harpseal Regular';
+                }
+
+                    .profile-info-contacts__links-item__link {
+                        width: 88%;
+                    }
+
+                        .profile-info-contacts__links-item__link > a {
+                            font-size: 1.3rem;
+                            text-decoration: underline;
+                            font-family: 'FortuneC regular';
+                            color: #63489d;
+                        }
+        
+        .profile-info-events-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+            .profile-info-events-list__item {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+            }
+
+                .profile-info-events-list-headers {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 2%;
+                    border-bottom: 1px solid #63489d;
+                }
+
+                    .profile-info-events-list-headers > h3{
+                        margin: 0;
+                        width: 18%;
+                        text-align: center;
+                        color: #63489d;
+                        font-family: 'Harpseal Regular';
+                        font-size: 1.4rem;
+                    }
+
+                .profile-info-events-list__item-info {
+                    padding: 10px;
+                    height: 70px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2%;
+                    border-bottom: 1px solid #63489d;
+                    border-left: 1px solid #63489d;
+                    border-right: 1px solid #63489d;
+                }
+
+                .profile-info-events-list__item-detailed {
+                    width: 100%;
+                    padding: 10px;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: center;
+                    align-items: center;
+                    gap: 2%;
+                    border-bottom: 1px solid #63489d;
+                    border-left: 1px solid #63489d;
+                    border-right: 1px solid #63489d;
+                }
+
+                    .profile-info-events-list__item-detailed__video {
+                        display: flex;
+                        justify-content: center;
+                        width: 60%;
+                    }
+
+                    .profile-info-events-list__item-detailed__desc {
+                        width: 40%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-start;
+                        align-items: center;
+                    }
+
+                        .profile-info-events-list__item-detailed__desc-item {
+                            display: flex;
+                            flex-direction: row;
+                            width: 100%;
+                            gap: 5%;
+                        }
+
+                            .profile-info-events-list__item-detailed__desc-item > p {
+                                width: 85%;
+                                color: #63489d;
+                                font-family: 'Harpseal Regular';
+                            }
+
+                            .profile-info-events-list__item-detailed__desc-item > p:first-child {
+                                width: 10%;
+                            }
+                
+                .profile-info-events-list__item-info:hover {
+                    cursor: pointer;
+                    background: #e8e4f0;
+                }
+
+                    .profile-info-events-list__item-info > h3 {
+                        margin: 0;
+                        width: 18%;
+                        font-size: 1.4rem;
+                        text-align: center;
+                        font-family: 'FortuneC regular';
+                        color: #63489d;
+                    }
+
+
+
+@media screen and (min-width: 1441px) and (max-width: 1920px) {
+    
+    .profile {
+        width: 60%;
+    }
+
+}
+
+@media screen and (min-width: 1921px) {
+
+    .profile {
+        width: 45%;
+    }
+    
+}

@@ -15,6 +15,7 @@ exports.header = header =  `
         <link rel="stylesheet" href="/components/seasons/seasons.css">
         <link rel="stylesheet" href="/components/eventBlock/event.css">
         <link rel="stylesheet" href="/components/current/current.css">
+        <link rel="stylesheet" href="/components/profile/profile.css">
         <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     </head>

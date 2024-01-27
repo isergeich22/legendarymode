@@ -29,7 +29,7 @@ seasonsButton.forEach(el => {
     el.addEventListener('click', () => {        
         let season = (result.seasons.find(item => item.seasonNumber === el.id))
         content += `<div class="seasons-header">
-                    <h1 class="seasons-header__text">${season.seasonNumber}</h1>
+                    <h1 class="seasons-header__text">${season.seasonNumber} сезон</h1>
                 </div>
                 <div id="eventsBlock" class="season-body">`
         season.events.forEach(elem => {            
@@ -229,7 +229,7 @@ seasonsButton.forEach(el => {
                                 <div class="event-body-item text-block">
                                     <div class="text-block-item">
                                         <p>Ведущий:</p>
-                                        <p><a href="">${event.eventHost}</a></p>
+                                        <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
                                     </div>
                                     <div class="text-block-item">
                                         <p>Игра:</p>
@@ -286,7 +286,7 @@ seasonsButton.forEach(el => {
                                 <div class="event-body-item text-block">
                                     <div class="text-block-item">
                                         <p>Ведущий:</p>
-                                        <p><a href="">${event.eventHost}</a></p>
+                                        <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
                                     </div>
                                     <div class="text-block-item">
                                         <p>Игра:</p>
@@ -340,7 +340,7 @@ seasonsButton.forEach(el => {
                                 <div class="event-body-item text-block">
                                     <div class="text-block-item">
                                         <p>Ведущий:</p>
-                                        <p><a href="">${event.eventHost}</a></p>
+                                        <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
                                     </div>
                                     <div class="text-block-item">
                                         <p>Игра:</p>

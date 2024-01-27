@@ -1,7 +1,7 @@
 {
     "participants": [
         {
-            "id": "vikakarter",
+            "id": "vika_karter",
             "photo": "/img/participants/vikakarter.png",
             "name": "Вика Картер",
             "links": [
@@ -24,7 +24,7 @@
             ]
         },
         {
-            "id": "orkpodcaster",
+            "id": "orkpod",
             "photo": "/img/participants/orkpodcaster.png",
             "name": "Орк Подкастер",
             "links": [
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "id": "welovegames",
+            "id": "WELOVEGAMES",
             "photo": "/img/participants/welovegames.png",
             "name": "Денис WELOVEGAMES",
             "links": [
@@ -70,7 +70,7 @@
             ]
         },
         {
-            "id": "dmitry_bale",
+            "id": "DMITRY_BALE",
             "photo": "/img/participants/dmitrybale.png",
             "name": "Дмитрий Бейл",
             "links": [
@@ -93,7 +93,7 @@
             ]
         },
         {
-            "id": "juice",
+            "id": "Juice",
             "photo": "/img/participants/juice.png",
             "name": "Михаил Джус",
             "links": [
