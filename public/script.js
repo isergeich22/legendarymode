@@ -9,6 +9,13 @@ async function getSeasons() {
 
 }
 
+function getRandomInt(min, max) {
+
+    let rand = min + Math.random() * (max + 1 - min)
+    return Math.floor(rand)
+
+}
+
 getSeasons()
 
 const seasonsButton = document.querySelectorAll('.season-number')
@@ -125,8 +132,6 @@ seasonsButton.forEach(el => {
 
                 values.sort((a, b) => b - a)
 
-                console.log(values)
-
                 for(let i = 0; i < values.length; i++) {
 
                     for(let j = 0; j < seasonResult.length; j++) {
@@ -138,18 +143,89 @@ seasonsButton.forEach(el => {
                     }
 
                 }
+
+                if(event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost) >= 0) {
+
+                    content += `
+                        <div class="event-body-item">
+                            <div class="event-body-item__video">
+                                <iframe width="500" height="281" src="${event.eventVideo[event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost)].videoLink}" title="YouTube video player" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                    gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="event-body-item__tabs">
+                    `
+
+                    event.eventVideo.forEach(el => {
+                        if(el.videoAuthor === event.eventHost) {
+                            content += `
+                                <button class="tabs-button active" id="${el.videoAuthor}">
+                                    ${el.videoAuthor}
+                                </button>
+                            `
+                        }
+                        if(el.videoAuthor !== event.eventHost) {
+                            content += `
+                                <button class="tabs-button" id="${el.videoAuthor}">
+                                    ${el.videoAuthor}
+                                </button>
+                            `
+                        }
+                    })
+
+                    content += `
+                            </div>
+                        </div>
+                    `
+
+                }
+
+                if(event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost) < 0) {
+
+                    let index = getRandomInt(0, event.eventVideo.length - 1)
+
+                    content += `
+                        <div class="event-body-item">
+                            <div class="event-body-item__video">
+                                <iframe width="560" height="281" src="${event.eventVideo[index].videoLink}" title="YouTube video player" 
+                                    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                                    gyroscope; picture-in-picture; web-share" allowfullscreen>
+                                </iframe>
+                            </div>
+                            <div class="event-body-item__tabs">
+                    `
+
+                    event.eventVideo.forEach(el => {
+                        if(el.videoAuthor === event.eventVideo[index].videoAuthor) {
+                            content += `
+                                <button class="tabs-button active" id="${el.videoAuthor}">
+                                    ${el.videoAuthor}
+                                </button>
+                            `
+                        }
+                        if(el.videoAuthor !== event.eventVideo[index].videoAuthor) {
+                            content += `
+                                <button class="tabs-button" id="${el.videoAuthor}">
+                                    ${el.videoAuthor}
+                                </button>
+                            `
+                        }
+                    })
+
+                    content += `
+                            </div>
+                        </div>
+                    `
+
+                }
                 
                 let [firstPlace, secondPlace, thirdPlace, fourthPlace] = [event.eventResults.find(evt => evt.position === "1"), event.eventResults.find(evt => evt.position === "2"), event.eventResults.find(evt => evt.position === "3"), event.eventResults.find(evt => evt.position === "4")]
                 let [firstPlaceRule, secondPlaceRule, thirdPlaceRule, fourthPlaceRule] = [season.rules.find(rule => rule.eventPlace === 1), season.rules.find(rule => rule.eventPlace === 2), season.rules.find(rule => rule.eventPlace === 3), season.rules.find(rule => rule.eventPlace === 4)]
                 // console.log([firstPlace, secondPlace, thirdPlace, fourthPlace])
                 if(fourthPlace !== undefined && thirdPlace !== undefined) {
 
-                    content += `<div class="event-body-item">
-                                    <iframe width="640" height="360" src="${event.eventVideo}" title="YouTube video player" 
-                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                        gyroscope; picture-in-picture; web-share" allowfullscreen>
-                                    </iframe>
-                                </div>
+                    content += `
                                 <div class="event-body-item text-block">
                                     <div class="text-block-item">
                                         <p>Ведущий:</p>
@@ -206,12 +282,7 @@ seasonsButton.forEach(el => {
 
                 if(fourthPlace === undefined && thirdPlace !== undefined) {
 
-                    content += `<div class="event-body-item">
-                                    <iframe width="640" height="360" src="${event.eventVideo}" title="YouTube video player" 
-                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                        gyroscope; picture-in-picture; web-share" allowfullscreen>
-                                    </iframe>
-                                </div>
+                    content += `
                                 <div class="event-body-item text-block">
                                     <div class="text-block-item">
                                         <p>Ведущий:</p>
@@ -265,12 +336,7 @@ seasonsButton.forEach(el => {
 
                 if(fourthPlace === undefined && thirdPlace === undefined) {
 
-                    content += `<div class="event-body-item">
-                                    <iframe width="640" height="360" src="${event.eventVideo}" title="YouTube video player" 
-                                        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
-                                        gyroscope; picture-in-picture; web-share" allowfullscreen>
-                                    </iframe>
-                                </div>
+                    content += `
                                 <div class="event-body-item text-block">
                                     <div class="text-block-item">
                                         <p>Ведущий:</p>
@@ -317,10 +383,31 @@ seasonsButton.forEach(el => {
                     eventBlock.style.background = '#f7e9ff'
                     content = ``
 
-                }
+                }                
+
+                const tabsButton = document.querySelectorAll('.tabs-button')
+
+                tabsButton.forEach(el => {
+                    el.addEventListener('click', () => {
+
+                        if(event.eventVideo.findIndex(evt => evt.videoAuthor === el.id) >= 0) {
+
+                            document.querySelector('iframe').setAttribute('src', event.eventVideo[event.eventVideo.findIndex(evt => evt.videoAuthor === el.id)].videoLink)
+                            el.classList.add('active')
+                            tabsButton.forEach(elem => {
+                                if(elem.id !== el.id) {
+                                    elem.classList.remove('active')
+                                }
+                            })
+
+                        }
+
+                    })
+                })                
 
             })
-        })
+        })        
+
     })
     
 })

@@ -24,7 +24,16 @@
                 {
                     "eventNumber": "1",
                     "eventDate": "12.07.2023",
-                    "eventVideo": "https://www.youtube.com/embed/OUditpcWppA?si=eAt_9walPlq7olrH",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/OUditpcWppA?si=eAt_9walPlq7olrH",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/JzqBxagAVgc?si=HB6uE2vwR7zR3WCR",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "WELOVEGAMES",
                     "eventGame": "The Long Drive",
@@ -52,7 +61,16 @@
                 {
                     "eventNumber": "2",
                     "eventDate": "19.07.2023",
-                    "eventVideo": "https://www.youtube.com/embed/bXoguN-UW9U?si=fDIqrHetyfiPjsAQ",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/bXoguN-UW9U?si=jU5Z_-1tAXJRCIwu",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/l5cDt-hgdnU?si=gXajUHwBQJaYyjwv",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Hitman 3",
@@ -80,7 +98,16 @@
                 {
                     "eventNumber": "3",
                     "eventDate": "26.07.2023",
-                    "eventVideo": "https://www.youtube.com/embed/Uqle1-RQaGI?si=0dbHLUXgnSSYEUZu",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/Uqle1-RQaGI?si=tbnC7em-vIaTI4LR",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/BTqa8lnUd4o?si=B_4K4EGum0QmgbsE",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "orkpod",
                     "eventGame": "Grand Theft Auto V",
@@ -108,7 +135,16 @@
                 {
                     "eventNumber": "4",
                     "eventDate": "02.08.2023",
-                    "eventVideo": "https://www.youtube.com/embed/_GsTr9ee_uc?si=SfSY4LfeMSKZheuZ",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/_GsTr9ee_uc?si=Grl2C6vSc-vfgCy9",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/5Fysj_ngXUQ?si=maNopwmKQfx4DqbC",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "Juice",
                     "eventGame": "Phasmophobia",
@@ -136,7 +172,12 @@
                 {
                     "eventNumber": "5",
                     "eventDate": "09.08.2023",
-                    "eventVideo": "https://www.youtube.com/embed/v6Vg8oqOkjc?si=qVn9pCec3vj3yle-",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/v6Vg8oqOkjc?si=RNsM0ief_bd1BtWn",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "vika_karter",
                     "eventGame": "The Witcher 3: Wild Hunt",
@@ -164,7 +205,16 @@
                 {
                     "eventNumber": "6",
                     "eventDate": "23.08.2023",
-                    "eventVideo": "https://www.youtube.com/embed/hZWPa6nAGKc?si=1HvtUJ0NUGmN9hv3",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/hZWPa6nAGKc?si=4gMqzRpsjp5x_-F_",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/XHoLasQli0c?si=XatWfmSdaJ8LHZau",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Dark and Darker",
@@ -192,7 +242,16 @@
                 {
                     "eventNumber": "7",
                     "eventDate": "30.08.2023",
-                    "eventVideo": "https://www.youtube.com/embed/J4YqyTsBe8I?si=DylgYHWrIuQqZEqI",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/J4YqyTsBe8I?si=YnETaBwqp7N282AC",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/EFhF10OmeeE?si=atrnP-2hU4X490TJ",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "orkpod",
                     "eventGame": "Cooking Simulator",
@@ -220,7 +279,16 @@
                 {
                     "eventNumber": "8",
                     "eventDate": "06.09.2023",
-                    "eventVideo": "https://www.youtube.com/embed/ey40gffawh0?si=cTAJge5rzM3_b_m-",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/ey40gffawh0?si=1Xmy6LQtMX8GwHcI",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/2Wy-2DfSG6A?si=uqrIQn7Q83iFn3bb",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "vika_karter",
                     "eventGame": "Sims 4",
@@ -248,7 +316,16 @@
                 {
                     "eventNumber": "9",
                     "eventDate": "13.09.2023",
-                    "eventVideo": "https://www.youtube.com/embed/iosMS7LAdIs?si=kmiJzV8UXI3reHf-",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/iosMS7LAdIs?si=Km4R5rpPjHmVJoaS",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/DPLskatU-4E?si=zh9vCInr5ysUgemW",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "Juice",
                     "eventGame": "Retro Games",
@@ -276,7 +353,16 @@
                 {
                     "eventNumber": "10",
                     "eventDate": "13.09.2023",
-                    "eventVideo": "https://www.youtube.com/embed/G0OVUDfY53Y?si=_jFZ1Tjm4o1DO1Rn",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/G0OVUDfY53Y?si=mG-flnUfgariuDHd",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/sJTiFdNGJHs?si=eb6F_n2k0SsF3f1h",
+                            "videoAuthor": "WELOVEGAMES"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "WELOVEGAMES",
                     "eventGame": "Manual Samuel, Stilt Fella",
@@ -304,7 +390,12 @@
                 {
                     "eventNumber": "11",
                     "eventDate": "18.10.2023",
-                    "eventVideo": "https://www.youtube.com/embed/Ttp8kRXMqbk?si=kSfvQdUHEfJHtMA0",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/Ttp8kRXMqbk?si=279knGKMi-QGii56",
+                            "videoAuthor": "orkpod"
+                        }
+                    ],
                     "eventTitle": "",
                     "eventHost": "DMITRY_BALE",
                     "eventGame": "Fall Guys",
