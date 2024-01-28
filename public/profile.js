@@ -18,7 +18,7 @@ events.forEach(el => {
 
                 let event = result.seasons[result.seasons.findIndex(ssn => ssn.seasonNumber === el.children[0].innerHTML)].events[index]
 
-                if(el.parentNode.children[1].children.length === 0) {
+                if(el.parentNode.children[1].classList.contains('empty') === true) {
 
                     el.parentNode.children[1].innerHTML = `
                         <div id="video" class="profile-info-events-list__item-detailed__video">
@@ -28,11 +28,26 @@ events.forEach(el => {
                             </iframe>
                         </div>
                         <div class="profile-info-events-list__item-detailed__desc">
+                            <div class="profile-info-events-list__item-detailed__desc-item">
+                                <p>Название ивента:</p>
+                                <p>${event.eventTitle}</p>
+                            </div>
+                            <div class="profile-info-events-list__item-detailed__desc-item">
+                                <p>Дата ивента:</p>
+                                <p>${event.eventDate}</p>
+                            </div>
+                            <div class="profile-info-events-list__item-detailed__desc-item">
+                                <p>Игра ивента:</p>
+                                <p>${event.eventGame}</p>
+                            </div>
+                            <div class="profile-info-events-list__item-detailed__desc-item">
+                                <p>Краткие правила:</p>
+                                <p>${event.eventDescription}</p>
+                            </div>
                         </div>
-                        `                
-                }                
+                        `
 
-                console.log(el.parentNode.children.length)
+                }                
                         
             })
     

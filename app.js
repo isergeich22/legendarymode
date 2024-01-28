@@ -445,7 +445,7 @@ app.get('/profile', async function(req, res){
                             <h3>${elem.eventTitle}</h3>
                             <h3>${elem.eventGame}</h3>
                         </div>
-                        <div class="profile-info-events-list__item-detailed">
+                        <div class="profile-info-events-list__item-detailed empty">
                         </div>
                     </div>
                 `
