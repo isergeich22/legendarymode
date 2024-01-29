@@ -44,8 +44,21 @@ events.forEach(el => {
                                 <p>Краткие правила:</p>
                                 <p>${event.eventDescription}</p>
                             </div>
-                        </div>
-                        `
+                            <div class="profile-info-events-list__item-detailed__desc-hide">
+                                <button id="hide">
+                                    Скрыть подробности
+                                </button>
+                            </div>
+                        </div>                        
+                        `                        
+
+                        const hide = document.querySelector('#hide')
+
+                        hide.addEventListener('click', () => {
+
+                            hide.parentNode.parentNode.parentNode.innerHTML = ``
+
+                        })
 
                 }                
                         
