@@ -1,8 +1,8 @@
 exports.nav = nav = (content) => `
     <section class="nav">
-        <div class="nav-item"><a href="#about">О ТУРНИРЕ</a></div>
-        <div class="nav-item"><a href="#news">НОВОСТИ</a></div>
-        <div class="nav-item"><a href="#participants">УЧАСТНИКИ</a></div>
+        <div class="nav-item"><a href="/home#about">О ТУРНИРЕ</a></div>
+        <div class="nav-item"><a href="/home#news">НОВОСТИ</a></div>
+        <div class="nav-item"><a href="/home#participants">УЧАСТНИКИ</a></div>
         <div class="dropdown nav-item">
             <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
                 Сезоны
