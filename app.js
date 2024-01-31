@@ -386,7 +386,7 @@ app.get('/profile', async function(req, res){
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="32px" height="32px" id="Layer_0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="30px" height="30px" id="Layer_0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M3.4 3.4C2 4.81333 2 7.07333 2 11.6V12.4C2 16.92 2 19.18 3.4 20.6C4.81333 
                                         22 7.07333 22 11.6 22H12.4C16.92 22 19.18 22 20.6 20.6C22 19.1867 22 16.9267 22 12.4V11.6C22 7.08 22 4.82 20.6 3.4C19.1867 
                                         2 16.9267 2 12.4 2H11.6C7.08 2 4.82 2 3.4 3.4ZM5.37333 8.08667C5.48 13.2867 8.08 16.4067 12.64 16.4067H12.9067V13.4333C14.58 
@@ -407,8 +407,8 @@ app.get('/profile', async function(req, res){
                                             @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
                                                 #Layer_0 {
-                                                    width: 16px;
-                                                    height: 16px;
+                                                    width: 22px;
+                                                    height: 22px;
                                                 }
 
                                             }
@@ -460,7 +460,7 @@ app.get('/profile', async function(req, res){
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
-                                    <svg width="32px" height="32px" id="Layer_0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <svg width="30px" height="30px" id="Layer_0" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <style>
 
                                             @media screen and (min-width: 320px) and (max-width: 480px) {
@@ -578,6 +578,15 @@ app.get('/profile', async function(req, res){
 
                                     }
 
+                                    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+                                        #Layer_1 {
+                                            width: 36px;
+                                            height: 36px;
+                                        }
+
+                                    }
+
                                 </style>
                                 <path d="M69.09 4.24c-1.08.96-9.48 17.63-9.48 17.63l-6.25 25.21l24.32-2.23S97.91 7.23 98.32 6.36c.73-1.58 1.12-2.23-1.67-2.23c-2.79-.01-26.55-.79-27.56.11z" fill="#176cc7">
                                 </path>
@@ -632,6 +641,15 @@ app.get('/profile', async function(req, res){
                                             width: 32px;
                                             height: 32px;
 
+                                        }
+
+                                    }
+                                    
+                                    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+                                        #Layer_1 {
+                                            width: 36px;
+                                            height: 36px;
                                         }
 
                                     }
@@ -690,6 +708,15 @@ app.get('/profile', async function(req, res){
                                             width: 32px;
                                             height: 32px;
 
+                                        }
+
+                                    }
+
+                                    @media screen and (min-width: 769px) and (max-width: 1024px) {
+
+                                        #Layer_1 {
+                                            width: 36px;
+                                            height: 36px;
                                         }
 
                                     }
