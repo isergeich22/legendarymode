@@ -248,11 +248,11 @@ seasonsButton.forEach(el => {
                                         <p>${event.eventGame}</p>
                                     </div>
                                     <div class="text-block-item">
-                                        <p>Название ивента:</p>
+                                        <p>Название выпуска:</p>
                                         <p>${event.eventTitle}</p>
                                     </div>
                                     <div class="text-block-item">
-                                        <p>Дата ивента:</p>
+                                        <p>Дата выпуска:</p>
                                         <p>${event.eventDate}</p>
                                     </div>
                                     <div class="text-block-item">

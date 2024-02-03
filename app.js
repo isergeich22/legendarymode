@@ -857,7 +857,7 @@ app.get('/profile', async function(req, res){
 
     profileInfo += `<div class="profile-info-events">
                         <div class="profile-info-events-header">
-                            <h3>Проведенные ивенты</h3>
+                            <h3>Проведенные выпуски</h3>
                         </div>
                         <div class="profile-info-events-list">
                             <div class="profile-info-events-list-headers">
