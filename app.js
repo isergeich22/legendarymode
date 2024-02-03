@@ -828,16 +828,27 @@ app.get('/profile', async function(req, res){
     profileInfo += `<div class="profile-info-achivements__event-header">
                         <h3>Ивенты</h3>
                     </div>`
-    console.log(placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount)
     let maxIndex = placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.reduce((acc, curr, i) => placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[acc].placeCount > curr.placeCount ? acc : i, 0)
 
     profileInfo += `<div class="profile-info-achivements__event-item">
                         <p>Самое частое занимаемое место в ивентах - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[maxIndex].placeValue} место</b></p>
-                    </div>
-                    <div class="profile-info-achivements__event-item">
-                        <p>Количество <b>1 мест</b> за все ивенты - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount}</b></p>
                     </div>`
-                    
+
+    if(placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.findIndex(item => item.placeValue == 1) >= 0) {
+
+        profileInfo += `<div class="profile-info-achivements__event-item">
+                            <p>Количество <b>1 мест</b> за все ивенты - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount}</b></p>
+                        </div>`
+
+    }
+
+    if(placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.findIndex(item => item.placeValue == 1) < 0) {
+
+        profileInfo += `<div class="profile-info-achivements__event-item">
+                            <p>Количество <b>1 мест</b> за все ивенты - <b>0</b></p>
+                        </div>`
+
+    }                    
 
     profileInfo += `</div>
                 </div>`
