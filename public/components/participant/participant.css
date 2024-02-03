@@ -87,6 +87,11 @@
                     margin-bottom: 2vh;
                 }
 
+                    .card-content__name > h3 > a {
+                        text-decoration: none;
+                        color: #63489d;
+                    }
+
                 .card-content__social {
                     width: 100%;
                     display: flex;

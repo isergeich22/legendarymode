@@ -473,18 +473,6 @@ seasonsButton.forEach(el => {
     
 })
 
-const partCards = document.querySelectorAll('.part-card')
-
-partCards.forEach(el => {
-    el.addEventListener('click', () => {
-        window.open(
-            `http://${window.location.host}/profile?name=${el.id}`,
-            '_blank'
-        )
-        // window.location.href = `http://${window.location.host}/profile?name=${el.id}`
-    })
-})
-
 // if(window.location.href.indexOf('home') < 0 && window.location.href.indexOf('login') < 0 && window.location.href.indexOf('change') < 0) {
 
 //     const body = document.querySelector('body')

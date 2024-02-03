@@ -172,7 +172,7 @@ app.get(['/', '/home'], async function(req, res){
                             </div>
                             <div class="part-card-content">
                                 <div class="card-content__name">
-                                    <h3>${el.name}</h3>
+                                    <h3><a href="/profile?name=${el.id}" target="_blank">${el.name}</a></h3>
                                 </div>
                                 <div class="card-content__social">`                            
             el.links.forEach(elem => {
