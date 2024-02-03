@@ -826,7 +826,7 @@ app.get('/profile', async function(req, res){
     // })
 
     profileInfo += `<div class="profile-info-achivements__event-header">
-                        <h3>Ивенты</h3>
+                        <h3>Выпуски</h3>
                     </div>`
     let maxIndex = placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.reduce((acc, curr, i) => placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[acc].placeCount > curr.placeCount ? acc : i, 0)
 
