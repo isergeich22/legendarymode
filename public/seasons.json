@@ -417,6 +417,299 @@
                     "isBonus": true
                 }
             ]
+        },
+        {
+            "seasonNumber": "2",
+            "rules": [
+                {
+                    "eventPlace": 1,
+                    "placePoints": 7
+                },
+                {
+                    "eventPlace": 2,
+                    "placePoints": 4
+                },
+                {
+                    "eventPlace": 3,
+                    "placePoints": 2
+                },
+                {
+                    "eventPlace": 4,
+                    "placePoints": 1
+                },
+                {
+                    "eventPlace": "-",
+                    "placePoints": "-"
+                }
+            ],
+            "events": [
+                {
+                    "eventNumber": "1",
+                    "eventDate": "22.11.2023",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/850Vc3MUuJg?si=Cn-vW8-JePGekjaz",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/CE0NRH92Se8?si=DbXp1nZX5zMlyuan",
+                            "videoAuthor": "WELOVEGAMES"
+                        },
+                        {
+                            "videoLink": "https://player.twitch.tv/?video=2010382000&parent=localhost&autoplay=false",
+                            "videoAuthor": "DMITRY_BALE"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/wqqz8GMitRc?si=h9SEhvcyB2fzE1Ms",
+                            "videoAuthor": "Juice"
+                        }
+                    ],
+                    "eventTitle": "",
+                    "eventHost": "vika_karter",
+                    "eventGame": "RUST",
+                    "eventDescription": "Задача игроков - выживать и набирать баллы по встроенному плагину, который ведет подсчет. Места распределяются по сумме баллов, набранных за 4 часа.",
+                    "eventResults": [
+                        {
+                            "position": "4",
+                            "player": "DMITRY_BALE"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "3",
+                            "player": "orkpod"
+                        },
+                        {
+                            "position": "1",
+                            "player": "WELOVEGAMES"
+                        }
+                    ],
+                    "isBonus": false
+                },
+                {
+                    "eventNumber": "2",
+                    "eventDate": "01.12.2023",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/d1xfQqweNzA?si=HOCME-Ui2q-R5gEY",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/dWgpnBGltlA?si=VwUy_TL6Hgfj7VkD",
+                            "videoAuthor": "WELOVEGAMES"
+                        },
+                        {
+                            "videoLink": "https://player.twitch.tv/?video=2010384485&parent=localhost&autoplay=false",
+                            "videoAuthor": "DMITRY_BALE"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/v7oQfqlHuyw?si=F1VWvzOwCCG_2woA",
+                            "videoAuthor": "Juice"
+                        }
+                    ],
+                    "eventTitle": "",
+                    "eventHost": "WELOVEGAMES",
+                    "eventGame": "Full Throttle",
+                    "eventDescription": "Играли в квест Full Throttle, на скорость. Критерий победы - кто быстрее пройдет.",
+                    "eventResults": [
+                        {
+                            "position": "3",
+                            "player": "DMITRY_BALE"
+                        },
+                        {
+                            "position": "2",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "1",
+                            "player": "orkpod"
+                        },
+                        {
+                            "position": "4",
+                            "player": "vika_karter"
+                        }
+                    ],
+                    "isBonus": false
+                },
+                {
+                    "eventNumber": "3",
+                    "eventDate": "06.12.2023",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/XTVkhdk-Jp8?si=6-1o79Ad0O7REl2E",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/GK_qe8UtMfQ?si=QGlt5_xzOWXfMAb5",
+                            "videoAuthor": "WELOVEGAMES"
+                        },
+                        {
+                            "videoLink": "https://player.twitch.tv/?video=2010385465&parent=localhost&autoplay=false",
+                            "videoAuthor": "DMITRY_BALE"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/vD4eOafAx-0?si=02ifqTcDedj84Tnb",
+                            "videoAuthor": "Juice"
+                        }
+                    ],
+                    "eventTitle": "",
+                    "eventHost": "orkpod",
+                    "eventGame": "Игры с физикой",
+                    "eventDescription": "Играли в несколько игр, базирующихся на физике.",
+                    "eventResults": [
+                        {
+                            "position": "1",
+                            "player": "DMITRY_BALE"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "4",
+                            "player": "vika_karter"
+                        },
+                        {
+                            "position": "2",
+                            "player": "WELOVEGAMES"
+                        }
+                    ],
+                    "isBonus": false
+                },
+                {
+                    "eventNumber": "4",
+                    "eventDate": "13.12.2023",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/wUQuaeqRfjk?si=_IwY0G0vfQnUNGN1",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/ARc_M_3Nv34?si=oHks47P7oAzrArns",
+                            "videoAuthor": "WELOVEGAMES"
+                        },
+                        {
+                            "videoLink": "https://player.twitch.tv/?video=2010387710&parent=localhost&autoplay=false",
+                            "videoAuthor": "DMITRY_BALE"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/Y5EKYmjmGd8?si=nWN7JaDHlIx3Ti85",
+                            "videoAuthor": "Juice"
+                        }
+                    ],
+                    "eventTitle": "",
+                    "eventHost": "DMITRY_BALE",
+                    "eventGame": "Гольф",
+                    "eventDescription": "Совместное прохождение карт в Golf With Your Friends. Участники сидели в одном дискорде и общались друг с другом",
+                    "eventResults": [
+                        {
+                            "position": "4",
+                            "player": "vika_karter"
+                        },
+                        {
+                            "position": "3",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "2",
+                            "player": "orkpod"
+                        },
+                        {
+                            "position": "1",
+                            "player": "WELOVEGAMES"
+                        }
+                    ],
+                    "isBonus": false
+                },
+                {
+                    "eventNumber": "5",
+                    "eventDate": "20.12.2023",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/_xUKjvS-B6E?si=MijGsv_3b0VMEbu8",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/5CnOnwwW1PQ?si=aYgkIeMJ62qvA-5W",
+                            "videoAuthor": "WELOVEGAMES"
+                        },
+                        {
+                            "videoLink": "https://player.twitch.tv/?video=2010390402&parent=localhost&autoplay=false",
+                            "videoAuthor": "DMITRY_BALE"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/LUUJw1pMm5c?si=5LmTSyUz-vmFgVyP",
+                            "videoAuthor": "Juice"
+                        }
+                    ],
+                    "eventTitle": "",
+                    "eventHost": "Juice",
+                    "eventGame": "Червяки",
+                    "eventDescription": "Участники играли в Червяков, преимущественно против друг друга. Так же на выпуске были гости: BRM, CAKE, BJORN, GHK",
+                    "eventResults": [
+                        {
+                            "position": "4",
+                            "player": "DMITRY_BALE"
+                        },
+                        {
+                            "position": "1",
+                            "player": "vika_karter"
+                        },
+                        {
+                            "position": "2",
+                            "player": "orkpod"
+                        },
+                        {
+                            "position": "3",
+                            "player": "WELOVEGAMES"
+                        }
+                    ],
+                    "isBonus": false
+                },
+                {
+                    "eventNumber": "6",
+                    "eventDate": "27.12.2023",
+                    "eventVideo": [
+                        {
+                            "videoLink": "https://www.youtube.com/embed/7NNZ5g5P2js?si=XvCVQXj68PvdY5Tn",
+                            "videoAuthor": "orkpod"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/ydF_GNvT4KY?si=GGC_DM_8eVnqm1uO",
+                            "videoAuthor": "WELOVEGAMES"
+                        },
+                        {
+                            "videoLink": "https://www.youtube.com/embed/bg69K7Y87o8?si=qocQpelX1wBc6tIL",
+                            "videoAuthor": "Juice"
+                        }
+                    ],
+                    "eventTitle": "",
+                    "eventHost": "WELOVEGAMES",
+                    "eventGame": "Special: Халфа",
+                    "eventDescription": "Бонусный предновогодний выпуск от WLG, в рамках которого мы проходили HL на скорость, в конце была PVP заруба.",
+                    "eventResults": [
+                        {
+                            "position": "-",
+                            "player": "DMITRY_BALE"
+                        },
+                        {
+                            "position": "-",
+                            "player": "Juice"
+                        },
+                        {
+                            "position": "-",
+                            "player": "orkpod"
+                        },
+                        {
+                            "position": "-",
+                            "player": "vika_karter"
+                        }
+                    ],
+                    "isBonus": true
+                }
+            ]
         }
     ]
 }

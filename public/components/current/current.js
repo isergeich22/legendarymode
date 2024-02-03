@@ -1,9 +1,8 @@
-exports.current = current = (seasonNumber ,content, eventsLength) =>`
+exports.current = current = (seasonNumber ,content, eventsLength, numberOfEvents) =>`
     <section class="current" id="current">
-        <div class="current-prev">
+        <!-- <div class="current-prev">
             <button id="${seasonNumber-1}" class="current-prev-button">
-            <?xml version="1.0" encoding="iso-8859-1"?>
-            <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+            <?xml version="1.0" encoding="iso-8859-1"?> Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools
             <svg fill="#63489d" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                 viewBox="0 0 512.013 512.013" xml:space="preserve">
                 <style>
@@ -94,22 +93,21 @@ exports.current = current = (seasonNumber ,content, eventsLength) =>`
                 </g>
             </svg>
             </button>
-        </div>
+        </div>-->
         <div class="current-body">
             <div class="current-body-header">
-                <h1 class="current-header__text">ТЕКУЩИЙ СЕЗОН</h1>
+                <h1 id="${seasonNumber}" class="current-header__text">${seasonNumber} СЕЗОН</h1>
             </div>
             <div class="current-body-content">
                 ${content}
             </div>
             <div class="current-body-footer">
-                <h1 class="-current-footer__text">ВЫПУСКОВ: ${eventsLength} из 11</h1>
+                <h1 class="-current-footer__text">ВЫПУСКОВ: ${eventsLength} из ${numberOfEvents}</h1>
             </div>
         </div>
-        <div class="current-next">
+        <!--<div class="current-next">
             <button id="${seasonNumber+1}" class="current-next-button">
-                <?xml version="1.0" encoding="iso-8859-1"?>
-                <!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                <?xml version="1.0" encoding="iso-8859-1"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools
                 <svg fill="#63489d" height="64px" width="64px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
                     viewBox="0 0 512.008 512.008" xml:space="preserve">
                     <g>
@@ -121,6 +119,6 @@ exports.current = current = (seasonNumber ,content, eventsLength) =>`
                     </g>
                 </svg>
             </button>
-        </div>
+        </div>-->
     </section>
 `

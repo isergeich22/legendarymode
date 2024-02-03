@@ -22,18 +22,30 @@ const seasonsButton = document.querySelectorAll('.season-number')
 const seasonBlock = document.querySelector('#seasons')
 const eventBlock = document.querySelector('#eventBody')
 
+const prevButton = document.querySelector('.current-prev-button')
+const nextButton = document.querySelector('.current-next-button')
+const currentHeader = document.querySelector('.current-header__text')
+
+// if(currentHeader.id === result.seasons.length) {
+//     nextButton.setAttribute('id', 0)
+// }
+
+// if(currentHeader.id === 1) {
+//     prevButton.setAttribute('id') = result.seasons.length-1
+// }
+
 let content = ``
 let eventButtons
 
-seasonsButton.forEach(el => {
-    el.addEventListener('click', () => {        
+seasonsButton.forEach(el => {    
+    el.addEventListener('click', () => {
         let season = (result.seasons.find(item => item.seasonNumber === el.id))
         content += `<div class="seasons-header">
                     <h1 class="seasons-header__text">${season.seasonNumber} сезон</h1>
                 </div>
                 <div id="eventsBlock" class="season-body">`
         season.events.forEach(elem => {            
-            if(parseInt(elem.eventNumber) / 5 >= 2 && parseInt(elem.eventNumber) % 5 > 0) {
+            if(elem.isBonus === true) {
 
                 content += `<div class="btn-group">
                                 <button class="btn btn-event btn-lg season-event" id="${elem.eventNumber}" type="button">
@@ -223,6 +235,55 @@ seasonsButton.forEach(el => {
                 let [firstPlace, secondPlace, thirdPlace, fourthPlace] = [event.eventResults.find(evt => evt.position === "1"), event.eventResults.find(evt => evt.position === "2"), event.eventResults.find(evt => evt.position === "3"), event.eventResults.find(evt => evt.position === "4")]
                 let [firstPlaceRule, secondPlaceRule, thirdPlaceRule, fourthPlaceRule] = [season.rules.find(rule => rule.eventPlace === 1), season.rules.find(rule => rule.eventPlace === 2), season.rules.find(rule => rule.eventPlace === 3), season.rules.find(rule => rule.eventPlace === 4)]
                 // console.log([firstPlace, secondPlace, thirdPlace, fourthPlace])
+                if(event.eventResults.findIndex(evt => evt.position === "-") >= 0) {
+
+                    content += `
+                                <div class="event-body-item text-block">
+                                    <div class="text-block-item">
+                                        <p>Ведущий:</p>
+                                        <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
+                                    </div>
+                                    <div class="text-block-item">
+                                        <p>Игра:</p>
+                                        <p>${event.eventGame}</p>
+                                    </div>
+                                    <div class="text-block-item">
+                                        <p>Название ивента:</p>
+                                        <p>${event.eventTitle}</p>
+                                    </div>
+                                    <div class="text-block-item">
+                                        <p>Дата ивента:</p>
+                                        <p>${event.eventDate}</p>
+                                    </div>
+                                    <div class="text-block-item">
+                                        <p>Краткие правила:</p>
+                                        <p>${event.eventDescription}</p>
+                                    </div>
+                                </div>
+                                <div class="results-block">                                
+                                    <div class="event-results">
+                                        <div class="event-results-header">
+                                            <h1>ИТОГИ ВЫПУСКА</h1>
+                                        </div>
+                                        <div class="event-results-item">
+                                            ${event.eventResults[0].player} - (-)
+                                        </div>
+                                        <div class="event-results-item">
+                                            ${event.eventResults[1].player} - (-)
+                                        </div>
+                                        <div class="event-results-item">
+                                            ${event.eventResults[2].player} - (-)
+                                        </div>
+                                        <div class="event-results-item">
+                                            ${event.eventResults[3].player} - (-)
+                                        </div>
+                                    </div>`
+
+                    eventBlock.innerHTML = content
+                    eventBlock.style.background = '#f7e9ff'
+                    content = ``
+
+                }
                 if(fourthPlace !== undefined && thirdPlace !== undefined) {
 
                     content += `
@@ -334,7 +395,7 @@ seasonsButton.forEach(el => {
 
                 }
 
-                if(fourthPlace === undefined && thirdPlace === undefined) {
+                if(fourthPlace === undefined && thirdPlace === undefined && event.eventResults.findIndex(evt => evt.position === "-") < 0) {
 
                     content += `
                                 <div class="event-body-item text-block">
@@ -410,6 +471,18 @@ seasonsButton.forEach(el => {
 
     })
     
+})
+
+const partCards = document.querySelectorAll('.part-card')
+
+partCards.forEach(el => {
+    el.addEventListener('click', () => {
+        window.open(
+            `http://${window.location.host}/profile?name=${el.id}`,
+            '_blank'
+        )
+        // window.location.href = `http://${window.location.host}/profile?name=${el.id}`
+    })
 })
 
 // if(window.location.href.indexOf('home') < 0 && window.location.href.indexOf('login') < 0 && window.location.href.indexOf('change') < 0) {
