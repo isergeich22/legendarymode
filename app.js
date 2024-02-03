@@ -831,13 +831,13 @@ app.get('/profile', async function(req, res){
     let maxIndex = placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.reduce((acc, curr, i) => placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[acc].placeCount > curr.placeCount ? acc : i, 0)
 
     profileInfo += `<div class="profile-info-achivements__event-item">
-                        <p>Самое частое занимаемое место в ивентах - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[maxIndex].placeValue} место</b></p>
+                        <p>Самое часто занимаемое место в выпусках - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[maxIndex].placeValue} место</b></p>
                     </div>`
 
     if(placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.findIndex(item => item.placeValue == 1) >= 0) {
 
         profileInfo += `<div class="profile-info-achivements__event-item">
-                            <p>Количество <b>1 мест</b> за все ивенты - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount}</b></p>
+                            <p>Количество <b>1 мест</b> за все выпуски - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount}</b></p>
                         </div>`
 
     }
@@ -845,7 +845,7 @@ app.get('/profile', async function(req, res){
     if(placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.findIndex(item => item.placeValue == 1) < 0) {
 
         profileInfo += `<div class="profile-info-achivements__event-item">
-                            <p>Количество <b>1 мест</b> за все ивенты - <b>0</b></p>
+                            <p>Количество <b>1 мест</b> за все выпуски - <b>0</b></p>
                         </div>`
 
     }                    
