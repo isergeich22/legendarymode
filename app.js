@@ -115,7 +115,7 @@ app.get(['/', '/home'], async function(req, res){
 
     seasonsList.seasons.forEach(el => {
 
-        seasonNav += `<li><a class="dropdown-item season-number" id="${el.seasonNumber}" href="#seasons">${el.seasonNumber} сезон</a></li>`
+        seasonNav += `<li><a class="dropdown-item season-number" id="${el.seasonNumber}">${el.seasonNumber} сезон</a></li>`
         // el.events.forEach(elem => {
         //     events += `<div class="btn-group">
         //                     <button class="btn btn-event btn-lg season-event" type="button">
@@ -278,7 +278,7 @@ app.get(['/', '/home'], async function(req, res){
                 </div>`        
     })
 
-    res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + about.about  + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
+    res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
 })
 
 app.get ('/detailed', async function(req, res){
@@ -927,6 +927,30 @@ app.get('/profile', async function(req, res){
     `
 
     res.send(header.header + nav.nav('') + profile.profile(req.query.name, profileInfo))
+
+})
+
+app.get('/seasons', async function(req, res){
+
+    let seasonNav = ``
+
+    seasonsList.seasons.forEach(el => {
+
+        seasonNav += `<li><a class="seasons-header__text season-number" id="${el.seasonNumber}">${el.seasonNumber} сезон</a></li>`
+        // el.events.forEach(elem => {
+        //     events += `<div class="btn-group">
+        //                     <button class="btn btn-event btn-lg season-event" type="button">
+        //                         ${elem.eventNumber} выпуск
+        //                     </button>
+        //                     <ul class="dropdown-menu">
+        //                         <li>Hello World</li>
+        //                     </ul>
+        //                 </div>`
+        // })
+
+    })
+
+    res.send(header.header + seasons.seasons(seasonNav) + event.eventBlock + footer.footer)
 
 })
 

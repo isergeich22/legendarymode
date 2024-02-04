@@ -14,19 +14,23 @@
     justify-content: center;
     align-items: center;
     background: #fff;
+    margin-top: 10px;
 }
 
     .seasons-header {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
-        padding: 2vh 0;
+        padding: 2vh 15px;
+        gap: 2%;
         width: 100%;
         text-align: center;
-        background: #feca6b;        
+        background: #feca6b;
+        list-style: none;
+        margin: 0;
     }
 
-    .seasons-header > h1 {
+    .seasons-header > li {
         margin: 0;
     }
 
@@ -34,6 +38,7 @@
             font-family: 'Harpseal Regular';
             font-size: 2em;
             color: #63489d;
+            text-decoration: none;
         }
 
     .season-body {
@@ -42,7 +47,7 @@
         flex-direction: row;
         justify-content: flex-start;
         align-items: center;
-        background: #f7e9ff;
+        /* background: #f7e9ff; */
         height: 50px;
     }
 

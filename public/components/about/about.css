@@ -16,6 +16,10 @@
     margin-bottom: 1vh;
 }
 
+    .about > div:first-child {
+        margin-top: 10px;
+    }
+
     .about-header {
         display: flex;
         justify-content: center;

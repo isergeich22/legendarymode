@@ -21,6 +21,7 @@ getSeasons()
 const seasonsButton = document.querySelectorAll('.season-number')
 const seasonBlock = document.querySelector('#seasons')
 const eventBlock = document.querySelector('#eventBody')
+const events = document.querySelector('#eventsBlock')
 
 const prevButton = document.querySelector('.current-prev-button')
 const nextButton = document.querySelector('.current-next-button')
@@ -39,11 +40,14 @@ let eventButtons
 
 seasonsButton.forEach(el => {    
     el.addEventListener('click', () => {
+        seasonsButton.forEach(item => {
+            if(item.id !== el.id) {
+                item.style.color = '#63489d'
+            }
+        })
+        el.style.color = '#9772ab'
+        eventBlock.innerHTML = ``
         let season = (result.seasons.find(item => item.seasonNumber === el.id))
-        content += `<div class="seasons-header">
-                    <h1 class="seasons-header__text">${season.seasonNumber} сезон</h1>
-                </div>
-                <div id="eventsBlock" class="season-body">`
         season.events.forEach(elem => {            
             if(elem.isBonus === true) {
 
@@ -70,7 +74,7 @@ seasonsButton.forEach(el => {
             }
         })
         content += `</div>`
-        seasonBlock.innerHTML = content
+        events.innerHTML = content
         content = ``
         eventButtons = document.querySelectorAll('.season-event')
         eventButtons.forEach(btn => {

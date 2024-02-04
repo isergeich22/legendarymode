@@ -1,17 +1,8 @@
 exports.nav = nav = (content) => `
     <section class="nav">
-        <div class="nav-item"><a href="/home#about">О ТУРНИРЕ</a></div>
+        <div class="nav-item"><a href="/detailed">О ТУРНИРЕ</a></div>
         <div class="nav-item"><a href="/home#news">НОВОСТИ</a></div>
         <div class="nav-item"><a href="/home#participants">УЧАСТНИКИ</a></div>
-        <div class="dropdown nav-item">
-            <a class="btn" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                Сезоны
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                ${content}
-                <!--<li><a class="dropdown-item" id="seasonNumber" href="#seasons">1 сезон</a></li>
-                <li><a class="dropdown-item" id="seasonNumber" href="#seasons">2 сезон</a></li>-->
-            </ul>
-        </div>
+        <div class="nav-item"><a class="btn" href="/seasons">Сезоны</a></div>
     </section>
 `
