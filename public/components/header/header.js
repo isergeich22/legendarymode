@@ -21,6 +21,6 @@ exports.header = header =  `
     </head>
     <body>
         <section class="header">
-            <img src="/img/logo_body.png"><h1>Легендарная <br> Сложность</h1>
+            <img src="/img/logo_body.png"><h1><a href="/">Легендарная <br> Сложность</a></h1>
         </section>
 `

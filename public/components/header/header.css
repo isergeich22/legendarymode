@@ -16,11 +16,12 @@
     /* border: 1px solid #feca6b; */
 }
 
-    .header > h1 {
+    .header > h1 > a {
         font-family: 'Harpseal Regular';
         font-size: 4rem;
         line-height: 5.5rem;
         color: #63489d;
+        text-decoration: none;
     }
 
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
