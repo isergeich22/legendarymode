@@ -278,7 +278,7 @@ app.get(['/', '/home'], async function(req, res){
                 </div>`        
     })
 
-    res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + participant.participant(parts) + seasons.seasons + event.eventBlock + footer.footer)
+    res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + participant.participant(parts) + footer.footer)
 })
 
 app.get ('/detailed', async function(req, res){
