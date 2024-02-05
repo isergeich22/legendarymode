@@ -37,7 +37,7 @@
             display: flex;
             flex-direction: row;
             gap: 5%;
-            padding: 15px;
+            padding: 0px 15px;
         }
 
             .profile-info-headers > h3 {
@@ -61,7 +61,7 @@
             flex-direction: row;
             align-items: center;
             gap: 5%;
-            padding: 15px;
+            padding: 0px 15px;
         }            
 
             .profile-info-contacts__image {

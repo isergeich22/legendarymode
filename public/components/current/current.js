@@ -96,7 +96,7 @@ exports.current = current = (seasonNumber ,content, eventsLength, numberOfEvents
         </div>-->
         <div class="current-body">
             <div class="current-body-header">
-                <h1 id="${seasonNumber}" class="current-header__text">${seasonNumber} СЕЗОН</h1>
+                <h1 id="${seasonNumber}" class="current-header__text">ТЕКУЩИЙ СЕЗОН</h1>
             </div>
             <div class="current-body-content">
                 ${content}
