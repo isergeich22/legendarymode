@@ -172,7 +172,7 @@ app.get(['/', '/home'], async function(req, res){
                             </div>
                             <div class="part-card-content">
                                 <div class="card-content__name">
-                                    <h3><a href="/profile?name=${el.id}" target="_blank">${el.name}</a></h3>
+                                    <h3><a href="/profile?name=${el.id}">${el.name}</a></h3>
                                 </div>
                                 <div class="card-content__social">`                            
             el.links.forEach(elem => {
@@ -278,12 +278,12 @@ app.get(['/', '/home'], async function(req, res){
                 </div>`        
     })
 
-    res.send(header.header + nav.nav(seasonNav) + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + participant.participant(parts) + footer.footer)
+    res.send(header.header + nav.nav + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + participant.participant(parts) + footer.footer)
 })
 
 app.get ('/detailed', async function(req, res){
 
-    res.send(header.header + detailed.detailed + footer.footer)
+    res.send(header.header + nav.nav + detailed.detailed + footer.footer)
 
 })
 
@@ -926,7 +926,7 @@ app.get('/profile', async function(req, res){
         </html>
     `
 
-    res.send(header.header + nav.nav('') + profile.profile(req.query.name, profileInfo))
+    res.send(header.header + nav.nav + profile.profile(req.query.name, profileInfo))
 
 })
 
@@ -950,7 +950,7 @@ app.get('/seasons', async function(req, res){
 
     })
 
-    res.send(header.header + seasons.seasons(seasonNav) + event.eventBlock + footer.footer)
+    res.send(header.header + nav.nav + seasons.seasons(seasonNav) + event.eventBlock + footer.footer)
 
 })
 

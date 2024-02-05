@@ -1,4 +1,4 @@
-exports.nav = nav = (content) => `
+exports.nav = nav =  `
     <section class="nav">
         <div class="nav-item"><a href="/detailed">О ТУРНИРЕ</a></div>
         <div class="nav-item"><a href="/home#news">НОВОСТИ</a></div>
