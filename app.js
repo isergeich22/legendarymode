@@ -278,7 +278,7 @@ app.get(['/', '/home'], async function(req, res){
                 </div>`        
     })
 
-    res.send(header.header + nav.nav + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + participant.participant(parts) + footer.footer)
+    res.send(header.header + nav.nav + current.current(seasonsList.seasons.length, currentResults, seasonsList.seasons[seasonsList.seasons.length - 1].events.length, seasonsList.seasons[seasonsList.seasons.length-1].events.findIndex(evt => evt.isBonus === true)+1) + news.news(newses) + about.about + participant.participant(parts) + footer.footer)
 })
 
 app.get ('/detailed', async function(req, res){
@@ -826,7 +826,7 @@ app.get('/profile', async function(req, res){
     // })
 
     profileInfo += `<div class="profile-info-achivements__event-header">
-                        <h3>Выпуски</h3>
+                        <h3>Достижения</h3>
                     </div>`
     let maxIndex = placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.reduce((acc, curr, i) => placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[acc].placeCount > curr.placeCount ? acc : i, 0)
 
@@ -863,9 +863,8 @@ app.get('/profile', async function(req, res){
                             <div class="profile-info-events-list-headers">
                                 <h3>Сезон</h3>
                                 <h3>Выпуск</h3>
-                                <h3>Дата выпуска</h3>
-                                <h3>Название выпуска</h3>
-                                <h3>Игра выпуска</h3>
+                                <h3>Дата</h3>
+                                <h3>Игра</h3>
                             </div>`
 
     seasonsList.seasons.forEach(el => {
@@ -903,7 +902,6 @@ app.get('/profile', async function(req, res){
                             <h3>${el.seasonNumber}</h3>
                             <h3>${elem.eventNumber}</h3>
                             <h3>${elem.eventDate}</h3>
-                            <h3>${elem.eventTitle}</h3>
                             <h3>${elem.eventGame}</h3>
                         </div>
                         <div class="profile-info-events-list__item-detailed empty">

@@ -47,6 +47,7 @@ seasonsButton.forEach(el => {
         })
         el.style.color = '#9772ab'
         eventBlock.innerHTML = ``
+        eventBlock.style.padding = '0'
         let season = (result.seasons.find(item => item.seasonNumber === el.id))
         season.events.forEach(elem => {            
             if(elem.isBonus === true) {
@@ -285,6 +286,7 @@ seasonsButton.forEach(el => {
 
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+                    eventBlock.style.padding = '20px'
                     content = ``
 
                 }
@@ -341,6 +343,7 @@ seasonsButton.forEach(el => {
                                 `                            
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+                    eventBlock.style.padding = '20px'
                     content = ``
 
                 }
@@ -395,6 +398,7 @@ seasonsButton.forEach(el => {
                                 `                            
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+                    eventBlock.style.padding = '20px'
                     content = ``
 
                 }
@@ -446,6 +450,7 @@ seasonsButton.forEach(el => {
                                 `                            
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+                    eventBlock.style.padding = '20px'
                     content = ``
 
                 }                

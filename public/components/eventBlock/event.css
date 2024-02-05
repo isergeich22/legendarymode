@@ -9,7 +9,7 @@
 .event {
     display: flex;
     width: 80%;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
     .event-body {
@@ -19,9 +19,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        padding: 2vh 2vh;
-        gap: 2%;        
-        margin-bottom: 3vh;
+        gap: 2%;
         background: #fff !important;
     }
 
@@ -125,6 +123,10 @@
                 border: 4px solid #63489d;
             }
 
+            .event-results {
+                height: 362px;
+            }
+
                 .event-header {
                     width: 80%;
                 }
@@ -140,12 +142,20 @@
                         border-bottom: 2px solid #63489d;
                     }
 
+                    .event-results-header {
+                        height: 60px;
+                    }
+
                         .event-results-header > h1, .season-results-header > h1 {
                             font-family: 'FortuneC regular';
                             color: #63489d;
                         }
 
-                        .season-results-header > h1 {
+                        .event-results-header > h1 {
+                            margin-bottom: 5px;
+                        }
+
+                        .event-results-header > h1, .season-results-header > h1 {
                             font-size: 1.4rem;
                         }
 
@@ -159,6 +169,10 @@
                     font-family: 'FortuneC regular';
                     border-bottom: 1px solid #63489d;
                     color: #63489d;
+                }
+
+                .event-results-item {
+                    height: 78px;
                 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait){

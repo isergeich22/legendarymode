@@ -19,7 +19,6 @@
     .header > h1 > a {
         font-family: 'Harpseal Regular';
         font-size: 4rem;
-        line-height: 5.5rem;
         color: #63489d;
         text-decoration: none;
     }
@@ -28,15 +27,21 @@
     
     .header {
         width: 100%;
-        height: 10vh;
-    }
-    .header > h1 > a {
-        font-size: 1rem;
-        line-height: 1rem;
-        margin: 0;
+        height: 60px;
     }
 
-    .header > img {
+    .header > h1 {
+        line-height: .4;
+        margin: 0;
+        height: 30px;
+    }
+
+        .header > h1 > a {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+    .header > a > img {
         width: 9vw;
     }
 
@@ -46,15 +51,22 @@
 
     .header {
         width: 100%;
-        height: 15vh;
-    }
-    .header > h1 > a {
-        font-size: 1rem;
-        line-height: 1rem;
-        margin: 0;
+        height: 58px;
     }
 
-    .header > img {
+    .header > h1 {
+        line-height: .5;
+        margin: 0;
+        height: 37px;
+    }
+
+        .header > h1 > a {
+            font-size: 1rem;
+            margin: 0;
+            height: 37px;
+        }
+
+    .header > a > img {
         width: 6vw;
     }
 
@@ -64,16 +76,25 @@
 
     .header {
         width: 100%;
-        height: 60px;
-    }
-    .header > h1 > a {
-        font-size: 1rem;
-        line-height: 1rem;
-        margin: 0;
+        height: 58px;
     }
 
-    .header > img {
-        width: 5.5%;
+        .header > a {
+            width: 30px;
+        }
+
+        .header > h1 {
+            line-height: .5;
+            margin-bottom: 5px;
+        }
+
+            .header > h1 > a {
+                font-size: 1rem;
+                margin: 0;
+            }
+
+    .header > a > img {
+        width: 100%;
     }
     
 }
@@ -84,14 +105,22 @@
         width: 100%;
         height: 60px;
     }
-    .header > h1 > a {
-        font-size: 1rem;
-        line-height: 1rem;
-        margin: 0;
-    }
 
-    .header > img {
-        width: 3.7%;
+        .header > a {
+            width: 30px;
+        }
+
+        .header > h1 {
+            line-height: .5;
+        }
+
+            .header > h1 > a {
+                font-size: 1rem;
+                margin: 0;
+            }
+
+    .header > a > img {
+        width: 100%;
     }
     
 }
@@ -103,14 +132,22 @@
         height: 100px;
     }
 
-        .header > h1 > a {
-            font-size: 1.8rem;
-            line-height: 1.8rem;
+        .header > a {
+            width: 60px;
+        }
+
+        .header > h1 {
+            line-height: .8;
             margin: 0;
         }
 
-        .header > img {
-            width: 6.5%;
+            .header > h1 > a {
+                font-size: 1.8rem;
+                margin: 0;
+            }
+
+        .header > a > img {
+            width: 85%;
         }
 
 }
@@ -122,14 +159,22 @@
         height: 100px;
     }
 
-        .header > h1 > a {
-            font-size: 1.6rem;
-            line-height: 1.6rem;
+        .header > a {
+            width: 60px;
+        }
+
+        .header > h1 {
+            line-height: .8;
             margin: 0;
         }
 
-        .header > img {
-            width: 4.5%;
+            .header > h1 > a {
+                font-size: 1.6rem;
+                margin: 0;
+            }
+
+        .header > a > img {
+            width: 85%;
         }
 
 }

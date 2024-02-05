@@ -14,7 +14,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
+    margin: 10px auto;
+    margin-top: 0;
 }
 
     .part-header {
@@ -58,7 +59,7 @@
             /* box-shadow: -10px 10px 24px -4px #63489d inset;
             -webkit-box-shadow: -10px 10px 24px -4px #63489d inset;
             -moz-box-shadow: -10px 10px 24px -4px #63489d inset; */
-            margin-bottom: .5vh;
+            margin-bottom: 5px;
             background: #f7e9ff;
         }
 
@@ -143,7 +144,7 @@
         .part-card {
             width: 100%;
             height: 150px;
-            margin-bottom: .5vh;
+            margin-bottom: 5px;
         }
 
                 .part-card-photo > img {
@@ -197,7 +198,7 @@
 
         .part-card {
             width: 100%;
-            margin-bottom: 1vh;
+            margin-bottom: 5px;
             height: 150px;
         }
 
@@ -257,7 +258,7 @@
         .part-card {
             width: 100%;
             height: 150px;
-            margin-bottom: .5vh;
+            margin-bottom: 5px;
         }
 
             .part-card-photo {
@@ -321,7 +322,7 @@
 
         .part-card {
             width: 49.75%;
-            margin-bottom: .5vh;
+            margin-bottom: 5px;
             gap: 6%;
             height: 150px;
         }
@@ -386,7 +387,7 @@
         .part-card {
             width: 100%;
             height: 200px;
-            margin-bottom: .5vh;
+            margin-bottom: 5px;
         }
 
             .part-card-photo {
@@ -451,7 +452,7 @@
         .part-card {
             width: 49.75%;
             height: 180px;
-            margin-bottom: .5vh;
+            margin-bottom: 5px;
         }
 
             .part-card-photo {
