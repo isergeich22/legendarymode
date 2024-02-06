@@ -176,7 +176,7 @@ app.get(['/', '/home'], async function(req, res){
                                 </div>
                                 <div class="card-content__social">`                            
             el.links.forEach(elem => {
-                if(elem.linkName.indexOf('twitch.tv') >= 0) {
+                if(elem.linkAddress.indexOf('twitch.tv') >= 0) {
                     parts += `<div class="card-content__social-item">
                                     <div class="card-content__social-item-icon">
                                         <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -193,7 +193,7 @@ app.get(['/', '/home'], async function(req, res){
                                     </div>
                                 </div>`
                 }
-                if(elem.linkName.indexOf('boosty.to') >= 0) {
+                if(elem.linkAddress.indexOf('boosty.to') >= 0) {
                     parts += `<div class="card-content__social-item">
                                     <div class="card-content__social-item-icon">
                                     <?xml version="1.0" encoding="utf-8"?>
@@ -215,7 +215,7 @@ app.get(['/', '/home'], async function(req, res){
                                     </div>
                                 </div>`
                 }
-                if(elem.linkName.indexOf('t.me') >= 0) {
+                if(elem.linkAddress.indexOf('t.me') >= 0) {
                     parts += `<div class="card-content__social-item">
                                     <div class="card-content__social-item-icon">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -239,7 +239,7 @@ app.get(['/', '/home'], async function(req, res){
                                     </div>
                                 </div>`
                 }
-                if(elem.linkName.indexOf('vk.com') >= 0) {
+                if(elem.linkAddress.indexOf('vk.com') >= 0) {
                     parts += `<div class="card-content__social-item">
                                     <div class="card-content__social-item-icon">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -258,7 +258,7 @@ app.get(['/', '/home'], async function(req, res){
                                     </div>
                                 </div>`
                 }
-                if(elem.linkName.indexOf('youtube.com') >= 0) {
+                if(elem.linkAddress.indexOf('youtube.com') >= 0) {
                     parts += `<div class="card-content__social-item">
                                     <div class="card-content__social-item-icon">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -307,7 +307,7 @@ app.get('/profile', async function(req, res){
 
     participants.participants[participants.participants.findIndex(prt => prt.id === req.query.name)].links.forEach(el => {
 
-        if(el.linkName.indexOf('twitch.tv') >= 0) {
+        if(el.linkAddress.indexOf('twitch.tv') >= 0) {
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -341,7 +341,7 @@ app.get('/profile', async function(req, res){
                                 </div>
                             </div>`
         }
-        if(el.linkName.indexOf('boosty') >= 0) {
+        if(el.linkAddress.indexOf('boosty') >= 0) {
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?>
@@ -382,7 +382,7 @@ app.get('/profile', async function(req, res){
                                 </div>
                             </div>`
         }
-        if(el.linkName.indexOf('vk.com') >= 0) {
+        if(el.linkAddress.indexOf('vk.com') >= 0) {
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -421,7 +421,7 @@ app.get('/profile', async function(req, res){
                                 </div>
                             </div>`
         }
-        if(el.linkName.indexOf('youtube') >= 0) {
+        if(el.linkAddress.indexOf('youtube') >= 0) {
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
@@ -456,7 +456,7 @@ app.get('/profile', async function(req, res){
                                 </div>
                             </div>`
         }
-        if(el.linkName.indexOf('t.me') >= 0) {
+        if(el.linkAddress.indexOf('t.me') >= 0) {
             profileInfo += `<div class="profile-info-contacts__links-item">
                                 <div class="profile-info-contacts__links-item__svg">
                                     <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->

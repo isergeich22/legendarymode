@@ -46,6 +46,7 @@ seasonsButton.forEach(el => {
             }
         })
         el.style.color = '#9772ab'
+        events.innerHTML = ``
         eventBlock.innerHTML = ``
         eventBlock.style.padding = '0'
         let season = (result.seasons.find(item => item.seasonNumber === el.id))

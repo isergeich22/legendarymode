@@ -148,7 +148,7 @@
         }
 
                 .part-card-photo > img {
-                    width: 30vw;
+                    width: 100%;
                 }
 
                 .card-content__name {
@@ -209,7 +209,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 100%;
+                    width: 80%;
                 }
 
                 .card-content__name {
@@ -334,7 +334,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 13vw;
+                    width: 100%;
                 }
 
                 .card-content__name {

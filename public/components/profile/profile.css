@@ -36,19 +36,24 @@
             display: flex;
             flex-direction: row;
             gap: 5%;
-            padding: 0px 15px;
+            padding: 10px 15px;
         }
 
             .profile-info-headers > h3 {
                 color: #63489d;
                 font-family: 'Harpseal Regular';
-                font-size: 1.5rem;
+                font-size: 1.2rem;
                 text-align: center;
+                margin: 0;
                 width: 43%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
             }
 
             .profile-info-headers > h3:first-child {
                 width: 27%;
+                text-align: right;
             }
 
             .profile-info-headers > h3:nth-child(2) {
@@ -58,13 +63,15 @@
         .profile-info-contacts {
             display: flex;
             flex-direction: row;
-            align-items: center;
+            align-items: flex-start;
             gap: 5%;
             padding: 0px 15px;
         }            
 
             .profile-info-contacts__image {
                 width: 27%;
+                display: flex;
+                justify-content: center;
             }
 
                 .profile-info-contacts__image > h3 {
@@ -352,10 +359,13 @@
 
         .profile-info-contacts__image {
             width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
             .profile-info-contacts__image > img {
-                width: 100%;
+                width: 50%;
             }
 
         .profile-info-contacts__links {
@@ -434,7 +444,7 @@
 
 }
 
-@media screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
+@media only screen and (min-width: 320px) and (max-width: 480px) and (orientation: landscape) {
 
     .profile-header__text {
         font-size: 1.5rem;

@@ -6,19 +6,19 @@
             "name": "Вика Картер",
             "links": [
                 {
-                    "linkName": "twitch.tv/vika_karter",
+                    "linkName": "Стримы на Twitch",
                     "linkAddress": "https://www.twitch.tv/vika_karter"
                 },
                 {
-                    "linkName": "boosty.to/karter",
+                    "linkName": "Поддержать на Boosty",
                     "linkAddress": "https://boosty.to/karter"
                 },
                 {
-                    "linkName": "t.me/karter_info",
+                    "linkName": "Канал в Telegram",
                     "linkAddress": "https://t.me/karter_info"
                 },
                 {
-                    "linkName": "vk.com/vikakarter",
+                    "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/vikakarter"
                 }
             ]
@@ -29,19 +29,19 @@
             "name": "Орк-Подкастер",
             "links": [
                 {
-                    "linkName": "twitch.tv/orkpod",
+                    "linkName": "Стримы на Twitch",
                     "linkAddress": "https://www.twitch.tv/orkpod"
                 },
                 {
-                    "linkName": "boosty.to/orkpod",
+                    "linkName": "Поддержать на Boosty",
                     "linkAddress": "https://boosty.to/orkpod"
                 },
                 {
-                    "linkName": "t.me/orkpodcaster",
+                    "linkName": "Канал в Telegram",
                     "linkAddress": "https://t.me/orkpodcaster"
                 },
                 {
-                    "linkName": "vk.com/orktwitch",
+                    "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/orktwitch"
                 }
             ]
@@ -52,19 +52,19 @@
             "name": "Денис WELOVEGAMES",
             "links": [
                 {
-                    "linkName": "twitch.tv/welovegames",
+                    "linkName": "Стримы на Twitch",
                     "linkAddress": "https://www.twitch.tv/welovegames"
                 },
                 {
-                    "linkName": "boosty.to/welovegames",
+                    "linkName": "Поддержать на Boosty",
                     "linkAddress": "https://boosty.to/welovegames"
                 },
                 {
-                    "linkName": "t.me/welovegames",
+                    "linkName": "Канал в Telegram",
                     "linkAddress": "https://t.me/welovegames"
                 },
                 {
-                    "linkName": "vk.com/welovegames",
+                    "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/welovegames"
                 }
             ]
@@ -75,7 +75,7 @@
             "name": "Дмитрий Бейл",
             "links": [
                 {
-                    "linkName": "twitch.tv/dmitry_bale",
+                    "linkName": "Стримы на Twitch",
                     "linkAddress": "https://www.twitch.tv/dmitry_bale"
                 },
                 {
@@ -83,11 +83,11 @@
                     "linkAddress": "https://www.youtube.com/channel/UCcAQJDkK-Xf-YGCGAdAY3Ig"
                 },
                 {
-                    "linkName": "t.me/DmitryBaleOfficial",
+                    "linkName": "Канал в Telegram",
                     "linkAddress": "https://t.me/DmitryBaleOfficial"
                 },
                 {
-                    "linkName": "vk.com/dmitrybaleofficial",
+                    "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/dmitrybaleofficial"
                 }
             ]
@@ -98,19 +98,19 @@
             "name": "Михаил Джус",
             "links": [
                 {
-                    "linkName": "twitch.tv/juice",
+                    "linkName": "Стримы на Twitch",
                     "linkAddress": "https://www.twitch.tv/juice"
                 },
                 {
-                    "linkName": "boosty.to/juice",
+                    "linkName": "Поддержать на Boosty",
                     "linkAddress": "https://boosty.to/juice"
                 },
                 {
-                    "linkName": "t.me/Juice_live",
+                    "linkName": "Канал в Telegram",
                     "linkAddress": "https://t.me/Juice_live"
                 },
                 {
-                    "linkName": "vk.com/juicelive",
+                    "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/juicelive"
                 }
             ]

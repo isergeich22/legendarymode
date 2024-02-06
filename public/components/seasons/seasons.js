@@ -1,4 +1,4 @@
-exports.seasons = seasons = (list) =>`
+exports.seasons = seasons = (list, content) =>`
     <section id="seasons" class="seasons">
         <ul class="seasons-header">
             ${list}
