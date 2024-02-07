@@ -201,12 +201,12 @@
                 }
 
         .text-block {
-            padding: 2vh;
+            /* padding: 2vh; */
             height: 270px;
         }
 
         .text-block-item {
-            margin-bottom: 2vh;
+            /* margin-bottom: 2vh; */
         }
 
             .text-block-item > p:first-child {
