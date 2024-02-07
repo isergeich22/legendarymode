@@ -9,7 +9,7 @@
 .event {
     display: flex;
     width: 80%;
-    margin: 10px auto;
+    /* margin: 10px auto; */
 }
 
     .event-body {
@@ -152,7 +152,7 @@
                         }
 
                         .event-results-header > h1 {
-                            margin-bottom: 5px;
+                            /* margin-bottom: 5px; */
                         }
 
                         .event-results-header > h1, .season-results-header > h1 {
@@ -201,12 +201,12 @@
                 }
 
         .text-block {
-            padding: 2vh;
+            /* padding: 2vh; */
             height: 270px;
         }
 
         .text-block-item {
-            margin-bottom: 2vh;
+            /* margin-bottom: 2vh; */
         }
 
             .text-block-item > p:first-child {
