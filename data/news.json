@@ -1,4 +1,9 @@
 {
     "news": [
+        {
+            "newsType": "anouncement",
+            "newsHeader": "АНОНС - 3 СЕЗОН",
+            "newsContent": "/img/anouncement_3_season.png"
+        }
     ]
 }

@@ -557,7 +557,15 @@ app.get('/profile', async function(req, res){
 
     profileInfo += `<div class="profile-info-achivements__season-header">
                         <h3>Сезоны</h3>
+                    </div>
+                    <div class="profile-info-achivements__season-item-header">
+                        <h4></h4>
+                        <h4>Сезон</h4>
+                        <h4>Место</h4>
+                        <h4>Баллы</h4>
                     </div>`
+
+    let events = 0
 
     seasons.forEach(elem => {
         elem.forEach(el => {
@@ -766,6 +774,7 @@ app.get('/profile', async function(req, res){
                 if(values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 4 || values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 5) {
                     profileInfo += `
                         <div class="profile-info-achivements__season-item">
+                            <p></p>
                             <p>${el.seasonNumber} сезон</p>
                             <p>${values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1} место</p>
                             <p>${el.seasonPoints}</p>
@@ -774,6 +783,10 @@ app.get('/profile', async function(req, res){
                 }
             }
         })
+    })
+
+    seasonsList.seasons.forEach(el => {
+        events += el.events.length
     })
 
     let eventResult = []
@@ -831,13 +844,13 @@ app.get('/profile', async function(req, res){
     let maxIndex = placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.reduce((acc, curr, i) => placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[acc].placeCount > curr.placeCount ? acc : i, 0)
 
     profileInfo += `<div class="profile-info-achivements__event-item">
-                        <p>Самое часто занимаемое место в выпусках - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[maxIndex].placeValue} место</b></p>
+                        <p>Самое часто занимаемое место в выпусках - </p><p><b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat[maxIndex].placeValue} место</b></p>
                     </div>`
 
     if(placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.findIndex(item => item.placeValue == 1) >= 0) {
 
         profileInfo += `<div class="profile-info-achivements__event-item">
-                            <p>Количество <b>1 мест</b> за все выпуски - <b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount}</b></p>
+                            <p>Общее количество&nbsp<b>побед</b></p><p><b>${placeResult[placeResult.findIndex(item => item.player === req.query.name)].stat.find(item => item.placeValue == 1).placeCount} из ${events}</b></p>
                         </div>`
 
     }

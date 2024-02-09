@@ -88,8 +88,8 @@
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait) {
 
     .current {
-        width: 30%;
-        height: 60px;
+        width: 40%;
+        height: 100px;
         gap: 7.5%;
     }
 
@@ -98,7 +98,7 @@
         }
 
         .current-body {
-            height: 40px;
+            height: 80px;
         }
 
                 .current-body-header, .current-body-footer {
@@ -106,16 +106,16 @@
                 }
 
                     .current-body-header > h1 {
-                        font-size: .3rem;
+                        font-size: .5rem;
                     }
 
                     .current-body-footer > h1 {
-                        font-size: .2rem;
+                        font-size: .3rem;
                     }
 
                     .current-body-content__item {
-                        font-size: .3rem;
-                        height: 5px;
+                        font-size: .4rem;
+                        height: 12px;
                     }
 
 }
@@ -124,7 +124,7 @@
 
     .current {
         width: 30%;
-        height: 60px;
+        height: 100px;
         gap: 7.5%;
     }
 
@@ -141,16 +141,16 @@
                 }
 
                     .current-body-header > h1 {
-                        font-size: .3rem;
+                        font-size: .5rem;
                     }
 
                     .current-body-footer > h1 {
-                        font-size: .2rem;
+                        font-size: .3rem;
                     }
 
                     .current-body-content__item {
-                        font-size: .3rem;
-                        height: 5px;
+                        font-size: .4rem;
+                        height: 12px;
                     }
     
 }
@@ -158,8 +158,8 @@
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
     
     .current {
-        width: 30%;
-        height: 90px;
+        width: 50%;
+        height: 150px;
         gap: 7.5%;
     }
 
@@ -172,20 +172,20 @@
         }
 
                 .current-body-header, .current-body-footer {
-                    height: 10px;
+                    height: 20px;
                 }
 
                     .current-body-header > h1 {
-                        font-size: .4rem;
+                        font-size: .6rem;
                     }
 
                     .current-body-footer > h1 {
-                        font-size: .3rem;
+                        font-size: .4rem;
                     }
 
                     .current-body-content__item {
-                        font-size: .4rem;
-                        height: 10px;
+                        font-size: .6rem;
+                        height: 22px;
                     }
 
 }
@@ -193,8 +193,8 @@
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: landscape) {
 
     .current {
-        width: 30%;
-        height: 190px;
+        width: 40%;
+        height: 150px;
         gap: 7.5%;
     }
 
@@ -203,7 +203,7 @@
         }
 
         .current-body {
-            height: 155px;
+            height: 40px;
         }
 
                 .current-body-header, .current-body-footer {
@@ -211,16 +211,16 @@
                 }
 
                     .current-body-header > h1 {
-                        font-size: .8rem;
-                    }
-
-                    .current-body-footer > h1 {
                         font-size: .6rem;
                     }
 
+                    .current-body-footer > h1 {
+                        font-size: .4rem;
+                    }
+
                     .current-body-content__item {
-                        font-size: .8rem;
-                        height: 20px;
+                        font-size: .6rem;
+                        height: 22px;
                     }
     
 }
@@ -228,8 +228,8 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: portrait) {
 
     .current {
-        width: 30%;
-        height: 190px;
+        width: 35%;
+        height: 170px;
         gap: 7.5%;
     }
 
@@ -263,8 +263,8 @@
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
 
     .current {
-        width: 30%;
-        height: 190px;
+        width: 35%;
+        height: 170px;
         gap: 7.5%;
     }
 
