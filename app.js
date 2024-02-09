@@ -138,14 +138,10 @@ app.get(['/', '/home'], async function(req, res){
             if(el.newsContent.indexOf('img') >= 0) {
 
                 newses += `<div class="news-card">
-                            <div class="news-card-header">
-                                ${el.newsHeader}
-                            </div>
-                            <div class="news-card-body">
-                                <img class="news-card-body__image" src="${el.newsContent}">
-                                <div class="news-card-body__date">${el.newsDate}</div>
-                            </div>
-                        </div>`
+                                <div class="news-card-body">
+                                    <img class="news-card-body__image" src="${el.newsContent}">
+                                </div>
+                            </div>`
 
             } else {
 
@@ -573,7 +569,6 @@ app.get('/profile', async function(req, res){
                         <h3>Сезоны</h3>
                     </div>
                     <div class="profile-info-achivements__season-item-header">
-                        <h4></h4>
                         <h4>Сезон</h4>
                         <h4>Место</h4>
                         <h4>Баллы</h4>
@@ -587,8 +582,8 @@ app.get('/profile', async function(req, res){
                 if(values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 1) {
                     profileInfo += `
                         <div class="profile-info-achivements__season-item">
-                            <div class="profile-info-achivements__season-item-medal">
-                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <!--<div class="profile-info-achivements__season-item-medal">
+                                <?xml version="1.0" encoding="utf-8"?> Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools
                                 <svg width="48px" height="48px" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet">
                                     <style>
 
@@ -643,7 +638,7 @@ app.get('/profile', async function(req, res){
                                     <path d="M25.51 3.72c-.63.58 23.46 43.48 23.46 43.48s4.04.52 13.06.6s13.49-.52 13.49-.52S56.79 4.15 55.67 3.72c-.55-.22-7.97-.3-15.22-.38c-7.26-.09-14.34-.18-14.94.38z" fill="#2e9df4">
                                     </path>
                                 </svg>
-                            </div>
+                            </div>-->
                             <p>${el.seasonNumber} сезон</p>
                             <p>${values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1} место</p>
                             <p>${el.seasonPoints}</p>
@@ -654,8 +649,8 @@ app.get('/profile', async function(req, res){
                 if(values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 2) {
                     profileInfo += `
                         <div class="profile-info-achivements__season-item">
-                            <div class="profile-info-achivements__season-item-medal">
-                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <!--<div class="profile-info-achivements__season-item-medal">
+                                <?xml version="1.0" encoding="utf-8"?> Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools
                                 <svg width="48px" height="48px" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet">
                                     <style>
 
@@ -710,7 +705,7 @@ app.get('/profile', async function(req, res){
                                             4.34-5c3.83-3.31 6.9-7.86 6.08-13.24c-1.7-11.12-12.9-11.53-17.75-7.66c-4.73 3.77-3.71 10.27-.35 10.31z" fill="#9b9b9d">
                                     </path>
                                 </svg>
-                            </div>
+                            </div>-->
                             <p>${el.seasonNumber} сезон</p>
                             <p>${values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1} место</p>
                             <p>${el.seasonPoints}</p>
@@ -721,8 +716,8 @@ app.get('/profile', async function(req, res){
                 if(values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 3) {
                     profileInfo += `
                         <div class="profile-info-achivements__season-item">
-                            <div class="profile-info-achivements__season-item-medal">
-                                <?xml version="1.0" encoding="utf-8"?><!-- Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools -->
+                        <!--<div class="profile-info-achivements__season-item-medal">
+                                <?xml version="1.0" encoding="utf-8"?>Uploaded to: SVG Repo, www.svgrepo.com, Generator: SVG Repo Mixer Tools 
                                 <svg width="48px" height="48px" id="Layer_1" viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--noto" preserveAspectRatio="xMidYMid meet">
                                     <style>
 
@@ -777,7 +772,7 @@ app.get('/profile', async function(req, res){
                                             2.61-6.04 1.44-7.62-.14c-2.09-2.09-4.18-.89-4.88-.07c-1.1 1.3-2.27 4.26 1.79 7.14c4.05 2.88 16.34 3.43 18.82-5.49c2.16-7.79-2.88-10.99-2.88-10.99s2.57-2.95 1.91-8.68z" fill="#d25116">
                                     </path>
                                 </svg>
-                            </div>
+                            </div>-->
                             <p>${el.seasonNumber} сезон</p>
                             <p>${values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1} место</p>
                             <p>${el.seasonPoints}</p>
@@ -788,7 +783,6 @@ app.get('/profile', async function(req, res){
                 if(values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 4 || values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1 === 5) {
                     profileInfo += `
                         <div class="profile-info-achivements__season-item">
-                            <p></p>
                             <p>${el.seasonNumber} сезон</p>
                             <p>${values[seasons.indexOf(elem)].indexOf(el.seasonPoints)+1} место</p>
                             <p>${el.seasonPoints}</p>

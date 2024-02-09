@@ -151,7 +151,7 @@
                     }
 
                         .profile-info-achivements__season-item-header > h4 {
-                            width: 21.25%;
+                            width: 30%;
                             color: #63489d;
                             font-family: 'Harpseal Regular';
                             margin: 0;
@@ -164,14 +164,14 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 21.25%;
+                            width: 30%;
                             height: 60px;
                             border-right: 2px solid #63489d;
                         }
 
                         .profile-info-achivements__season-item > p, .profile-info-achivements__event-item > p {
                             margin: 0;
-                            width: 21.25%;
+                            width: 30%;
                             height: 60px;
                             color: #63489d;
                             font-family: 'FortuneC regular';

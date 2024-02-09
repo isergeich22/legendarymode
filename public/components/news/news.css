@@ -39,7 +39,7 @@
 
     .news-card {
         width: 100%;        
-        padding: 20px;
+        /* padding: 20px; */
         background: #f7e9ff;
         display: flex;
         flex-direction: column;
@@ -67,7 +67,7 @@
                 }
 
                 .news-card-body__image {
-                    width: 70%;
+                    width: 100%;
                 }
 
                     .empty-news {
@@ -95,7 +95,7 @@
             }
 
         .news-card {        
-            padding: 10px;
+            /* padding: 10px; */
         }
 
             .news-card-header {
@@ -103,7 +103,7 @@
             }
 
             .news-card-body__image {
-                width: 90%;
+                width: 100%;
             }
 
             .news-card-body > p {
@@ -134,7 +134,7 @@
             }
 
         .news-card {
-            padding: 10px;
+            /* padding: 10px; */
         }
 
             .news-card-header {
@@ -142,7 +142,7 @@
             }
 
             .news-card-body__image {
-                width: 90%;
+                width: 100%;
             }
 
             .news-card-body > p {
@@ -173,7 +173,7 @@
             }
 
         .news-card {
-            padding: 10px;
+            /* padding: 10px; */
         }
 
             .news-card-header {
@@ -181,7 +181,7 @@
             }
 
             .news-card-body__image {
-                width: 90%;
+                width: 100%;
             }
 
             .news-card-body > p {
@@ -216,7 +216,7 @@
             }
 
         .news-card {
-            padding: 10px;
+            /* padding: 10px; */
         }
 
             .news-card-header {
@@ -224,7 +224,7 @@
             }
 
             .news-card-body__image {
-                width: 90%;
+                width: 100%;
             }
 
             .news-card-body > p {
@@ -259,7 +259,7 @@
             }
 
         .news-card {
-            padding: 10px;
+            /* padding: 10px; */
         }
 
             .news-card-header {
@@ -267,7 +267,7 @@
             }
 
             .news-card-body__image {
-                width: 90%;
+                width: 100%;
             }
 
             .news-card-body > p {
@@ -301,7 +301,7 @@
             }
 
         .news-card {
-            padding: 10px;
+            /* padding: 10px; */
         }
 
             .news-card-header {
@@ -309,7 +309,7 @@
             }
 
             .news-card-body__image {
-                width: 90%;
+                width: 100%;
             }
 
             .news-card-body > p {
