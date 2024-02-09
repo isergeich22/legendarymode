@@ -135,17 +135,31 @@ app.get(['/', '/home'], async function(req, res){
         
         newsList.news.forEach(el => {
 
-            newses += `<div class="news-card">
-                        <div class="news-card-header">
-                            ${el.newsHeader}
-                        </div>
-                        <div class="news-card-body">
-                            <p>
-                                ${el.newsText}
-                            </p>
-                            <div class="news-card-body__date">${el.newsDate}</div>
-                        </div>
-                    </div>`
+            if(el.newsContent.indexOf('img') >= 0) {
+
+                newses += `<div class="news-card">
+                            <div class="news-card-header">
+                                ${el.newsHeader}
+                            </div>
+                            <div class="news-card-body">
+                                <img class="news-card-body__image" src="${el.newsContent}">
+                                <div class="news-card-body__date">${el.newsDate}</div>
+                            </div>
+                        </div>`
+
+            } else {
+
+                newses += `<div class="news-card">
+                            <div class="news-card-header">
+                                ${el.newsHeader}
+                            </div>
+                            <div class="news-card-body">
+                                <p>${el.newsContent}</p>
+                                <div class="news-card-body__date">${el.newsDate}</div>
+                            </div>
+                        </div>`
+
+            }
 
         })
 

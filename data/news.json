@@ -3,7 +3,8 @@
         {
             "newsType": "anouncement",
             "newsHeader": "АНОНС - 3 СЕЗОН",
-            "newsContent": "/img/anouncement_3_season.png"
+            "newsContent": "/img/anouncement_3_season.png",
+            "newsDate": "09.02.2024"
         }
     ]
 }

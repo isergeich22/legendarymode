@@ -445,6 +445,10 @@
                     font-size: .7rem;
                 }
 
+                .profile-info-achivements__season-item-medal {
+                    height: 40px;
+                }
+
                 .profile-info-achivements__event-item > p:first-child {
                     font-size: .5rem;
                 }
