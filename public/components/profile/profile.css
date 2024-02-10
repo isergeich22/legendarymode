@@ -323,13 +323,14 @@
                     .profile-info-events-list__item-detailed__desc-hide {
                         width: 100%;
                         display: flex;
-                        flex-direction: column;
+                        flex-direction: row;
                         justify-content: flex-end;
                         align-items: flex-end;
+                        gap: 5%;
                     }
 
                         .profile-info-events-list__item-detailed__desc-hide > button {
-                            width: 60%;
+                            width: 47.5%;
                             background: none;
                             height: 50px;
                             border: 1px solid #63489d;
@@ -338,10 +339,20 @@
                             transition: .2s ease-in-out;
                         }
 
+                            .profile-info-events-list__item-detailed__desc-hide > button > a {
+                                text-decoration: none;
+                                color: #63489d;
+                                font-family: 'FortuneC regular';
+                            }
+
                         .profile-info-events-list__item-detailed__desc-hide > button:hover {
                             background: #63489d;
                             color: #f7e9ff;
                             transition: .2s ease-in-out;
+                        }
+
+                        .profile-info-events-list__item-detailed__desc-hide > button:hover > a {
+                            color: #f7e9ff;
                         }
 
                         .profile-info-events-list__item-detailed__desc-item {

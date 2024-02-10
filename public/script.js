@@ -322,6 +322,9 @@ seasonsButton.forEach(el => {
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
                         eventBlock.style.height = '1200px'
                         document.querySelector('.event-replays').style.width = "94%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
                         eventBlock.style.height = '1000px'
@@ -419,6 +422,9 @@ seasonsButton.forEach(el => {
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
                         eventBlock.style.height = '1200px'
                         document.querySelector('.event-replays').style.width = "94%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
                         eventBlock.style.height = '1000px'
@@ -514,6 +520,9 @@ seasonsButton.forEach(el => {
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
                         eventBlock.style.height = '1200px'
                         document.querySelector('.event-replays').style.width = "94%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
                         eventBlock.style.height = '1000px'
@@ -606,6 +615,9 @@ seasonsButton.forEach(el => {
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
                         eventBlock.style.height = '1200px'
                         document.querySelector('.event-replays').style.width = "94%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
                         eventBlock.style.height = '1000px'
@@ -638,6 +650,9 @@ seasonsButton.forEach(el => {
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
                         eventBlock.style.height = '1200px'
                         document.querySelector('.event-replays').style.width = "94%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
                         eventBlock.style.height = '1000px'                        
