@@ -20,6 +20,14 @@
                 {
                     "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/vikakarter"
+                },
+                {
+                    "linkName": "Архив стримов",
+                    "linkAddress": "https://archive.vikarter.club"
+                },
+                {
+                    "linkName": "Discord сервер",
+                    "linkAddress": "https://discord.com/invite/mNvaebx"
                 }
             ]
         },
@@ -43,6 +51,14 @@
                 {
                     "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/orktwitch"
+                },
+                {
+                    "linkName": "Нарезки стримов",
+                    "linkAddress": "https://www.youtube.com/@orkcut"
+                },
+                {
+                    "linkName": "Архив стримов",
+                    "linkAddress": "https://youtube.com/orkstream"
                 }
             ]
         },
@@ -60,12 +76,24 @@
                     "linkAddress": "https://boosty.to/welovegames"
                 },
                 {
-                    "linkName": "Канал в Telegram",
+                    "linkName": "Новостной Telegram",
                     "linkAddress": "https://t.me/welovegames"
                 },
                 {
-                    "linkName": "Паблик Вконтакте",
+                    "linkName": "Сообщество Вконтакте",
                     "linkAddress": "https://vk.com/welovegames"
+                },
+                {
+                    "linkName": "Сообщество Discord",
+                    "linkAddress": "https://discord.com/invite/welovegames"
+                },
+                {
+                    "linkName": "Нарезки со стримов",
+                    "linkAddress": "https://youtube.com/welovegames"
+                },
+                {
+                    "linkName": "Записи трансляций",
+                    "linkAddress": "https://youtube.com/@wlgvods"
                 }
             ]
         },
@@ -89,6 +117,10 @@
                 {
                     "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/dmitrybaleofficial"
+                },
+                {
+                    "linkName": "Discord сервер",
+                    "linkAddress": "https://discord.com/invite/RVYmH97d2K"
                 }
             ]
         },
@@ -112,6 +144,18 @@
                 {
                     "linkName": "Паблик Вконтакте",
                     "linkAddress": "https://vk.com/juicelive"
+                },
+                {
+                    "linkName": "Discord сервер",
+                    "linkAddress": "https://discord.com/invite/juice"
+                },
+                {
+                    "linkName": "Нарезки от Мишани",
+                    "linkAddress": "https://www.youtube.com/channel/UCydActh6Uv9b1orr1H1l7fw"
+                },
+                {
+                    "linkName": "Записи трансляций",
+                    "linkAddress": "https://www.youtube.com/channel/UCQ6HGf4nMGaYfTb11ybI6gA"
                 }
             ]
         }

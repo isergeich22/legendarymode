@@ -157,6 +157,7 @@
 
                         .event-results-header > h1, .season-results-header > h1 {
                             font-size: 1.4rem;
+                            margin: 0;
                         }
 
                 .event-results-item, .season-results-item {
@@ -173,6 +174,55 @@
 
                 .event-results-item {
                     height: 78px;
+                }
+
+    .event-replays {
+        width: 94%;
+        height: 79px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;        
+        border: 4px solid #63489d;
+    }
+
+        .event-replays > h4 {
+            margin: 0;
+            width: 100%;
+            height: 30px;
+            font-family: 'FortuneC regular';
+            color: #63489d;
+            font-size: 1.4rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-bottom: 1px solid #63489d;
+        }
+
+        .event-replays-body {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                width: 100%;
+                height: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-left: 1px solid #63489d;
+            }
+
+                .event-replays-body__item-link {
+                    font-family: 'FortuneC regular';
+                    color: #63489d;
+                    font-size: 1.2rem;  
                 }
 
 @media screen and (min-width: 320px) and (max-width: 480px) and (orientation: portrait){
@@ -252,6 +302,23 @@
                     font-size: .7rem;
                     height: 30px;
                 }
+
+    .event-replays {
+        height: 202px;
+    }
+
+        .event-replays-body {
+            flex-direction: column;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                border-top: 1px solid #63489d;
+                border-left: none;
+            }
 
 }
 
@@ -333,6 +400,23 @@
                     height: 30px;
                 }
 
+    .event-replays {
+        height: 202px;
+    }
+
+        .event-replays-body {
+            flex-direction: column;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                border-top: 1px solid #63489d;
+                border-left: none;
+            }
+
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) and (orientation: portrait) {
@@ -412,6 +496,23 @@
                     font-size: .7rem;
                     height: 30px;
                 }
+
+    .event-replays {
+        height: 202px;
+    }
+
+        .event-replays-body {
+            flex-direction: column;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                border-top: 1px solid #63489d;
+                border-left: none;
+            }
     
 }
 
@@ -491,6 +592,23 @@
                     font-size: .7rem;
                     height: 30px;
                 }
+
+    .event-replays {
+        height: 202px;
+    }
+
+        .event-replays-body {
+            flex-direction: column;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                border-top: 1px solid #63489d;
+                border-left: none;
+            }
     
 }
 
@@ -572,6 +690,23 @@
                     height: 30px;
                 }
 
+    .event-replays {
+        height: 202px;
+    }
+
+        .event-replays-body {
+            flex-direction: column;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                border-top: 1px solid #63489d;
+                border-left: none;
+            }
+
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
@@ -650,6 +785,23 @@
                     font-size: .7rem;
                     height: 30px;
                 }
+
+    .event-replays {
+        height: 202px;
+    }
+
+        .event-replays-body {
+            flex-direction: column;
+        }
+
+            .event-replays-body > div:first-child {
+                border: none;
+            }
+
+            .event-replays-body__item {
+                border-top: 1px solid #63489d;
+                border-left: none;
+            }
 
 }
 

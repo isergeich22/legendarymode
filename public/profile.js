@@ -10,6 +10,8 @@ async function getSeasons() {
 
 getSeasons()
 
+let status = false
+
 events.forEach(el => {
 
             el.addEventListener('click', () => {
@@ -18,7 +20,9 @@ events.forEach(el => {
 
                 let event = result.seasons[result.seasons.findIndex(ssn => ssn.seasonNumber === el.children[0].innerHTML)].events[index]
 
-                if(el.parentNode.children[1].classList.contains('empty') === true) {
+                if(el.parentNode.children[1].classList.contains('hide') === true) {
+
+                    el.parentNode.children[1].classList.remove('hide')
 
                     if(event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost) >= 0) {
 
@@ -94,7 +98,11 @@ events.forEach(el => {
 
                         })
 
-                }                
+                }
+                
+                if(el.parentNode.children[1].classList.contains('hide') === false) {
+                    el.parentNode.children[1].classList.add('hide')
+                }
                         
             })
     

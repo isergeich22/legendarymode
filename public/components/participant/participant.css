@@ -143,7 +143,7 @@
 
         .part-card {
             width: 100%;
-            height: 150px;
+            height: 160px;
             margin-bottom: 5px;
         }
 
@@ -161,7 +161,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 25px;
+                        height: 15px;
                     }
 
                         .card-content__social-item-icon {
@@ -199,7 +199,7 @@
         .part-card {
             width: 100%;
             margin-bottom: 5px;
-            height: 150px;
+            height: 160px;
         }
 
             .part-card-photo {
@@ -222,7 +222,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 25px;
+                        height: 15px;
                     }
 
                         .card-content__social-item-icon {
@@ -257,7 +257,7 @@
 
         .part-card {
             width: 100%;
-            height: 150px;
+            height: 160px;
             margin-bottom: 5px;
         }
 
@@ -268,7 +268,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 22vw;
+                    width: 90%;
                 }
 
                 .card-content__name {
@@ -281,7 +281,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 3vh;
+                        height: 15px;
                     }
 
                         .card-content__social-item-icon {
@@ -324,7 +324,7 @@
             width: 49.75%;
             margin-bottom: 5px;
             gap: 6%;
-            height: 150px;
+            height: 160px;
         }
 
             .part-card-photo {
@@ -347,7 +347,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 25px;
+                        height: 15px;
                     }
 
                         .card-content__social-item-icon {
@@ -397,7 +397,7 @@
             }
 
                 .part-card-photo > img {
-                    width: 15vw;
+                    width: 90%;
                 }
 
                 .card-content__name {
@@ -410,7 +410,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 30px;
+                        height: 20px;
                     }
 
                         .card-content__social-item-icon {
@@ -451,7 +451,7 @@
 
         .part-card {
             width: 49.75%;
-            height: 180px;
+            height: 200px;
             margin-bottom: 5px;
         }
 
@@ -475,7 +475,7 @@
                 }
 
                     .card-content__social-item {
-                        height: 30px;
+                        height: 15px;
                     }
 
                         .card-content__social-item-icon {

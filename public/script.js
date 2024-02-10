@@ -49,6 +49,7 @@ seasonsButton.forEach(el => {
         events.innerHTML = ``
         eventBlock.innerHTML = ``
         eventBlock.style.padding = '0'
+        eventBlock.style.height = '0px'
         let season = (result.seasons.find(item => item.seasonNumber === el.id))
         season.events.forEach(elem => {            
             if(elem.isBonus === true) {
@@ -285,8 +286,47 @@ seasonsButton.forEach(el => {
                                         </div>
                                     </div>`
 
+                                content += `<div class="event-replays">
+                                                <h4>ЗАПИСИ</h4>
+                                                <div class="event-replays-body">`
+
+                                event.eventRecords.forEach(el => {
+                                    content += `<div class="event-replays-body__item">
+                                                    <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                                </div>`
+                                })
+                                                
+                                content += `</div>
+                                        </div>`
+
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+
+                    if(window.screen.availWidth >= 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+                    if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1100px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {                        
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "94%"
+                    }
+                    if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+
                     eventBlock.style.padding = '20px'
                     content = ``
 
@@ -341,9 +381,49 @@ seasonsButton.forEach(el => {
                                         ${seasonResultsContent}
                                     </div>
                                 </div>
-                                `                            
+                                `
+
+                                content += `<div class="event-replays">
+                                                <h4>ЗАПИСИ</h4>
+                                                <div class="event-replays-body">`
+
+                                event.eventRecords.forEach(el => {
+                                    content += `<div class="event-replays-body__item">
+                                                    <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                                </div>`
+                                })
+                                                
+                                content += `</div>
+                                        </div>`
+
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+
+                    if(window.screen.availWidth >= 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+                    if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1100px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "94%"
+                    }
+                    if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+
                     eventBlock.style.padding = '20px'
                     content = ``
 
@@ -396,9 +476,49 @@ seasonsButton.forEach(el => {
                                         ${seasonResultsContent}
                                     </div>
                                 </div>
-                                `                            
+                                `
+                                
+                                content += `<div class="event-replays">
+                                                <h4>ЗАПИСИ</h4>
+                                                <div class="event-replays-body">`
+
+                                event.eventRecords.forEach(el => {
+                                    content += `<div class="event-replays-body__item">
+                                                    <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                                </div>`
+                                })
+                                                
+                                content += `</div>
+                                        </div>`
+
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+
+                    if(window.screen.availWidth >= 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+                    if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1100px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "94%"
+                    }
+                    if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+
                     eventBlock.style.padding = '20px'
                     content = ``
 
@@ -448,13 +568,81 @@ seasonsButton.forEach(el => {
                                         ${seasonResultsContent}
                                     </div>
                                 </div>
-                                `                            
+                                `
+
+                                content += `<div class="event-replays">
+                                                <h4>ЗАПИСИ</h4>
+                                                <div class="event-replays-body">`
+
+                                event.eventRecords.forEach(el => {
+                                    content += `<div class="event-replays-body__item">
+                                                    <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                                </div>`
+                                })
+                                                
+                                content += `</div>
+                                        </div>`
+
                     eventBlock.innerHTML = content
                     eventBlock.style.background = '#f7e9ff'
+
+                    if(window.screen.availWidth >= 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+                    if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1100px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "94%"
+                    }
+                    if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+                    
                     eventBlock.style.padding = '20px'
                     content = ``
 
-                }                
+                }
+                
+                window.addEventListener('orientationchange', () => {
+                    if(window.screen.availWidth >= 1440) {
+                        eventBlock.style.height = '1000px'
+                    }
+
+                    if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1100px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "98%"
+                        if(window.screen.orientation.type.indexOf('landscape') >= 0) {
+                            eventBlock.style.height = '1000px'
+                        }
+                    }
+                    if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
+                        eventBlock.style.height = '1200px'
+                        document.querySelector('.event-replays').style.width = "94%"
+                    }
+                    if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
+                        eventBlock.style.height = '1000px'                        
+                    }
+                })
 
                 const tabsButton = document.querySelectorAll('.tabs-button')
 

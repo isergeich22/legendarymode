@@ -137,6 +137,10 @@
                     border-left: 2px solid #63489d;
                 }
 
+                .profile-info-achivements__season-item {
+                    gap: 0;
+                }
+
                 .profile-info-achivements > div.profile-info-achivements__event-item:first-child {
                     border-top: 2px solid #63489d;
                 }
@@ -147,11 +151,10 @@
                         width: 100%;
                         display: flex;
                         flex-direction: row;
-                        gap: 5%;
                     }
 
                         .profile-info-achivements__season-item-header > h4 {
-                            width: 30%;
+                            width: 33.33%;
                             color: #63489d;
                             font-family: 'Harpseal Regular';
                             margin: 0;
@@ -171,7 +174,7 @@
 
                         .profile-info-achivements__season-item > p, .profile-info-achivements__event-item > p {
                             margin: 0;
-                            width: 30%;
+                            width: 33.33%;
                             height: 60px;
                             color: #63489d;
                             font-family: 'FortuneC regular';
@@ -207,7 +210,7 @@
 
                 .profile-info-contacts__links-item {
                     width: 100%;
-                    height: 48px;
+                    height: 32px;
                     display: flex;
                     flex-direction: row;
                     gap: 2%;
@@ -247,7 +250,11 @@
             width: 100%;
             display: flex;
             flex-direction: column;
-        }
+        }        
+
+            .hide {
+                display: none;
+            }
 
             .profile-info-events-list__item {
                 display: flex;
