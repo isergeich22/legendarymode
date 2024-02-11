@@ -225,7 +225,7 @@
                     font-size: 1.2rem;  
                 }
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
 
     .event-body {
         flex-direction: column;
@@ -323,7 +323,7 @@
 
 } 
 
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape){
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
 
     .event-body {
         flex-direction: column;
@@ -421,7 +421,7 @@
 
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation: portrait) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
 
     .event-body {
         flex-direction: column;
@@ -519,7 +519,7 @@
     
 }
 
-@media only screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation: landscape) {
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
 
     .event {
         width: 70%;
@@ -616,7 +616,7 @@
     
 }
 
-@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: portrait) {
+@media only screen and (min-device-width: 769px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3){
 
     .event {
         width: 60%;
@@ -714,7 +714,7 @@
 
 }
 
-@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 769px) and (max-width: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 3){
 
     .event {
         width: 60%;
