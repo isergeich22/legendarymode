@@ -897,28 +897,26 @@ seasonsButton.forEach(el => {
                         eventBlock.style.height = '1000px'
                     }
                     if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1100px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {                        
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
-                        eventBlock.style.height = '1200px'
+                        eventBlock.style.height = '100%'
                         document.querySelector('.event-replays').style.width = "94%"
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
-                        eventBlock.style.height = '1000px'
+                        eventBlock.style.height = '100%'
                     }
 
                     eventBlock.style.padding = '20px'
@@ -997,28 +995,26 @@ seasonsButton.forEach(el => {
                         eventBlock.style.height = '1000px'
                     }
                     if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1100px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
-                        eventBlock.style.height = '1200px'
+                        eventBlock.style.height = '100%'
                         document.querySelector('.event-replays').style.width = "94%"
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
-                        eventBlock.style.height = '1000px'
+                        eventBlock.style.height = '100%'
                     }
 
                     eventBlock.style.padding = '20px'
@@ -1095,28 +1091,26 @@ seasonsButton.forEach(el => {
                         eventBlock.style.height = '1000px'
                     }
                     if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1100px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
-                        eventBlock.style.height = '1200px'
+                        eventBlock.style.height = '100%'
                         document.querySelector('.event-replays').style.width = "94%"
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
-                        eventBlock.style.height = '1000px'
+                        eventBlock.style.height = '100%'
                     }
 
                     eventBlock.style.padding = '20px'
@@ -1190,28 +1184,26 @@ seasonsButton.forEach(el => {
                         eventBlock.style.height = '1000px'
                     }
                     if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1100px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
-                        eventBlock.style.height = '1200px'
+                        eventBlock.style.height = '100%'
                         document.querySelector('.event-replays').style.width = "94%"
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
-                        eventBlock.style.height = '1000px'
+                        eventBlock.style.height = '100%'
                     }
                     
                     eventBlock.style.padding = '20px'
@@ -1225,28 +1217,26 @@ seasonsButton.forEach(el => {
                     }
 
                     if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1100px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
-                        eventBlock.style.height = '1200px'
-                        document.querySelector('.event-replays').style.width = "98%"
+                        eventBlock.style.height = '100%'
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
-                        eventBlock.style.height = '1200px'
+                        eventBlock.style.height = '100%'
                         document.querySelector('.event-replays').style.width = "94%"
                         if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-                            eventBlock.style.height = '1000px'
+                            eventBlock.style.height = '100%'
                         }
                     }
                     if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
-                        eventBlock.style.height = '1000px'                        
+                        eventBlock.style.height = '100%'
                     }
                 })
 
