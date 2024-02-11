@@ -3,7 +3,7 @@ const auth = require('./public/components/auth/auth')
 const participants = require('./data/participant.json')
 const newsList = require('./data/news.json')
 const seasonsList = require('./public/seasons.json')
-const event = require('./public/components/eventBlock/event')
+const events = require('./public/components/eventBlock/events')
 const [header, current, news, nav, about, detailed, profile, participant, seasons, footer] = 
         [
             require('./public/components/header/header'), require('./public/components/current/current'), require('./public/components/news/news'), require('./public/components/nav/nav'),
@@ -993,25 +993,526 @@ app.get('/profile', async function(req, res){
 
 app.get('/seasons', async function(req, res){
 
-    let seasonNav = ``
+    if(req.query.season === undefined && req.query.event === undefined) {
 
-    seasonsList.seasons.forEach(el => {
+        let seasonNav = ``
 
-        seasonNav += `<li><a class="seasons-header__text season-number" id="${el.seasonNumber}">${el.seasonNumber} сезон</a></li>`
-        // el.events.forEach(elem => {
-        //     events += `<div class="btn-group">
-        //                     <button class="btn btn-event btn-lg season-event" type="button">
-        //                         ${elem.eventNumber} выпуск
-        //                     </button>
-        //                     <ul class="dropdown-menu">
-        //                         <li>Hello World</li>
-        //                     </ul>
-        //                 </div>`
+        seasonsList.seasons.forEach(el => {
+
+            seasonNav += `<li><a class="seasons-header__text season-number" id="${el.seasonNumber}">${el.seasonNumber} сезон</a></li>`
+            // el.events.forEach(elem => {
+            //     events += `<div class="btn-group">
+            //                     <button class="btn btn-event btn-lg season-event" type="button">
+            //                         ${elem.eventNumber} выпуск
+            //                     </button>
+            //                     <ul class="dropdown-menu">
+            //                         <li>Hello World</li>
+            //                     </ul>
+            //                 </div>`
+            // })
+
+        })
+
+        res.send(header.header + nav.nav + seasons.seasons(seasonNav, '') + events.eventBlock('') + footer.footer)
+
+    }
+
+    if(req.query.season !== undefined && req.query.event !== undefined) {
+
+        function getRandomInt(min, max) {
+
+            let rand = min + Math.random() * (max + 1 - min)
+            return Math.floor(rand)
+        
+        }
+
+        let players = ['DMITRY_BALE', 'Juice', 'orkpod', 'vika_karter', 'WELOVEGAMES']
+
+        let seasonNav = ``
+
+        seasonsList.seasons.forEach(el => {
+            if(el.seasonNumber === req.query.season) {
+
+                seasonNav += `<li><a class="seasons-header__text season-number" style="color: #9772ab;" id="${el.seasonNumber}">${el.seasonNumber} сезон</a></li>`
+
+            }
+            if(el.seasonNumber !== req.query.season) {
+
+                seasonNav += `<li><a class="seasons-header__text season-number" id="${el.seasonNumber}">${el.seasonNumber} сезон</a></li>`
+
+            }
+        })
+
+        let content = ``
+
+        seasonsList.seasons[req.query.season - 1].events.forEach(el => {
+
+            if(el.isBonus === true) {
+
+                if(el.eventNumber === req.query.event) {
+
+                    content += `<div class="btn-group">
+                                    <button class="btn btn-event btn-lg season-event season-event-active" id="${el.eventNumber}" type="button">
+                                        ${el.eventNumber} выпуск (бонусный)
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Hello World</li>
+                                    </ul>
+                                </div>`
+
+                } else {
+
+                    content += `<div class="btn-group">
+                                    <button class="btn btn-event btn-lg season-event" id="${el.eventNumber}" type="button">
+                                        ${el.eventNumber} выпуск (бонусный)
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Hello World</li>
+                                    </ul>
+                                </div>`
+
+                }
+
+            } else {
+
+                if(el.eventNumber === req.query.event) {
+
+                    content += `<div class="btn-group">
+                                    <button class="btn btn-event btn-lg season-event season-event-active" id="${el.eventNumber}" type="button">
+                                        ${el.eventNumber} выпуск
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Hello World</li>
+                                    </ul>
+                                </div>`
+
+                } else {
+
+                    content += `<div class="btn-group">
+                                    <button class="btn btn-event btn-lg season-event" id="${el.eventNumber}" type="button">
+                                        ${el.eventNumber} выпуск
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li>Hello World</li>
+                                    </ul>
+                                </div>`
+
+                }
+
+            }
+
+        })
+
+        let eventContent = ``
+
+        let seasonResult = [
+        ]
+        let event = seasonsList.seasons[req.query.season - 1].events.find(evt => evt.eventNumber === req.query.event)
+        let index = seasonsList.seasons[req.query.season - 1].events.indexOf(event)
+
+            for(let i = 0; i < players.length; i++) {
+                let pointsSum = 0
+                for(let j = 0; j <= index; j++) {
+                    if(players[i] !== seasonsList.seasons[req.query.season - 1].events[j].eventHost) {
+                        if(seasonsList.seasons[req.query.season - 1].events[j].eventResults.findIndex(evt => evt.player === players[i]) >= 0) {
+                            if(seasonsList.seasons[req.query.season - 1].events[j].isBonus === false) {
+                                pointsSum += seasonsList.seasons[req.query.season - 1].rules.find(rule => rule.eventPlace === parseInt(seasonsList.seasons[req.query.season - 1].events[j].eventResults.find(evt => evt.player === players[i]).position)).placePoints
+                            }
+                            if(seasonsList.seasons[req.query.season - 1].events[j].isBonus === true) {
+                                if(seasonsList.seasons[req.query.season - 1].events[j].eventResults.find(evt => evt.player === players[i]).position === '1') {
+                                    pointsSum += 1
+                                }
+                            }
+
+                        }
+
+                    }
+                }
+
+                // console.log(pointsSum)
+                
+                seasonResult.push({
+                    playerName: players[i],
+                    seasonPoints: pointsSum
+                })
+
+            }
+
+        // seasonResult.forEach(el => {
+        //     console.log(`${el.playerName} - ${el.seasonPoints}`)
         // })
 
-    })
+        let seasonResultsContent = ``
 
-    res.send(header.header + nav.nav + seasons.seasons(seasonNav) + event.eventBlock + footer.footer)
+        let max = 0
+
+        for(let i = 0; i < seasonResult.length; i++) {
+            
+            if(seasonResult[i].seasonPoints > max) {
+                max = seasonResult[i].seasonPoints
+            }
+
+        }
+
+        let values = []
+
+        for(let i = 0; i < seasonResult.length; i++) {
+
+            if(values.indexOf(seasonResult[i].seasonPoints) < 0) {
+
+                values.push(seasonResult[i].seasonPoints)
+
+            }
+
+        }
+
+        values.sort((a, b) => b - a)
+
+        for(let i = 0; i < values.length; i++) {
+
+            for(let j = 0; j < seasonResult.length; j++) {
+
+                if(seasonResult[j].seasonPoints === values[i]) {
+                    seasonResultsContent += `<div class="season-results-item">${i+1} место - ${seasonResult[j].playerName} (${seasonResult[j].seasonPoints})</div>`
+                }
+
+            }
+
+        }
+
+        if(event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost) >= 0) {
+
+            eventContent += `
+                <div class="event-body-item">
+                    <div class="event-body-item__video">
+                        <iframe width="500" height="281" src="${event.eventVideo[event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost)].videoLink}" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="event-body-item__tabs">
+            `
+
+            event.eventVideo.forEach(el => {
+                if(el.videoAuthor === event.eventHost) {
+                    eventContent += `
+                        <button class="tabs-button active" id="${el.videoAuthor}">
+                            ${el.videoAuthor}
+                        </button>
+                    `
+                }
+                if(el.videoAuthor !== event.eventHost) {
+                    eventContent += `
+                        <button class="tabs-button" id="${el.videoAuthor}">
+                            ${el.videoAuthor}
+                        </button>
+                    `
+                }
+            })
+
+            eventContent += `
+                    </div>
+                </div>
+            `
+
+        }
+
+        if(event.eventVideo.findIndex(evt => evt.videoAuthor === event.eventHost) < 0) {
+
+            let index = getRandomInt(0, event.eventVideo.length - 1)
+
+            eventContent += `
+                <div class="event-body-item">
+                    <div class="event-body-item__video">
+                        <iframe width="560" height="281" src="${event.eventVideo[index].videoLink}" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; 
+                            gyroscope; picture-in-picture; web-share" allowfullscreen>
+                        </iframe>
+                    </div>
+                    <div class="event-body-item__tabs">
+            `
+
+            event.eventVideo.forEach(el => {
+                if(el.videoAuthor === event.eventVideo[index].videoAuthor) {
+                    eventContent += `
+                        <button class="tabs-button active" id="${el.videoAuthor}">
+                            ${el.videoAuthor}
+                        </button>
+                    `
+                }
+                if(el.videoAuthor !== event.eventVideo[index].videoAuthor) {
+                    eventContent += `
+                        <button class="tabs-button" id="${el.videoAuthor}">
+                            ${el.videoAuthor}
+                        </button>
+                    `
+                }
+            })
+
+            eventContent += `
+                    </div>
+                </div>
+            `
+
+        }
+        
+        let [firstPlace, secondPlace, thirdPlace, fourthPlace] = [event.eventResults.find(evt => evt.position === "1"), event.eventResults.find(evt => evt.position === "2"), event.eventResults.find(evt => evt.position === "3"), event.eventResults.find(evt => evt.position === "4")]
+        let [firstPlaceRule, secondPlaceRule, thirdPlaceRule, fourthPlaceRule] = [seasonsList.seasons[req.query.season - 1].rules.find(rule => rule.eventPlace === 1), seasonsList.seasons[req.query.season - 1].rules.find(rule => rule.eventPlace === 2), seasonsList.seasons[req.query.season - 1].rules.find(rule => rule.eventPlace === 3), seasonsList.seasons[req.query.season - 1].rules.find(rule => rule.eventPlace === 4)]
+
+        if(event.eventResults.findIndex(evt => evt.position === "-") >= 0) {
+
+            eventContent += `
+                        <div class="event-body-item text-block">
+                            <div class="text-block-item">
+                                <p>Ведущий:</p>
+                                <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Игра:</p>
+                                <p>${event.eventGame}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Название выпуска:</p>
+                                <p>${event.eventTitle}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Дата выпуска:</p>
+                                <p>${event.eventDate}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Краткие правила:</p>
+                                <p>${event.eventDescription}</p>
+                            </div>
+                        </div>
+                        <div class="results-block">                                
+                            <div class="event-results">
+                                <div class="event-results-header">
+                                    <h1>ИТОГИ ВЫПУСКА</h1>
+                                </div>
+                                <div class="event-results-item">
+                                    ${event.eventResults[0].player} - (-)
+                                </div>
+                                <div class="event-results-item">
+                                    ${event.eventResults[1].player} - (-)
+                                </div>
+                                <div class="event-results-item">
+                                    ${event.eventResults[2].player} - (-)
+                                </div>
+                                <div class="event-results-item">
+                                    ${event.eventResults[3].player} - (-)
+                                </div>
+                            </div>`
+
+                        eventContent += `<div class="event-replays">
+                                        <h4>ЗАПИСИ</h4>
+                                        <div class="event-replays-body">`
+
+                        event.eventRecords.forEach(el => {
+                            eventContent += `<div class="event-replays-body__item">
+                                            <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                        </div>`
+                        })
+                                        
+                        eventContent += `</div>
+                                </div>`
+
+        }
+
+        if(fourthPlace !== undefined && thirdPlace !== undefined) {
+
+            eventContent += `
+                        <div class="event-body-item text-block">
+                            <div class="text-block-item">
+                                <p>Ведущий:</p>
+                                <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Игра:</p>
+                                <p>${event.eventGame}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Название ивента:</p>
+                                <p>${event.eventTitle}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Дата ивента:</p>
+                                <p>${event.eventDate}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Краткие правила:</p>
+                                <p>${event.eventDescription}</p>
+                            </div>
+                        </div>
+                        <div class="results-block">                                
+                            <div class="event-results">
+                                <div class="event-results-header">
+                                    <h1>ИТОГИ ВЫПУСКА</h1>
+                                </div>
+                                <div class="event-results-item">
+                                    1 место: ${firstPlace.player} - (${firstPlaceRule.placePoints} очка)
+                                </div>
+                                <div class="event-results-item">
+                                    2 место: ${secondPlace.player} - (${secondPlaceRule.placePoints} очка)
+                                </div>
+                                <div class="event-results-item">
+                                    3 место: ${thirdPlace.player} - (${thirdPlaceRule.placePoints} очка)
+                                </div>
+                                <div class="event-results-item">
+                                    4 место: ${fourthPlace.player} - (${fourthPlaceRule.placePoints} очко)
+                                </div>
+                            </div>
+                            <div class="season-results">
+                                <div class="season-results-header">
+                                    <h1>ПРОМЕЖУТОЧНЫЙ ИТОГ СЕЗОНА</h1>
+                                </div>
+                                ${seasonResultsContent}
+                            </div>
+                        </div>
+                        `
+
+                        eventContent += `<div class="event-replays">
+                                        <h4>ЗАПИСИ</h4>
+                                        <div class="event-replays-body">`
+
+                        event.eventRecords.forEach(el => {
+                            eventContent += `<div class="event-replays-body__item">
+                                            <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                        </div>`
+                        })
+                                        
+                        eventContent += `</div>
+                                </div>`
+
+        }
+
+        if(fourthPlace === undefined && thirdPlace !== undefined) {
+
+            eventContent += `
+                        <div class="event-body-item text-block">
+                            <div class="text-block-item">
+                                <p>Ведущий:</p>
+                                <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Игра:</p>
+                                <p>${event.eventGame}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Название ивента:</p>
+                                <p>${event.eventTitle}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Дата ивента:</p>
+                                <p>${event.eventDate}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Краткие правила:</p>
+                                <p>${event.eventDescription}</p>
+                            </div>
+                        </div>
+                        <div class="results-block">                                
+                            <div class="event-results">
+                                <div class="event-results-header">
+                                    <h1>ИТОГИ ВЫПУСКА</h1>
+                                </div>
+                                <div class="event-results-item">
+                                    1 место: ${firstPlace.player} - (2 очка)
+                                </div>
+                                <div class="event-results-item">
+                                    2 место: ${secondPlace.player} - (1 очко)
+                                </div>
+                                <div class="event-results-item">
+                                    3 место: ${thirdPlace.player} - (0 очка)
+                                </div>
+                            </div>
+                            <div class="season-results">
+                                <div class="season-results-header">
+                                    <h1>ПРОМЕЖУТОЧНЫЙ ИТОГ СЕЗОНА</h1>
+                                </div>
+                                ${seasonResultsContent}
+                            </div>
+                        </div>
+                        `
+                        
+                        eventContent += `<div class="event-replays">
+                                        <h4>ЗАПИСИ</h4>
+                                        <div class="event-replays-body">`
+
+                        event.eventRecords.forEach(el => {
+                            eventContent += `<div class="event-replays-body__item">
+                                            <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                        </div>`
+                        })
+                                        
+                        eventContent += `</div>
+                                </div>`
+
+        }
+
+        if(fourthPlace === undefined && thirdPlace === undefined && event.eventResults.findIndex(evt => evt.position === "-") < 0) {
+
+            eventContent += `
+                        <div class="event-body-item text-block">
+                            <div class="text-block-item">
+                                <p>Ведущий:</p>
+                                <p><a href="/profile?name=${event.eventHost}">${event.eventHost}</a></p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Игра:</p>
+                                <p>${event.eventGame}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Название ивента:</p>
+                                <p>${event.eventTitle}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Дата ивента:</p>
+                                <p>${event.eventDate}</p>
+                            </div>
+                            <div class="text-block-item">
+                                <p>Краткие правила:</p>
+                                <p>${event.eventDescription}</p>
+                            </div>
+                        </div>
+                        <div class="results-block">                                
+                            <div class="event-results">
+                                <div class="event-results-header">
+                                    <h1>ИТОГИ ВЫПУСКА</h1>
+                                </div>
+                                <div class="event-results-item">
+                                    1 место: ${firstPlace.player} - (1 очко)
+                                </div>
+                                <div class="event-results-item">
+                                    2 место: ${secondPlace.player} - (0 очков)
+                                </div>
+                            </div>
+                            <div class="season-results">
+                                <div class="season-results-header">
+                                    <h1>ПРОМЕЖУТОЧНЫЙ ИТОГ СЕЗОНА</h1>
+                                </div>
+                                ${seasonResultsContent}
+                            </div>
+                        </div>
+                        `
+
+                        eventContent += `<div class="event-replays">
+                                        <h4>ЗАПИСИ</h4>
+                                        <div class="event-replays-body">`
+
+                        event.eventRecords.forEach(el => {
+                            eventContent += `<div class="event-replays-body__item">
+                                            <a class="event-replays-body__item-link" href="${el.videoLink}">${el.videoAuthor}</a>
+                                        </div>`
+                        })
+                                        
+                        eventContent += `</div>
+                                </div>`
+
+        }
+
+        res.send(header.header + nav.nav + seasons.seasons(seasonNav, content) + events.eventBlock(eventContent, 'style="background: #f7e9ff; padding: 20px"') + footer.footer)
+
+    }
 
 })
 

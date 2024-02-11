@@ -52,7 +52,7 @@ events.forEach(el => {
                                 </div>
                                 <div class="profile-info-events-list__item-detailed__desc-hide">
                                     <button id="det">
-                                        <a href="https://${window.location.host}/seasons?season=${el.parentNode.children[0].children[0].innerHTML}&event=${el.parentNode.children[0].children[1].innerHTML}">Подробнее</a>
+                                        <a href="http://${window.location.host}/seasons?season=${el.parentNode.children[0].children[0].innerHTML}&event=${el.parentNode.children[0].children[1].innerHTML}">Подробнее</a>
                                     </button>
                                     <button id="hide">
                                         Скрыть
@@ -85,7 +85,7 @@ events.forEach(el => {
                                 </div>
                                 <div class="profile-info-events-list__item-detailed__desc-hide">
                                     <button id="det">
-                                    <a href="https://${window.location.host}/seasons?season=${el.parentNode.children[0].children[0].innerHTML}&event=${el.parentNode.children[0].children[1].innerHTML}">Подробнее</a>
+                                    <a href="http://${window.location.host}/seasons?season=${el.parentNode.children[0].children[0].innerHTML}&event=${el.parentNode.children[0].children[1].innerHTML}">Подробнее</a>
                                     </button>
                                     <button id="hide">
                                         Скрыть

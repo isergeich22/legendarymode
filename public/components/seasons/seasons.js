@@ -4,6 +4,7 @@ exports.seasons = seasons = (list, content) =>`
             ${list}
         </ul>
         <div id="eventsBlock" class="season-body">
+            ${content}
         </div>
     </section>
 `
