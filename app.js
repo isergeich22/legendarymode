@@ -1510,7 +1510,7 @@ app.get('/seasons', async function(req, res){
 
         }
 
-        res.send(header.header + nav.nav + seasons.seasons(seasonNav, content) + events.eventBlock(eventContent, 'style="background: #f7e9ff; padding: 20px"') + footer.footer)
+        res.send(header.header + nav.nav + seasons.seasons(seasonNav, content) + events.eventBlock(eventContent, 'style="background: #f7e9ff; height: 100%; padding: 20px"') + footer.footer)
 
     }
 
