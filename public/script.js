@@ -35,35 +35,6 @@ const currentHeader = document.querySelector('.current-header__text')
 //     prevButton.setAttribute('id') = result.seasons.length-1
 // }
 
-if(window.screen.availWidth >= 1440) {
-    eventBlock.style.height = '1000px'
-}
-
-if(window.screen.availWidth >= 320 && window.screen.availWidth <= 480) {
-    eventBlock.style.height = '1200px'
-    document.querySelector('.event-replays').style.width = "98%"
-    if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-        eventBlock.style.height = '1100px'
-    }
-}
-if(window.screen.availWidth >= 481 && window.screen.availWidth <= 768) {
-    eventBlock.style.height = '1200px'
-    document.querySelector('.event-replays').style.width = "98%"
-    if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-        eventBlock.style.height = '1000px'
-    }
-}
-if(window.screen.availWidth >= 769 && window.screen.availWidth < 1024) {
-    eventBlock.style.height = '1200px'
-    document.querySelector('.event-replays').style.width = "94%"
-    if(window.screen.orientation.type.indexOf('landscape') >= 0) {
-        eventBlock.style.height = '1000px'
-    }
-}
-if(window.screen.availWidth >= 1024 && window.screen.availWidth < 1440) {
-    eventBlock.style.height = '1000px'                        
-}
-
 let content = ``
 let eventButtons
 
