@@ -7,27 +7,33 @@
             "links": [
                 {
                     "linkName": "Стримы на Twitch",
-                    "linkAddress": "https://www.twitch.tv/vika_karter"
+                    "linkAddress": "https://www.twitch.tv/vika_karter",
+                    "isMain": true
                 },
                 {
                     "linkName": "Поддержать на Boosty",
-                    "linkAddress": "https://boosty.to/karter"
+                    "linkAddress": "https://boosty.to/karter",
+                    "isMain": true
                 },
                 {
                     "linkName": "Канал в Telegram",
-                    "linkAddress": "https://t.me/karter_info"
+                    "linkAddress": "https://t.me/karter_info",
+                    "isMain": true
                 },
                 {
                     "linkName": "Сообщество Вконтакте",
-                    "linkAddress": "https://vk.com/vikakarter"
+                    "linkAddress": "https://vk.com/vikakarter",
+                    "isMain": true
                 },
                 {
                     "linkName": "Архив стримов",
-                    "linkAddress": "https://archive.vikarter.club"
+                    "linkAddress": "https://archive.vikarter.club",
+                    "isMain": false
                 },
                 {
                     "linkName": "Discord сервер",
-                    "linkAddress": "https://discord.com/invite/mNvaebx"
+                    "linkAddress": "https://discord.com/invite/mNvaebx",
+                    "isMain": false
                 }
             ]
         },
@@ -38,27 +44,33 @@
             "links": [
                 {
                     "linkName": "Стримы на Twitch",
-                    "linkAddress": "https://www.twitch.tv/orkpod"
+                    "linkAddress": "https://www.twitch.tv/orkpod",
+                    "isMain": true
                 },
                 {
                     "linkName": "Поддержать на Boosty",
-                    "linkAddress": "https://boosty.to/orkpod"
+                    "linkAddress": "https://boosty.to/orkpod",
+                    "isMain": true
                 },
                 {
                     "linkName": "Канал в Telegram",
-                    "linkAddress": "https://t.me/orkpodcaster"
+                    "linkAddress": "https://t.me/orkpodcaster",
+                    "isMain": true
                 },
                 {
                     "linkName": "Сообщество Вконтакте",
-                    "linkAddress": "https://vk.com/orktwitch"
+                    "linkAddress": "https://vk.com/orktwitch",
+                    "isMain": true
                 },
                 {
                     "linkName": "Нарезки стримов",
-                    "linkAddress": "https://www.youtube.com/@orkcut"
+                    "linkAddress": "https://www.youtube.com/@orkcut",
+                    "isMain": false
                 },
                 {
                     "linkName": "Архив стримов",
-                    "linkAddress": "https://youtube.com/orkstream"
+                    "linkAddress": "https://youtube.com/orkstream",
+                    "isMain": false
                 }
             ]
         },
@@ -69,31 +81,38 @@
             "links": [
                 {
                     "linkName": "Стримы на Twitch",
-                    "linkAddress": "https://www.twitch.tv/welovegames"
+                    "linkAddress": "https://www.twitch.tv/welovegames",
+                    "isMain": true
                 },
                 {
                     "linkName": "Поддержать на Boosty",
-                    "linkAddress": "https://boosty.to/welovegames"
+                    "linkAddress": "https://boosty.to/welovegames",
+                    "isMain": true
                 },
                 {
                     "linkName": "Новостной Telegram",
-                    "linkAddress": "https://t.me/welovegames"
+                    "linkAddress": "https://t.me/welovegames",
+                    "isMain": true
                 },
                 {
                     "linkName": "Сообщество Вконтакте",
-                    "linkAddress": "https://vk.com/welovegames"
+                    "linkAddress": "https://vk.com/welovegames",
+                    "isMain": true
                 },
                 {
                     "linkName": "Discord сервер",
-                    "linkAddress": "https://discord.com/invite/welovegames"
+                    "linkAddress": "https://discord.com/invite/welovegames",
+                    "isMain": false
                 },
                 {
                     "linkName": "Нарезки со стримов",
-                    "linkAddress": "https://youtube.com/welovegames"
+                    "linkAddress": "https://youtube.com/welovegames",
+                    "isMain": false
                 },
                 {
                     "linkName": "Записи трансляций",
-                    "linkAddress": "https://youtube.com/@wlgvods"
+                    "linkAddress": "https://youtube.com/@wlgvods",
+                    "isMain": false
                 }
             ]
         },
@@ -104,23 +123,28 @@
             "links": [
                 {
                     "linkName": "Стримы на Twitch",
-                    "linkAddress": "https://www.twitch.tv/dmitry_bale"
+                    "linkAddress": "https://www.twitch.tv/dmitry_bale",
+                    "isMain": true
                 },
                 {
-                    "linkName": "youtube.com/@DmitryBale",
-                    "linkAddress": "https://www.youtube.com/channel/UCcAQJDkK-Xf-YGCGAdAY3Ig"
+                    "linkName": "Канал Youtube",
+                    "linkAddress": "https://www.youtube.com/channel/UCcAQJDkK-Xf-YGCGAdAY3Ig",
+                    "isMain": true
                 },
                 {
                     "linkName": "Канал в Telegram",
-                    "linkAddress": "https://t.me/DmitryBaleOfficial"
+                    "linkAddress": "https://t.me/DmitryBaleOfficial",
+                    "isMain": true
                 },
                 {
                     "linkName": "Сообщество Вконтакте",
-                    "linkAddress": "https://vk.com/dmitrybaleofficial"
+                    "linkAddress": "https://vk.com/dmitrybaleofficial",
+                    "isMain": true
                 },
                 {
                     "linkName": "Discord сервер",
-                    "linkAddress": "https://discord.com/invite/RVYmH97d2K"
+                    "linkAddress": "https://discord.com/invite/RVYmH97d2K",
+                    "isMain": false
                 }
             ]
         },
@@ -131,31 +155,38 @@
             "links": [
                 {
                     "linkName": "Стримы на Twitch",
-                    "linkAddress": "https://www.twitch.tv/juice"
+                    "linkAddress": "https://www.twitch.tv/juice",
+                    "isMain": true
                 },
                 {
                     "linkName": "Поддержать на Boosty",
-                    "linkAddress": "https://boosty.to/juice"
+                    "linkAddress": "https://boosty.to/juice",
+                    "isMain": true
                 },
                 {
                     "linkName": "Канал в Telegram",
-                    "linkAddress": "https://t.me/Juice_live"
+                    "linkAddress": "https://t.me/Juice_live",
+                    "isMain": true
                 },
                 {
                     "linkName": "Сообщество Вконтакте",
-                    "linkAddress": "https://vk.com/juicelive"
+                    "linkAddress": "https://vk.com/juicelive",
+                    "isMain": true
                 },
                 {
                     "linkName": "Discord сервер",
-                    "linkAddress": "https://discord.com/invite/juice"
+                    "linkAddress": "https://discord.com/invite/juice",
+                    "isMain": false
                 },
                 {
                     "linkName": "Нарезки от Мишани",
-                    "linkAddress": "https://www.youtube.com/channel/UCydActh6Uv9b1orr1H1l7fw"
+                    "linkAddress": "https://www.youtube.com/channel/UCydActh6Uv9b1orr1H1l7fw",
+                    "isMain": false
                 },
                 {
                     "linkName": "Записи трансляций",
-                    "linkAddress": "https://www.youtube.com/channel/UCQ6HGf4nMGaYfTb11ybI6gA"
+                    "linkAddress": "https://www.youtube.com/channel/UCQ6HGf4nMGaYfTb11ybI6gA",
+                    "isMain": false
                 }
             ]
         }

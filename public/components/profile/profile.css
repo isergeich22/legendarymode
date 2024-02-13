@@ -154,7 +154,7 @@
                     }
 
                         .profile-info-achivements__season-item-header > h4 {
-                            width: 33.33%;
+                            width: 25%;
                             color: #63489d;
                             font-family: 'Harpseal Regular';
                             margin: 0;
@@ -167,14 +167,19 @@
                             display: flex;
                             align-items: center;
                             justify-content: center;
-                            width: 30%;
+                            width: 25%;
                             height: 60px;
                             border-right: 2px solid #63489d;
                         }
 
+                            .profile-info-achivements__season-item-medal > img {
+                                width: 48px;
+                                height: 48px;
+                            }
+
                         .profile-info-achivements__season-item > p, .profile-info-achivements__event-item > p {
                             margin: 0;
-                            width: 33.33%;
+                            width: 25%;
                             height: 60px;
                             color: #63489d;
                             font-family: 'FortuneC regular';
@@ -429,6 +434,7 @@
         }
 
             .profile-info-contacts__links-item {
+                width: 90%;
                 height: 38px;
             }
 
@@ -466,6 +472,11 @@
                 .profile-info-achivements__season-item-medal {
                     height: 40px;
                 }
+
+                    .profile-info-achivements__season-item-medal > img {
+                        width: 24px;
+                        height: 24px;
+                    }
 
                 .profile-info-achivements__event-item > p:first-child {
                     font-size: .5rem;
@@ -548,7 +559,7 @@
         }
 
             .profile-info-contacts__image > img {
-                width: 60%;
+                width: 40%;
             }
 
         .profile-info-contacts__links {
@@ -558,6 +569,7 @@
         }
 
             .profile-info-contacts__links-item {
+                width: 92%;
                 height: 38px;
             }
 
@@ -578,6 +590,15 @@
         .profile-info-achivements__item {
             height: 40px;
         }
+
+            .profile-info-achivements__season-item-medal {
+                    height: 60px;
+                }
+
+                    .profile-info-achivements__season-item-medal > img {
+                        width: 24px;
+                        height: 24px;
+                    }
 
         .profile-info-events-header {
             margin: 0;
@@ -656,7 +677,7 @@
         }
 
             .profile-info-contacts__image > img {
-                width: 60%;
+                width: 40%;
             }
 
         .profile-info-contacts__links {
@@ -666,6 +687,7 @@
         }
 
             .profile-info-contacts__links-item {
+                width: 90%;
                 height: 38px;
             }
 
@@ -686,6 +708,15 @@
         .profile-info-achivements__item {
             height: 40px;
         }
+
+            .profile-info-achivements__season-item-medal {
+                    height: 60px;
+                }
+
+                    .profile-info-achivements__season-item-medal > img {
+                        width: 32px;
+                        height: 32px;
+                    }
 
         .profile-info-events-header {
             margin: 0;
@@ -768,7 +799,7 @@
         }
 
             .profile-info-contacts__image > img {
-                width: 40%;
+                width: 30%;
             }
 
         .profile-info-contacts__links {
@@ -778,6 +809,7 @@
         }
 
             .profile-info-contacts__links-item {
+                width: 94%;
                 height: 38px;
             }
 
@@ -798,6 +830,15 @@
         .profile-info-achivements__item {
             height: 40px;
         }
+
+            .profile-info-achivements__season-item-medal {
+                    height: 60px;
+                }
+
+                    .profile-info-achivements__season-item-medal > img {
+                        width: 32px;
+                        height: 32px;
+                    }
 
         .profile-info-events-header {
             margin: 0;
@@ -890,6 +931,7 @@
         }
 
             .profile-info-contacts__links-item {
+                width: 90%;
                 height: 38px;
             }
 
@@ -910,6 +952,15 @@
         .profile-info-achivements__item {
             height: 40px;
         }
+
+            .profile-info-achivements__season-item-medal {
+                    height: 60px;
+                }
+
+                    .profile-info-achivements__season-item-medal > img {
+                        width: 36px;
+                        height: 36px;
+                    }
 
         .profile-info-events-header {
             margin: 0;
@@ -1002,6 +1053,7 @@
         }
 
             .profile-info-contacts__links-item {
+                width: 93%;
                 height: 38px;
             }
 
@@ -1022,6 +1074,15 @@
         .profile-info-achivements__item {
             height: 40px;
         }
+
+            .profile-info-achivements__season-item-medal {
+                    height: 60px;
+                }
+
+                    .profile-info-achivements__season-item-medal > img {
+                        width: 36px;
+                        height: 36px;
+                    }
 
         .profile-info-events-header {
             margin: 0;
